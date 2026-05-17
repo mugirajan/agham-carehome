@@ -24,7 +24,7 @@
 	<link rel="canonical" href="https://yourdomain.com/index.html">
 
 	<!-- FAVICONS ICON -->
-	<link rel="icon" type="image/png" href="../src/images/favicon.png">
+	<link rel="icon" type="image/png" href="/assets/images/hero-banner/logo.png">
 
 	<!-- Open Graph -->
 	<meta property="og:type" content="website">
@@ -84,20 +84,19 @@
 </div>
 
 	<!-- Header Star -->
-	<header class="site-header sticky-header-wrapper !absolute top-0 left-0 w-full z-999 border-b border-white/10">
-
-	<div class="main-bar relative xl:pl-20 lg:text-heading text-secondary w-full">
+	<header class="site-header sticky-header-wrapper z-999 relative">
+	<div class="main-bar relative xl:pl-20 lg:text-heading text-secondary bg-white w-full">
 		<div class="container-fluid flex pl-[calc(80px_/_2)]">
 
-			<div class="border-r border-white/10 h-full w-20 min-w-20 flex justify-center items-center absolute left-0 top-0 max-xl:hidden">
-				<button type="button" class="py-2 px-4 rounded-lg toggle-nav-btn" data-drawer="#offcanvas-right" data-drawer-placement="right">
-					<span class="w-5 h-0.5 [.sticky-header-wrapper.is-fixed_&]:bg-secondary bg-white block duration-500"></span>
-					<span class="w-4 my-1.25 h-0.5 [.sticky-header-wrapper.is-fixed_&]:bg-secondary bg-white block duration-500"></span>
-					<span class="w-5 h-0.5 [.sticky-header-wrapper.is-fixed_&]:bg-secondary bg-white block duration-500"></span>
+			<div class="border-r border-black/10 h-full w-20 min-w-20 flex justify-center items-center absolute left-0 top-0 max-xl:hidden">
+				<button type="button" class="py-2.4 px-4 rounded-lg toggle-nav-btn" data-drawer="#offcanvas-right" data-drawer-placement="right">
+					<span class="w-5 h-0.5 bg-secondary block duration-500"></span>
+					<span class="w-4 my-1.25 h-0.5 bg-secondary block duration-500"></span>
+					<span class="w-5 h-0.5 bg-secondary block duration-500"></span>
 				</button>
 			</div>
 
-			<!-- Website Logo -->
+					<!-- Website Logo -->
 		<div class="flex items-center align-middle xl:w-41.25 w-33.75 sm:h-20 h-15.25 xl:me-7.5 me-2 logo-dark custom-logo">
 	<a href="index.html" class="table-cell align-middle">
 		<img src="/assets/images/hero-banner/logo.png" alt="logo"
@@ -108,14 +107,14 @@
 	</a>
 </div>
 
-			<button class="xmenu-toggler lg:hidden float-right sm:mt-4.5 sm:mb-4 sm:ml-7 my-2.5 ml-5 size-11 bg-white rounded-md relative cursor-pointer max-lg:order-1 max-md:ms-auto" type="button">
-				<span class="block absolute left-2.5 h-0.5 rounded-px bg-secondary duration-300 top-3.25 w-5.5"></span>
-				<span class="block absolute left-2.5 h-0.5 rounded-px bg-secondary duration-0 top-5.5 w-6.25"></span>
-				<span class="block absolute left-2.5 h-0.5 rounded-px bg-secondary duration-300 top-8 w-4"></span>
+			<button class="xmenu-toggler lg:hidden float-right sm:mt-4.5 sm:mb-4 sm:ml-7 my-2.5 ml-5 size-11 bg-secondary rounded-md relative cursor-pointer max-lg:order-1 max-md:ms-auto" type="button">
+				<span class="block absolute left-2.5 h-0.5 rounded-px bg-white duration-300 top-3.25 w-5.5"></span>
+				<span class="block absolute left-2.5 h-0.5 rounded-px bg-white duration-0 top-5.5 w-6.25"></span>
+				<span class="block absolute left-2.5 h-0.5 rounded-px bg-white duration-300 top-8 w-4"></span>
 			</button>
 			<div class="lg:hidden fixed top-0 left-0 bg-black size-full duration-300 z-999 opacity-0 visible pointer-events-none menu-close fade-overlay"></div>
-			<div class="flex lg:basis-auto lg:grow max-lg:flex-col justify-start font-title max-lg:fixed max-lg:h-screen max-lg:px-5 max-lg:top-0 max-lg:-left-75 max-lg:z-9999 max-lg:bg-white max-lg:w-72 max-lg:overflow-auto max-lg:duration-700 [.sticky-header-wrapper.is-fixed_&]:text-secondary lg:text-white header-nav custom-scroll">
-				<div class="flex items-center relative z-9 py-6.25 lg:hidden w-33.75 h-15.25 custom-logo " >
+			<div class="flex lg:basis-auto lg:grow max-lg:flex-col justify-start font-title max-lg:fixed max-lg:h-screen max-lg:px-5 max-lg:top-0 max-lg:-left-75 max-lg:z-9999 max-lg:bg-white max-lg:w-72 max-lg:overflow-auto max-lg:duration-700 header-nav custom-scroll">
+					<div class="flex items-center relative z-9 py-6.25 lg:hidden w-33.75 h-15.25 custom-logo " >
 					<a href="index.html" class="table-cell align-middle">
 						<img src="/assets/images/hero-banner/logo.png" alt="" class="object-contain duration-500" style="width:50px">
 					</a>
@@ -169,8 +168,7 @@
 
     </li>
 
-</ul>
-				<div class="lg:hidden block max-lg:p-5 text-center mt-auto">
+</ul>	<div class="lg:hidden block max-lg:p-5 text-center mt-auto">
 			
 				</div>
 			</div>
@@ -179,22 +177,22 @@
 					<ul class="lg:ml-5 sm:ml-3.75 flex items-center gap-11.25 w-full justify-between">
 						<li class="2xxl:inline-flex items-center gap-3.75 hidden">
 							<div class="widget-media">
-								<i class="feather icon-phone-call dz-ring-effect text-3xxl inline-flex animate-dzRing [.sticky-header-wrapper.is-fixed_&]:text-secondary text-white"></i>
+								<i class="feather icon-phone-call dz-ring-effect text-3xxl inline-flex animate-dzRing"></i>
 							</div>
 							<div class="widget-content">
 								<h6 class="text-primary text-sm font-normal mb-0">Contact us</h6>
-								<a href="tel:+11234567890" class="sm:text-lg text-base font-semibold [.sticky-header-wrapper.is-fixed_&]:text-secondary text-white">+1 123 456 7890</a>
+								<a href="tel:+11234567890" class="sm:text-lg text-base font-semibold text-secondary">+1 123 456 7890</a>
 							</div>
 						</li>
 						<li class="inline-block max-xl:hidden max-sm:!block">
-							<a href="contact-us.html" class="btn btn-primary btn-hover1 max-md:!text-sm max-md:!py-2.5 max-md:!px-4.5 max-md:!rounded-2lg">
+							<a href="appointment.html" class="btn btn-primary btn-hover1 max-md:!text-sm max-md:!py-2.5 max-md:!px-4.5 max-md:!rounded-2lg">
 								Appointment
 							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<div class="fixed -top-full left-0 size-full bg-white/80 z-999 flex items-center justify-center p-8 duration-500 xmenu-search" id="searchOverlay4">
+			<div class="fixed -top-full left-0 size-full bg-black/80 z-999 flex items-center justify-center p-8 duration-500 xmenu-search" id="searchOverlay4">
 				<form class="w-full" action="#">
 					<div class="relative max-w-3xl w-3xl mx-auto">
 						<input name="search" value="" type="text" class="h-14 py-4 px-5 border border-white/20 text-white w-full outline-none duration-300 focus:border-primary" placeholder="Type to search">
@@ -205,7 +203,6 @@
 			</div>
 		</div>
 	</div>
-
 </header>
 
 
@@ -2088,28 +2085,28 @@
 									<li class="relative pl-7 py-2 text-2sm font-medium">
 										<a class="block relative after:absolute after:bg-arrow-right after:size-4.5 after:bg-contain after:-left-6.5"
 											href="">
-											<span>Senior Care</span>
+											<span>Senior Care Service</span>
 										</a>
 									</li>
 
 									<li class="relative pl-7 py-2 text-2sm font-medium">
 										<a class="block relative after:absolute after:bg-arrow-right after:size-4.5 after:bg-contain after:-left-6.5"
 											href="">
-											<span>Transient Care</span>
+											<span>Transient Care Service</span>
 										</a>
 									</li>
 
 									<li class="relative pl-7 py-2 text-2sm font-medium">
 										<a class="block relative after:absolute after:bg-arrow-right after:size-4.5 after:bg-contain after:-left-6.5"
 											href="">
-											<span>Assisted Living</span>
+											<span>Assisted Living Service</span>
 										</a>
 									</li>
 
 									<li class="relative pl-7 py-2 text-2sm font-medium">
 										<a class="block relative after:absolute after:bg-arrow-right after:size-4.5 after:bg-contain after:-left-6.5"
 											href="">
-											<span>Mind & Memory</span>
+											<span>Mind & Memory Service</span>
 										</a>
 									</li>
 

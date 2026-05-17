@@ -339,3 +339,33 @@ window.addEventListener("load", function () {
 window.addEventListener("resize", function () {
   ClinicMaster.resize();
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuBtn = document.querySelector(".xmenu-toggler");
+    const menu = document.querySelector(".header-nav");
+    const overlay = document.querySelector(".fade-overlay");
+
+    menuBtn.addEventListener("click", function () {
+
+        menu.classList.toggle("max-lg:left-0");
+
+        overlay.classList.toggle("opacity-100");
+        overlay.classList.toggle("visible");
+        overlay.classList.toggle("pointer-events-auto");
+
+    });
+
+    overlay.addEventListener("click", function () {
+
+        menu.classList.remove("max-lg:left-0");
+
+        overlay.classList.remove("opacity-100");
+        overlay.classList.remove("visible");
+        overlay.classList.remove("pointer-events-auto");
+
+    });
+
+});

@@ -8135,15 +8135,11 @@ input[type="time"]::-webkit-calendar-picker-indicator , input[type="date"]::-web
 
 
 
-body{
-  margin:0;
-  background:white;
-}
 
 .logo-slider{
   width:100%;
   overflow:hidden;
-  padding:040px 0px 10px 0px;
+  padding:040px 0px 10px 0px;  background-color: #f7f3eb;
 }
 
 .logo-track{
@@ -8486,7 +8482,7 @@ MISSION VISION VALUES SECTION
 .mission-section{
     width: 100%;
     padding: 100px 20px;
-    background: white;
+    background: #f7f3eb;
 }
 
 .mission-section .container{
@@ -8501,7 +8497,7 @@ MISSION VISION VALUES SECTION
 }
 
 .mission-heading h2{
-    font-size: 42px;
+    font-size: 45px;
  
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -8936,7 +8932,7 @@ MOBILE RESPONSIVE
 .journey-heading h2{
 
 font-size: 600 !important;
-font-size: 42px;
+font-size: 45px;
 color: rgba(0, 0, 0, 0.705);
 	margin-bottom:20px;
 	line-height:1.2;
@@ -9180,6 +9176,7 @@ color: rgba(0, 0, 0, 0.705);
 	width:100%;
 	overflow:hidden;
 	position:relative;
+ 
 }
 
 .awards-slider-track{
@@ -9317,7 +9314,7 @@ color: rgba(0, 0, 0, 0.705);
 /* LARGE SCREEN */
 @media (min-width:1024px){
 	.custom-award-heading{
-		font-size:38px;
+		font-size:45px;
 	}
 }
 
@@ -9347,6 +9344,14 @@ color: rgba(0, 0, 0, 0.705);
 	width: 100%;
 	overflow: hidden;
 
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .custom-award-heading {
+        font-size: 45px !important;
+        line-height: 1.2;
+    }
 }
 
 .infrastructure-track {
@@ -10808,4 +10813,687 @@ body{
 	.footer-logo .footer-logo-img {
 		max-height: 100px;
 	}
+}
+
+
+/* =========================
+   AMENITIES SECTION
+========================= */
+
+.amenities-section{
+	background: #f7f3eb;
+  padding:80px 20px;
+}
+
+/* CARD */
+.amenities-card{
+	background: #fff;
+	border: 1px solid #dfe7e2;
+	border-radius: 35px;
+	padding: 45px 30px;
+	text-align: center;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.35s ease;
+	box-shadow: 0 10px 35px rgba(0,0,0,0.06);
+}
+
+/* HOVER */
+.amenities-card:hover{
+	transform: translateY(-8px);
+	border-color: #227675;
+	box-shadow: 0 20px 60px rgba(34,118,117,0.15);
+}
+
+/* ICON */
+.amenities-icon{
+	width: 85px;
+	height: 85px;
+	margin: 0 auto 25px;
+	border-radius: 50%;
+	background: #22767510;
+	border: 2px solid #227675;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.35s ease;
+}
+
+/* ICON STYLE */
+.amenities-icon i{
+	font-size: 38px;
+	color: #227675;
+	transition: all 0.35s ease;
+}
+
+/* ICON HOVER */
+.amenities-card:hover .amenities-icon{
+	background: #227675;
+	border-color: #227675;
+}
+
+.amenities-card:hover .amenities-icon i{
+	color: #fff;
+}
+
+/* TITLE */
+.amenities-card h4{
+	font-size: 26px;
+	font-weight: 600;
+	color: #1f2937;
+	margin-bottom: 18px;
+	line-height: 1.4;
+}
+
+/* DESCRIPTION */
+.amenities-card p{
+	font-size: 16px;
+	line-height: 1.9;
+	font-weight: 300;
+	color: #6b7280;
+	max-width: 290px;
+	margin: 0 auto;
+}
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+
+@media (max-width: 991px){
+
+	.amenities-card{
+		padding: 40px 25px;
+		border-radius: 28px;
+	}
+
+	.amenities-card h4{
+		font-size: 22px;
+	}
+
+	.amenities-icon{
+		width: 75px;
+		height: 75px;
+	}
+
+	.amenities-icon i{
+		font-size: 32px;
+	}
+
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 767px){
+
+	.amenities-card{
+		padding: 35px 20px;
+		border-radius: 24px;
+	}
+
+	.amenities-card h4{
+		font-size: 20px;
+		margin-bottom: 14px;
+	}
+
+	.amenities-card p{
+		font-size: 15px;
+		line-height: 1.8;
+	}
+
+	.amenities-icon{
+		width: 70px;
+		height: 70px;
+		margin-bottom: 20px;
+	}
+
+	.amenities-icon i{
+		font-size: 28px;
+	}
+
+}
+
+
+/* AMENITIES HEADING */
+.amenities-heading{
+	font-size: 42px;
+	line-height: 1.2;
+	font-weight: 600;
+	color: #1f2937;
+	padding: 0 10px;
+}
+
+/* LARGE TABLET */
+@media (max-width: 1199px){
+
+	.amenities-heading{
+		font-size: 38px;
+	}
+
+}
+
+/* TABLET */
+@media (max-width: 991px){
+
+	.amenities-heading{
+		font-size: 32px;
+		line-height: 1.3;
+	}
+
+}
+
+/* MOBILE */
+@media (max-width: 767px){
+
+	.amenities-heading{
+		font-size: 28px;
+		line-height: 1.35;
+		padding: 0 5px;
+	}
+
+}
+
+/* SMALL MOBILE */
+@media (max-width: 575px){
+
+	.amenities-heading{
+		font-size: 28px;
+	}
+
+}
+
+
+
+
+
+
+/* =========================
+   CLUB AT AGHAM SECTION
+========================= */
+
+.club-agham-section{
+	background: white;
+	position: relative;padding: 90px 20px 60px 20px;
+}
+
+/* TITLE */
+.club-title{
+	font-size: 45px;
+	font-weight: 600;
+	line-height: 1.2;
+
+}
+
+/* CARD */
+.club-card{
+	height: 100%;
+}
+
+/* IMAGE */
+.club-image{
+	border-radius: 12px;
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+
+.club-image img{
+	width: 100%;
+	height: 370px;
+	object-fit: cover;
+	display: block;
+	transition: all 0.4s ease;
+}
+
+.club-card:hover .club-image img{
+	transform: scale(1.05);
+}
+
+/* CONTENT */
+.club-content h4{
+	font-size: 25px;
+	font-weight: 500;
+	color: #111827;
+	margin-bottom: 16px;
+	line-height: 1.2;
+}
+
+.club-content p{
+	font-size: 16px;
+	line-height: 1.8;
+	font-weight: 300;
+	color: #4b5563;
+	max-width: 95%;
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media (max-width: 1199px){
+
+	.club-title{
+		font-size: 44px;
+	}
+
+	.club-content h4{
+		font-size: 32px;
+	}
+
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991px){
+
+	.club-title{
+		font-size: 38px;
+	}
+
+	.club-image img{
+		height: 320px;
+	}
+
+	.club-content h4{
+		font-size: 28px;
+	}
+
+	.club-content p{
+		font-size: 16px;
+	}
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px){
+
+	.club-title{
+		font-size: 28px;
+		line-height: 1.3;
+		padding: 0 10px;
+	}
+
+	.club-image{
+		margin-bottom: 20px;
+		border-radius: 10px;
+	}
+
+	.club-image img{
+		height: 250px;
+	}
+
+	.club-content h4{
+		font-size: 24px;
+		margin-bottom: 12px;
+	}
+
+	.club-content p{
+		font-size: 15px;
+		line-height: 1.8;
+		max-width: 100%;
+	}
+  
+  
+.club-agham-section{
+	background: white;
+	position: relative;padding: 50px 20px 0px 20px;
+}
+
+}
+
+
+
+/* =========================
+   WHY CARE HOMES SECTION
+========================= */
+
+.care-benefits-section{
+	background: #f7f3eb;
+	overflow: hidden;
+  padding: 80px 20px;
+}
+
+/* TITLE */
+.care-benefits-title{
+	font-size: 42px;
+	font-weight: 600;
+	line-height: 1.2;
+
+	margin-bottom: 24px;
+	max-width: 700px;
+}
+
+/* TEXT */
+.care-benefits-text{
+	font-size: 17px;
+	line-height: 1.9;
+	font-weight: 300;
+	color: #6b7280;
+	margin-bottom: 40px;
+	max-width: 650px;
+}
+
+/* LIST */
+.care-benefits-list{
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+/* ITEM */
+.benefit-item{
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #e5e7eb;
+}
+
+/* ICON */
+.benefit-icon{
+	width: 72px;
+	height: 72px;
+	border-radius: 20px;
+	background: #22767521;
+	border: 2px solid #227675;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.benefit-icon i{
+	font-size: 30px;
+	color: #227675;
+}
+
+/* CONTENT */
+.benefit-item h4{
+	font-size: 24px;
+	font-weight: 600;
+	color: #111827;
+	margin-bottom: 10px;
+	line-height: 1.3;
+}
+
+.benefit-item p{
+	font-size: 15px;
+	line-height: 1.8;
+	font-weight: 300;
+	color: #6b7280;
+	max-width: 500px;
+}
+
+/* IMAGE */
+.care-benefits-image{
+	position: relative;
+	border-radius: 35px;
+	overflow: hidden;
+}
+
+.care-benefits-image img{
+	width: 100%;
+	height: 720px;
+	object-fit: cover;
+	display: block;
+}
+
+/* FLOATING BOX */
+.care-floating-box{
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	background: rgba(255,255,255,0.92);
+	backdrop-filter: blur(10px);
+	padding: 30px;
+	border-radius: 28px;
+	max-width: 280px;
+	box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+.care-floating-box h3{
+	font-size: 52px;
+	font-weight: 600;
+	color: #227675;
+	line-height: 1;
+	margin-bottom: 12px;
+}
+
+.care-floating-box p{
+	font-size: 15px;
+	line-height: 1.8;
+	color: #4b5563;
+	font-weight: 400;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991px){
+
+	.care-benefits-title{
+		font-size: 38px;
+	}
+
+	.care-benefits-text{
+		font-size: 16px;
+		margin-bottom: 35px;
+	}
+
+	.benefit-item h4{
+		font-size: 22px;
+	}
+
+	.care-benefits-image img{
+		height: 550px;
+	}
+
+	.care-floating-box{
+		padding: 24px;
+		max-width: 240px;
+	}
+
+	.care-floating-box h3{
+		font-size: 42px;
+	}
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px){
+
+	.care-benefits-title{
+		font-size: 28px;
+		line-height: 1.3;
+	}
+
+	.care-benefits-text{
+		font-size: 15px;
+		line-height: 1.8;
+		margin-bottom: 30px;
+	}
+
+	.benefit-item{
+		gap: 16px;
+		padding-bottom: 20px;
+	}
+
+	.benefit-icon{
+		width: 58px;
+		height: 58px;
+		border-radius: 16px;
+	}
+
+	.benefit-icon i{
+		font-size: 24px;
+	}
+
+	.benefit-item h4{
+		font-size: 19px;
+		margin-bottom: 8px;
+	}
+
+	.benefit-item p{
+		font-size: 14px;
+		line-height: 1.7;
+	}
+
+	.care-benefits-image{
+		border-radius: 24px;
+		margin-top: 10px;
+	}
+
+	.care-benefits-image img{
+		height: 380px;
+	}
+
+	.care-floating-box{
+		left: 15px;
+		right: 15px;
+		bottom: 15px;
+		max-width: 100%;
+		padding: 20px;
+		border-radius: 20px;
+	}
+
+	.care-floating-box h3{
+		font-size: 34px;
+	}
+
+	.care-floating-box p{
+		font-size: 14px;
+		line-height: 1.7;
+	}
+
+}
+
+
+
+
+/* =========================
+   AGHAM ADVANTAGE SECTION
+========================= */
+
+.agham-advantage-section{
+	background: white;
+	overflow: hidden;
+  padding: 80px 20px 60px 20px;
+}
+
+/* TITLE */
+.agham-advantage-heading{
+	font-size: 45px;
+	font-weight: 600;
+	line-height: 1.2;
+
+	margin-bottom: 0;
+	letter-spacing: -1px;
+}
+
+/* BOX */
+.advantage-box{
+	position: relative;
+}
+
+/* IMAGE */
+.advantage-image{
+	border-radius: 6px;
+	overflow: hidden;
+	margin-bottom: 22px;
+}
+
+.advantage-image img{
+	width: 100%;
+	height: 420px;
+	object-fit: cover;
+	display: block;
+	transition: all 0.4s ease;
+}
+
+.advantage-box:hover .advantage-image img{
+	transform: scale(1.03);
+}
+
+/* HEADING */
+.advantage-box h4{
+	font-size: 26px;
+	font-weight: 500;
+	line-height: 1.4;
+	color: #111827;
+	margin-bottom: 0;
+}
+
+/* =========================
+   LARGE TABLET
+========================= */
+
+@media (max-width: 1199px){
+
+	.agham-advantage-heading{
+		font-size: 48px;
+	}
+
+	.advantage-image img{
+		height: 430px;
+	}
+
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991px){
+
+	.agham-advantage-heading{
+		font-size: 40px;
+	}
+
+	.advantage-box h4{
+		font-size: 22px;
+	}
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px){
+
+	.agham-advantage-heading{
+		font-size: 30px;
+		line-height: 1.3;
+		padding: 0 15px;
+	}
+
+	.advantage-image{
+		margin-bottom: 16px;
+	}
+
+	.advantage-image img{
+		height: 320px;
+	}
+
+	.advantage-box h4{
+		font-size: 20px;
+		line-height: 1.4;
+	}
+
+  .agham-advantage-section{
+	background: white;
+	overflow: hidden;
+  padding: 50px 20px 20px 20px;
+}
+
 }
