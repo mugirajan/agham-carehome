@@ -73,6 +73,190 @@
 
 	<!-- Custom Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<style>
+		.cta-icon i {
+    font-size: 40px;
+    color: #227675;        /* your brand teal */
+    stroke-width: 1;       /* thinner lines = more elegant */
+}
+.care-benefits-list {
+    gap: 12px !important; /* if using flexbox/grid gap */
+}
+/* ── CTA SECTION ── */
+.cta-section {
+  background-color: #f7f3EB;
+  padding: 40px 0;
+}
+
+.cta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* Illustration Card */
+.cta-illustration-card {
+  background-color: #227675;
+  border-radius: 16px;
+  padding: 32px 24px 0;
+  height: 100%;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.cta-illustration-card h2 {
+  color: #f7f3EB;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0;
+}
+
+.cta-illustration-card img {
+  width: 100%;
+  object-fit: cover;
+  margin-top: auto;
+  display: block;
+}
+
+/* Info Cards */
+.cta-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cta-icon i {
+  font-size: 40px;
+  color: #227675;
+}
+
+.cta-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.cta-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+  flex: 1;
+}
+
+.cta-link {
+  color: #227675;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.cta-link:hover { text-decoration: underline; }
+
+.cta-btn {
+  display: inline-block;
+  background-color: #227675;
+  color: #f7f3EB;
+  padding: 14px 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  width: fit-content;
+  margin-top: auto;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover { background-color: #185f5e; }
+
+/* ── TABLET (768px - 1024px) ── */
+@media (max-width: 1024px) {
+  .cta-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .cta-illustration-card {
+    min-height: 320px;
+  }
+
+  /* Illustration spans full width on tablet */
+  .cta-grid > div:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .cta-illustration-card {
+    flex-direction: row;
+    align-items: center;
+    padding: 24px 32px;
+    min-height: 200px;
+  }
+
+  .cta-illustration-card h2 {
+    font-size: 24px;
+    flex: 1;
+  }
+
+  .cta-illustration-card img {
+    width: 180px;
+    margin-top: 0;
+    margin-left: 24px;
+  }
+}
+
+/* ── MOBILE (below 768px) ── */
+@media (max-width: 768px) {
+  .cta-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .cta-grid > div:first-child {
+    grid-column: 1;
+  }
+
+  .cta-grid .cta-last-card {
+    grid-column: 1;
+  }
+
+  .cta-illustration-card {
+    flex-direction: column;
+    min-height: 280px;
+    padding: 24px 20px 0;
+  }
+
+  .cta-illustration-card h2 {
+    font-size: 22px;
+  }
+
+  .cta-illustration-card img {
+    width: 70%;
+    margin: 16px auto 0;
+  }
+
+  .cta-card {
+    height: auto;
+    min-height: unset;
+  }
+
+  .cta-btn {
+    width: 100%;
+    text-align: center;
+    padding: 14px 20px;
+  }
+}
+	</style>
 
 </head>
 <body id="bg" data-typography="typography_1">
@@ -1788,6 +1972,54 @@ Providing compassionate care, comfort, and dignity in a safe and nurturing envir
 				
 	
 
+	<!-- CTA SECTION -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-grid">
+
+      <!-- LEFT CARD - Illustration -->
+      <div>
+        <div class="cta-illustration-card">
+          <h2>Let Us Guide You to the Right Care</h2>
+          <img src="assets/images/service-images/Dementia-bro-removebg-preview.png" alt="Care Illustration">
+        </div>
+      </div>
+
+      <!-- MIDDLE CARD - Visit -->
+      <div>
+        <div class="cta-card">
+          <div class="cta-icon">
+            <i class="feather icon-home"></i>
+          </div>
+          <h3>Building Trust Through Care: Experience Our Senior Living Community</h3>
+          <p>
+            Finding the right care goes beyond a simple decision—it's about discovering 
+a place that feels like home. We welcome you to tour our community, connect 
+with our residents, and witness our compassionate care firsthand. We are glad 
+to arrange a personalized visit that suits your convenience.
+          </p>
+          <a href="contact-us.html" class="cta-link">Connect with us now</a>
+        </div>
+      </div>
+
+      <!-- RIGHT CARD - Call Us (spans full width on mobile) -->
+      <div class="cta-last-card">
+        <div class="cta-card">
+          <div class="cta-icon">
+            <i class="feather icon-users"></i>
+          </div>
+          <h3>Connect With Our Care Experts</h3>
+          <p>
+            Our dedicated support team is ready to guide you toward the right care option 
+or offer tailored recommendations at every step of your decision.
+          </p>
+         <a href="tel:+919999999999" class="cta-btn">Call Us</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 		
 
 			</main>
