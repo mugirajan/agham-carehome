@@ -369,3 +369,46 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+
+
+window.onload = function(){
+
+    const openBtn = document.getElementById("openCallback");
+    const closeBtn = document.getElementById("closeCallback");
+    const popup = document.getElementById("callbackPopup");
+
+    /* GET CURRENT PAGE */
+
+    const currentPage = window.location.pathname;
+
+    /* AUTO OPEN ONLY FOR HOME PAGE */
+
+    if(
+        currentPage.includes("index.html") ||
+        currentPage === "/" ||
+        currentPage === ""
+    ){
+
+        popup.classList.add("active");
+
+    }
+
+    /* OPEN POPUP */
+
+    openBtn.addEventListener("click", function(){
+
+        popup.classList.add("active");
+
+    });
+
+    /* CLOSE POPUP */
+
+    closeBtn.addEventListener("click", function(){
+
+        popup.classList.remove("active");
+
+    });
+
+};
