@@ -8251,7 +8251,7 @@ input[type="time"]::-webkit-calendar-picker-indicator , input[type="date"]::-web
 
 /* TITLE */
 .agham-premium-card h3{
-	font-size: 30px;
+	font-size: 22px;
 	line-height: 1.25;
 	margin-bottom: 15px;
 	color: var(--secondary);
@@ -9289,7 +9289,7 @@ color: rgba(0, 0, 0, 0.705);
 
 .award-card img{
 	width:100%;
-	height:240px;
+	height:320px;
 	object-fit:cover;
 	display:block;
 }
@@ -9412,6 +9412,14 @@ color: rgba(0, 0, 0, 0.705);
 	.location-card .min-w-47\.5{
 		margin-left:0px !important;
 	}
+
+}
+
+
+.faq img{
+height:600px !important;
+width: 100%;
+object-fit: cover;
 
 }
 
@@ -12646,6 +12654,32 @@ MOBILE
 
     .agham-icon i{
         font-size:50px;
+    }
+
+}
+
+
+.testimonial-swiper7 .swiper-slide img{
+    height: 320px !important;
+    object-fit: cover;
+}
+
+/* Tablet */
+
+@media(max-width:991px){
+
+    .testimonial-swiper7 .swiper-slide img{
+        height: 320px !important;
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:767px){
+
+    .testimonial-swiper7 .swiper-slide img{
+        height: 260px !important;
     }
 
 }
