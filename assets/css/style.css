@@ -8266,6 +8266,10 @@ input[type="time"]::-webkit-calendar-picker-indicator , input[type="date"]::-web
 	margin-bottom: 0;
 }
 
+.agham-premium-section h2{
+  font-size: 38px !important;
+}
+
 /*=========================
 	TABLET
 =========================*/
@@ -8483,11 +8487,70 @@ MISSION VISION VALUES SECTION
     width: 100%;
     padding: 100px 20px;
     background: white;
+  
+}
+
+.mission-grid{
+    display:flex;
+    justify-content:center !important;
+    align-items:center !important;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.mission-card{
+    max-width:380px;
+    width:100%;
+}
+.mission-grid{
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+    gap:30px;
+    flex-wrap:wrap;
+    width:100%;
+    margin:0 auto;
+}
+
+.mission-card{
+    width:350px;
+    max-width:100%;
+}
+
+/* MOBILE */
+
+@media(max-width:767px){
+
+    .mission-grid{
+        flex-direction:column;
+            gap:80px !important;
+    }
+
+    .mission-card{
+        width:100%;
+    }
+
+    .custom-award-heading{
+      font-size: 28px !important;
+    }
+
+
+
 }
 
 .mission-section .container{
     max-width: 1300px;
     margin: auto;
+    
+}
+.vision-card{
+  margin-top: 100px !important;
+  left: -60px !important;
+  border: 2px solid #227675;
+}
+.mission-card{
+   border: 2px solid #227675;
+   margin-top: -20px;
 }
 
 /* HEADING */
@@ -8497,7 +8560,7 @@ MISSION VISION VALUES SECTION
 }
 
 .mission-heading h2{
-    font-size: 45px;
+    font-size: 38px;
  
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -8528,6 +8591,7 @@ MISSION VISION VALUES SECTION
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 35px;
+    padding-top: 0px !important;
 }
 
 /* CARD */
@@ -8695,8 +8759,20 @@ MOBILE RESPONSIVE
 /* LARGE SCREEN */
 @media (min-width:1024px){
 	.custom-about-heading{
-		font-size:45px;
+		font-size:38px;
 	}
+}
+
+@media (max-width:1140px){
+    .vision-card{
+  margin-top: 0px !important;
+  left: 0px  !important;
+  border: 2px solid #227675;
+  
+}
+.mission-card{
+   border: 2px solid #227675;
+}
 }
 
 
@@ -8708,7 +8784,7 @@ JOURNEY SECTION
 .journey-section{
     width: 100%;
     padding: 100px 20px;
-    background: blue;
+  
 }
 
 .journey-section .container{
@@ -8912,6 +8988,10 @@ MOBILE RESPONSIVE
         font-size: 14px;
         line-height: 1.8;
     }
+
+    .custom-award-heading{
+      font-size: 28px !important;
+    }
 }
 
 
@@ -8921,7 +9001,7 @@ MOBILE RESPONSIVE
 
 .journey-section{
 	padding:100px 20px;
-	background:white;
+	background:#f7f3eb;
 	position:relative;
 }
 
@@ -8932,7 +9012,7 @@ MOBILE RESPONSIVE
 .journey-heading h2{
 
 font-size: 600 !important;
-font-size: 45px;
+font-size: 38px;
 color: rgba(0, 0, 0, 0.705);
 	margin-bottom:20px;
 	line-height:1.2;
@@ -9314,7 +9394,7 @@ color: rgba(0, 0, 0, 0.705);
 /* LARGE SCREEN */
 @media (min-width:1024px){
 	.custom-award-heading{
-		font-size:45px;
+		font-size:38px;
 	}
 }
 
@@ -9347,9 +9427,14 @@ color: rgba(0, 0, 0, 0.705);
 
 }
 
+ .custom-award-heading {
+        font-size: 38px !important;
+        line-height: 1.2;
+    }
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .custom-award-heading {
-        font-size: 45px !important;
+        font-size: 38px !important;
         line-height: 1.2;
     }
 }
@@ -9498,7 +9583,7 @@ body{
     }
 
     .hero-banner-overlay h1{
-        font-size:48px !important;
+        font-size:42px !important;
         line-height:1.2 !important;
         margin-bottom:20px !important;
     }
@@ -10879,7 +10964,7 @@ body{
 
 /* TITLE */
 .amenities-card h4{
-	font-size: 26px;
+	font-size: 22px;
 	font-weight: 600;
 	color: #1f2937;
 	margin-bottom: 18px;
@@ -10958,7 +11043,7 @@ body{
 
 /* AMENITIES HEADING */
 .amenities-heading{
-	font-size: 42px;
+	font-size: 38px;
 	line-height: 1.2;
 	font-weight: 600;
 	color: #1f2937;
@@ -11020,7 +11105,7 @@ body{
 
 /* TITLE */
 .club-title{
-	font-size: 45px;
+	font-size: 38px;
 	font-weight: 600;
 	line-height: 1.2;
 
@@ -11161,7 +11246,7 @@ body{
 
 /* TITLE */
 .care-benefits-title{
-	font-size: 42px;
+	font-size: 38px;
 	font-weight: 600;
 	line-height: 1.2;
 
@@ -11392,7 +11477,7 @@ body{
 
 /* TITLE */
 .agham-advantage-heading{
-	font-size: 45px;
+	font-size: 38px;
 	font-weight: 600;
 	line-height: 1.2;
 
@@ -11426,7 +11511,7 @@ body{
 
 /* HEADING */
 .advantage-box h4{
-	font-size: 26px;
+	font-size: 22px;
 	font-weight: 500;
 	line-height: 1.4;
 	color: #111827;
@@ -11495,5 +11580,1072 @@ body{
 	overflow: hidden;
   padding: 50px 20px 20px 20px;
 }
+
+}
+
+/* ===============================
+   AGHAM CALLBACK / CHAT POPUP
+================================== */
+
+.agham-callback-wrapper{
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    z-index: 99999;
+}
+
+/* Floating Icon */
+
+.agham-callback-icon{
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    margin-left: auto;
+}
+
+.agham-callback-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Popup */
+
+.agham-callback-popup{
+    position: absolute;
+    bottom: 85px;
+    right: 0;
+    width: 620px;
+    height: 250px;
+    background: #fff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.18);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.agham-callback-popup.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Header */
+
+.agham-callback-header{
+    background: #227675;
+    padding: 16px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+/* FLOATING ICON */
+
+.agham-callback-wrapper{
+    position: fixed;
+    right: 20px;
+    bottom: 100px; /* icon moved slightly up */
+    z-index: 99999;
+}
+
+.agham-header-left{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.agham-logo-circle{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #fff;
+    flex-shrink: 0;
+}
+
+.agham-logo-circle img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.agham-header-left h4{
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+    font-weight: 600;
+}
+
+.agham-header-left p{
+    margin: 4px 0 0;
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.agham-header-left p span{
+    width: 8px;
+    height: 8px;
+    background: #00d95f;
+    border-radius: 50%;
+}
+
+.agham-close{
+    width: 38px;
+    height: 38px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+/* Scroll Area */
+
+.agham-scroll-area{
+    height: calc(650px - 150px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 16px;
+    background: #f5f7fb;
+}
+
+/* Custom Scrollbar */
+
+.agham-scroll-area::-webkit-scrollbar{
+    width: 5px;
+}
+
+.agham-scroll-area::-webkit-scrollbar-thumb{
+    background: #b7b7b7;
+    border-radius: 10px;
+}
+
+/* Chat Message */
+
+.agham-chat-message{
+    background: #fff;
+    padding: 14px 16px;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+/* Form Box */
+
+.agham-form-body{
+    background: #fff;
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.agham-form-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.agham-form-title h5{
+    margin: 0;
+    font-size: 24px;
+    color: #222;
+    font-weight: 700;
+}
+
+.agham-form-title p{
+    margin-top: 6px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Inputs */
+
+.agham-input-group{
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.agham-input-group i{
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 16px;
+}
+
+.agham-input-group input,
+.agham-input-group select{
+    width: 100%;
+    height: 54px;
+    border: 1px solid #dcdcdc;
+    border-radius: 14px;
+    padding: 0 18px 0 48px;
+    font-size: 15px;
+    color: #222;
+    background: #fff;
+    outline: none;
+}
+
+.agham-input-group input:focus,
+.agham-input-group select:focus{
+    border-color: #227675;
+}
+
+/* Submit Button */
+
+.agham-submit-btn{
+    width: 100%;
+    height: 54px;
+    border: none;
+    border-radius: 14px;
+    background: #227675;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Bottom Chat Input */
+
+.agham-chat-footer{
+    background: #fff;
+    padding: 12px;
+    border-top: 1px solid #ececec;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.agham-chat-footer input{
+    flex: 1;
+    height: 48px;
+    border: 1px solid #cfd8e3;
+    border-radius: 30px;
+    padding: 0 18px;
+    outline: none;
+    font-size: 14px;
+}
+
+.agham-chat-footer button{
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: #227675;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* ===============================
+   TABLET
+================================== */
+
+@media(max-width:991px){
+
+    .agham-callback-popup{
+        width: 590px;
+        height: 88vh;
+        max-height: 88vh;
+    }
+
+}
+
+/* ===============================
+   MOBILE
+================================== */
+
+@media(max-width:767px){
+
+    .agham-callback-wrapper{
+        right: 10px;
+        bottom: 15px;
+    }
+
+    .agham-callback-popup{
+        width: calc(100vw - 20px);
+        max-width: 350px;
+        height: 85vh;
+        max-height: 85vh;
+        right: 0;
+        bottom: 80px;
+        border-radius: 18px;
+    }
+
+    .agham-scroll-area{
+        padding: 12px;
+    }
+
+    .agham-form-body{
+        padding: 18px;
+    }
+
+    .agham-form-title h5{
+        font-size: 21px;
+    }
+
+    .agham-input-group input,
+    .agham-input-group select{
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .agham-submit-btn{
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .agham-chat-footer input{
+        height: 45px;
+    }
+
+    .agham-chat-footer button{
+        width: 45px;
+        height: 45px;
+    }
+
+}
+
+.agham-callback-popup{
+    position: absolute;
+    bottom: 85px;
+    right: 0;
+    width: 420px;
+    height: 650px;
+    background: #fff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.18);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* THIS IS IMPORTANT */
+
+.agham-scroll-area{
+    height: calc(650px - 150px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 16px;
+    background: #f5f7fb;
+}
+
+
+/* SMALL INPUT FIELDS */
+
+.agham-input-group{
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.agham-input-group i{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #777;
+}
+
+.agham-input-group input,
+.agham-input-group select{
+    width: 100%;
+    height: 38px;              /* reduced height */
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 0 12px 0 34px;
+    font-size: 11px;           /* smaller text */
+    background: #fff;
+    outline: none;
+}
+
+/* SMALL SUBMIT BUTTON */
+
+.agham-submit-btn{
+    width: 100%;
+    height: 38px;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* SMALL FORM TITLE */
+
+.agham-form-title{
+    margin-bottom: 10px;
+}
+
+.agham-form-title h5{
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.agham-form-title p{
+    font-size: 10px;
+    line-height: 16px;
+}
+
+/* MOBILE */
+
+@media(max-width:576px){
+
+    .agham-input-group input,
+    .agham-input-group select{
+        height: 36px;
+        font-size: 10px;
+        padding-left: 32px;
+    }
+
+    .agham-input-group i{
+        font-size: 11px;
+        left: 10px;
+    }
+
+    .agham-submit-btn{
+        height: 36px;
+        font-size: 11px;
+    }
+
+}
+
+/* =====================================
+POPUP SIZE UPDATE
+===================================== */
+
+.agham-callback-popup{
+    position: fixed;
+    right: 20px;
+    bottom: 90px;
+
+    width: 480px;      /* increased width */
+    height: 560px;     /* reduced height */
+
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+    z-index: 99999;
+}
+
+/* SCROLL AREA */
+
+.agham-scroll-area{
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 14px;
+    background: #f5f7fb;
+    min-height: 0;
+}
+
+/* =====================================
+TABLET
+===================================== */
+
+@media(max-width:991px){
+
+    .agham-callback-popup{
+        width: 440px;
+        height: 440px;
+        right: 15px;
+        bottom: 80px;
+    }
+
+}
+
+/* =====================================
+MOBILE
+===================================== */
+
+@media(max-width:576px){
+
+    .agham-callback-popup{
+        width: calc(100vw - 16px); /* more width */
+        max-width: 400px;
+
+        height: 500px; /* reduced height */
+
+        right: 8px;
+        bottom: 75px;
+
+        border-radius: 16px;
+    }
+
+}
+
+.agham-success-alert{
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #e7f8ec;
+    color: #15803d;
+    border: 1px solid #b7ebc6;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* POPUP HIDDEN */
+
+.agham-callback-popup{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+/* POPUP SHOW */
+
+.agham-callback-popup.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+
+/*=====================================
+LOGO SLIDER SECTION
+=====================================*/
+
+.agham-logo-slider-section{
+
+    padding: 40px 0;
+    background: #f8f6f2;
+    overflow: hidden;
+    position: relative;
+
+}
+
+/* TOP & BOTTOM FADE */
+
+.agham-logo-slider-section::before,
+.agham-logo-slider-section::after{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 140px;
+    height: 100%;
+    z-index: 2;
+
+}
+
+.agham-logo-slider-section::before{
+
+    left: 0;
+    background: linear-gradient(to right,#f8f6f2 0%,transparent 100%);
+
+}
+
+.agham-logo-slider-section::after{
+
+    right: 0;
+    background: linear-gradient(to left,#f8f6f2 0%,transparent 100%);
+
+}
+
+/* SLIDER */
+
+.logo-slider{
+
+    width: 100%;
+    overflow: hidden;
+
+}
+
+/* TRACK */
+
+.logo-track{
+
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    width: max-content;
+    animation: aghamLogoScroll 25s linear infinite;
+
+}
+
+/* PAUSE ON HOVER */
+
+.logo-slider:hover .logo-track{
+
+    animation-play-state: paused;
+
+}
+
+/* CARD */
+
+.logo-card{
+
+    width: 50px;
+    height: 150px;
+    background: #fff;
+    border-radius: 24px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.06);
+    transition: 0.4s ease;
+    flex-shrink: 0;
+    border: 2px solid #227675;
+
+}
+
+/* HOVER EFFECT */
+
+.logo-card:hover{
+
+    transform: translateY(-8px);
+    box-shadow: 0 18px 45px rgba(0,0,0,0.10);
+
+}
+
+/* IMAGE */
+
+.logo-card img{
+
+    max-width: 200px;
+    max-height: 300px;
+    object-fit: contain;
+    transition: 0.4s ease;
+  
+    opacity: 0.8;
+
+}
+
+.logo-card:hover img{
+
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+
+}
+
+/* ANIMATION */
+
+@keyframes aghamLogoScroll{
+
+    from{
+
+        transform: translateX(0);
+
+    }
+
+    to{
+
+        transform: translateX(-50%);
+
+    }
+
+}
+
+/*=====================================
+TABLET
+=====================================*/
+
+@media (max-width: 991px){
+
+    .agham-logo-slider-section{
+
+        padding: 30px 0;
+
+    }
+
+    .logo-track{
+
+        gap: 20px;
+
+    }
+
+    .logo-card{
+
+        width: 180px;
+        height: 100px;
+        border-radius: 20px;
+
+    }
+
+    .logo-card img{
+
+        max-height: 55px;
+
+    }
+
+}
+
+/*=====================================
+MOBILE
+=====================================*/
+
+@media (max-width: 767px){
+
+    .agham-logo-slider-section{
+
+        padding: 25px 0;
+
+    }
+
+    .logo-track{
+
+        gap: 16px;
+
+    }
+
+    .logo-card{
+
+        width: 140px;
+        height: 85px;
+        border-radius: 18px;
+        padding: 14px;
+
+    }
+
+    .logo-card img{
+
+        max-height: 42px;
+
+    }
+
+}
+
+
+
+
+.hero-banner-overlay{
+    background-size: cover;
+    background-position: top center;
+    min-height: 720px !important;
+    padding-top: 120px !important;
+    padding-bottom: 80px !important;
+}
+
+/* Large Desktop */
+
+@media (max-width: 1600px){
+
+    .hero-banner-overlay{
+        min-height: 760px;
+    }
+
+}
+
+/* Laptop */
+
+@media (max-width: 1200px){
+
+    .hero-banner-overlay{
+        min-height: 680px;
+        padding-top: 100px;
+    }
+
+}
+
+/* Tablet */
+
+@media (max-width: 991px){
+
+    .hero-banner-overlay{
+        min-height: 580px;
+        background-position: 65% center;
+        padding-top: 90px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 767px){
+
+    .hero-banner-overlay{
+        min-height: 500px;
+        background-position: 70% center;
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+
+    .agham-core-values h2{
+  font-size: 28px !important;
+  font-weight: 600;
+  text-align: center;
+}
+
+}
+
+
+.agham-values-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 50px 0px;
+}
+.agham-core-values{
+  padding: 80px 20px 50px 0px !important;
+  background-color: #f7f3eb;
+}
+.agham-core-values h2{
+  font-size: 38px ;
+  font-weight: 600;
+}
+
+.agham-value-box{
+    min-height: 320px;
+    border-radius: 35px;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+    text-align: center;
+}
+
+.agham-value-box:hover{
+    transform: translateY(-8px);
+}
+
+.agham-value-icon{
+    margin-bottom: 35px;
+}
+
+.agham-value-icon i{
+    font-size: 50px;
+    color: #227675;
+    line-height: 1;
+}
+
+.agham-value-box h4{
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #222;
+}
+
+/* COLORS */
+
+.bg-blue-light{
+    background: #dfeaf2;
+}
+
+.bg-green-light{
+    background: #dfeeed;
+}
+
+.bg-mint-light{
+    background: #e3f0e5;
+}
+
+.bg-purple-light{
+    background: #ece6f5;
+}
+
+.bg-lavender-light{
+    background: #eceaf8;
+}
+
+.bg-pink-light{
+    background: #f5e8ee;
+}
+
+.bg-sky-light{
+    background: #e2edf8;
+}
+
+.bg-cream-light{
+    background: #f4ecec;
+}
+
+/* TABLET */
+
+@media(max-width:991px){
+
+    .agham-values-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:767px){
+
+    .agham-values-grid{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .agham-value-box{
+        min-height: 250px;
+        border-radius: 25px;
+    }
+
+    .agham-value-icon i{
+        font-size: 60px;
+    }
+
+    .agham-value-box h4{
+        font-size: 20px;
+    }
+
+}
+
+
+.agham-mission-vision-section{
+    padding:80px 0;
+    background:#fff;
+}
+
+.agham-mv-wrapper{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.agham-mv-card{
+    position:relative;
+    width:320px;
+    background:#fff;
+    border-radius:180px;
+    padding:70px 35px 50px;
+    text-align:center;
+    overflow:hidden;
+    transition:0.4s;
+}
+
+.agham-mv-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border:4px solid;
+    border-radius:180px;
+}
+
+.mission-card::before{
+    border-color:#34b27b;
+}
+
+.vision-card::before{
+    border-color:#e85a5a;
+}
+
+.agham-number{
+    position:absolute;
+    top:18px;
+    left:18px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:22px;
+    font-weight:700;
+}
+
+.mission-card .agham-number{
+    background:#34b27b;
+}
+
+.vision-card .agham-number{
+    background:#e85a5a;
+}
+
+.agham-icon{
+    margin-bottom:25px;
+}
+
+.agham-icon i{
+    font-size:60px;
+}
+
+.mission-card .agham-icon i{
+    color:#34b27b;
+}
+
+.vision-card .agham-icon i{
+    color:#e85a5a;
+}
+
+.agham-mv-card h3{
+    font-size:34px;
+    font-weight:700;
+    margin-bottom:18px;
+    color:#222;
+    letter-spacing:1px;
+}
+
+.agham-mv-card p{
+    font-size:16px;
+    line-height:28px;
+    color:#666;
+    margin:0;
+}
+
+/* Hover */
+
+.agham-mv-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* Mobile */
+
+@media(max-width:767px){
+
+    .agham-mission-vision-section{
+        padding:50px 15px;
+    }
+
+    .agham-mv-wrapper{
+        gap:25px;
+    }
+
+    .agham-mv-card{
+        width:100%;
+        max-width:340px;
+        padding:60px 25px 40px;
+    }
+
+    .agham-mv-card h3{
+        font-size:28px;
+    }
+
+    .agham-icon i{
+        font-size:50px;
+    }
 
 }
