@@ -72,6 +72,176 @@
 
 	<!-- Custom Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<style>
+		.benefit-item {
+    margin-bottom: 5px !important; /* reduce from whatever it currently is */
+    padding-bottom: 5px !important;
+}
+.cta-icon i {
+    font-size: 40px;
+    color: #227675;        /* your brand teal */
+    stroke-width: 1;       /* thinner lines = more elegant */
+}
+.care-benefits-list {
+    gap: 12px !important; /* if using flexbox/grid gap */
+}
+/* CTA SECTION */
+.cta-section {
+  background-color: #f7f3EB;
+  padding: 40px 0;
+}
+
+/* Illustration Card */
+.cta-illustration-card {
+  background-color: #227675;
+  border-radius: 16px;
+  padding: 32px 24px 0;
+  height: 100%;
+  min-height: 480px;          /* ensures card fills height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.cta-illustration-card h2 {
+  color: #f7f3EB;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0;           /* removed bottom margin so image hugs bottom */
+}
+
+.cta-illustration-card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0;           /* remove radius so it flush fits card bottom */
+  margin-top: auto;           /* pushes image to bottom */
+  display: block;
+}
+
+/* Info Cards */
+.cta-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px 24px;         /* reduced from 32px 28px */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;                  /* reduced from 16px */
+}
+
+.cta-icon img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.cta-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.cta-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+  flex: 1;
+}
+
+/* Link style */
+.cta-link {
+  color: #227675;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.cta-link:hover {
+  text-decoration: underline;
+}
+
+/* Button style */
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;   /* no fill */
+  color: #1a1a2e;                   /* dark text like in screenshot */
+  padding: 0;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  width: fit-content;
+  margin-top: auto;
+  transition: color 0.3s ease;
+}
+
+.cta-btn:hover {
+  color: #227675;                   /* teal on hover */
+}
+
+.cta-btn i {
+  font-size: 16px;
+}
+/* Responsive grid layout */
+.cta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* 3 columns desktop */
+  gap: 16px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #227675;
+  color: #f7f3EB;
+  padding: 14px 40px;
+  border-radius: 10px;        /* slightly more rounded */
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  width: fit-content;
+  margin-top: auto;
+  transition: background 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+.cta-btn:hover {
+  background-color: #185f5e;
+}
+
+@media (max-width: 1024px) {
+  /* Tablet - still 3 cards in one row */
+  .cta-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile - 2 on top, 1 on bottom */
+  .cta-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-grid .cta-last-card {
+    grid-column: 1 / -1;   /* spans full width */
+  }
+
+  .cta-illustration-card {
+    min-height: 280px !important;
+  }
+
+  .cta-illustration-card h2 {
+    font-size: 22px;
+  }
+}
+</style>
 
 </head>
 <body id="bg">
@@ -717,14 +887,12 @@
 					</span>
 
 					<h2 class="care-benefits-title">
-						Why Are Care Homes Better Than Staying At Home With Limited Support?
-					</h2>
+   Why Care Homes Are Better Than Home Support?
+</h2>
 
 					<p class="care-benefits-text">
-						Agham Care Home provides a safe, supportive, and engaging environment
-						where seniors receive professional care, emotional companionship,
-						and a better quality of life every day.
-					</p>
+    Agham Care Home offers seniors professional care, emotional companionship, and a better quality of life every day.
+</p>
 
 					<!-- BENEFITS LIST -->
 					<div class="care-benefits-list">
@@ -1672,7 +1840,58 @@
 
 	</div>
 </section>
-				
+				<!-- CTA SECTION -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-grid">
+
+      <!-- LEFT CARD - Illustration -->
+      <div>
+        <div class="cta-illustration-card">
+          <h2>Let Us Guide You to the Right Care</h2>
+          <img src="assets/images/service-images/Dementia-bro-removebg-preview.png" alt="Care Illustration">
+        </div>
+      </div>
+
+      <!-- MIDDLE CARD - Visit -->
+      <div>
+        <div class="cta-card">
+          <div class="cta-icon">
+            <i class="feather icon-home"></i>
+          </div>
+          <h3>Building Trust Through Care: Experience Our Senior Living Community</h3>
+          <p>
+            Finding the right care goes beyond a simple decision—it's about discovering 
+a place that feels like home. We welcome you to tour our community, connect 
+with our residents, and witness our compassionate care firsthand. We are glad 
+to arrange a personalized visit that suits your convenience.
+          </p>
+          <a href="contact-us.html" class="cta-link">Connect with us now</a>
+        </div>
+      </div>
+
+      <!-- RIGHT CARD - Call Us (spans full width on mobile) -->
+      <div class="cta-last-card">
+        <div class="cta-card">
+          <div class="cta-icon">
+            <i class="feather icon-users"></i>
+          </div>
+          <h3>Connect With Our Care Experts</h3>
+          <p>
+            Our dedicated support team is ready to guide you toward the right care option 
+or offer tailored recommendations at every step of your decision.
+          </p>
+          <li class="inline-block max-xl:hidden max-sm:!block">
+							<a href="tel:+919999999999"  class="btn btn-primary btn-hover1 max-md:!text-sm max-md:!py-2.5 max-md:!px-4.5 max-md:!rounded-2lg">
+								Call Us
+							</a>
+						</li>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 			</main>
 
 			<!-- Footer -->
