@@ -348,160 +348,181 @@
 								Your enquiry has been submitted successfully!
 
 							</div>
+							
+<div class="dzFormMsg"></div>
 
-							<!-- FORM -->
-							<form id="contactForm"
-								action="#"
-								method="POST">
+<form id="contactForm"
+      class="dzForm"
+      action="./assets/script/contact_smtp.php"
+      method="POST">
 
-								<div class="row">
+    <!-- HIDDEN FIELD -->
+    <input type="hidden" name="dzToDo" value="Contact">
 
-									<!-- FULL NAME -->
-									<div class="sm:w-1/2 w-full mb-5">
+    <div class="row">
 
-										<div class="relative">
+        <!-- FULL NAME -->
+        <div class="sm:w-1/2 w-full mb-5">
 
-											<span class="absolute left-0 top-4 text-2xl text-primary">
-												<i class="feather icon-user"></i>
-											</span>
+            <div class="relative">
 
-											<input name="dzName"
-												type="text"
-												required
-												pattern="[A-Za-z\s]{3,50}"
-												title="Please enter valid name"
-												class="py-3.75 pl-10 text-lg text-bodycolor border-b border-secondary/60 w-full placeholder:text-bodycolor"
-												placeholder="Full Name">
+                <span class="absolute left-0 top-4 text-2xl text-primary">
+                    <i class="feather icon-user"></i>
+                </span>
 
-										</div>
+                <input
+                    id="name"
+                    name="dzName"
+                    type="text"
+                    required
+                    pattern="[A-Za-z\s]{3,50}"
+                    title="Please enter valid name"
+                    class="py-3.75 pl-10 text-lg text-bodycolor border-b border-secondary/60 w-full placeholder:text-bodycolor"
+                    placeholder="Full Name">
 
-									</div>
+            </div>
 
-									<!-- MOBILE -->
-									<div class="sm:w-1/2 w-full mb-5">
+        </div>
 
-										<div class="relative">
+        <!-- MOBILE -->
+        <div class="sm:w-1/2 w-full mb-5">
 
-											<span class="absolute left-0 top-4 text-2xl text-primary">
-												<i class="feather icon-phone"></i>
-											</span>
+            <div class="relative">
 
-											<input name="dzPhoneNumber"
-												type="tel"
-												required
-												pattern="[0-9]{10}"
-												maxlength="10"
-												title="Enter valid 10 digit mobile number"
-												class="py-3.75 pl-10 text-lg text-bodycolor border-b border-secondary/60 w-full placeholder:text-bodycolor"
-												placeholder="Mobile Number">
+                <span class="absolute left-0 top-4 text-2xl text-primary">
+                    <i class="feather icon-phone"></i>
+                </span>
 
-										</div>
+                <input
+                    id="phone"
+                    name="dzPhoneNumber"
+                    type="tel"
+                    required
+                    pattern="[0-9]{10}"
+                    maxlength="10"
+                    title="Enter valid 10 digit mobile number"
+                    class="py-3.75 pl-10 text-lg text-bodycolor border-b border-secondary/60 w-full placeholder:text-bodycolor"
+                    placeholder="Mobile Number">
 
-									</div>
+            </div>
 
-									<!-- EMAIL -->
-									<div class="sm:w-1/2 w-full mb-5">
+        </div>
 
-										<div class="relative">
+        <!-- EMAIL -->
+        <div class="sm:w-1/2 w-full mb-5">
 
-											<span class="absolute left-0 top-4 text-2xl text-primary">
-												<i class="feather icon-mail"></i>
-											</span>
+            <div class="relative">
 
-											<input name="dzEmail"
-												type="email"
-												required
-												class="py-3.75 pl-10 text-lg text-bodycolor border-b border-secondary/60 w-full placeholder:text-bodycolor"
-												placeholder="Email Address">
+                <span class="absolute left-0 top-4 text-2xl text-primary">
+                    <i class="feather icon-mail"></i>
+                </span>
 
-										</div>
+                <input
+                    id="email"
+                    name="dzEmail"
+                    type="email"
+                    required
+                    class="py-3.75 pl-10 text-lg text-bodycolor border-b border-secondary/60 w-full placeholder:text-bodycolor"
+                    placeholder="Email Address">
 
-									</div>
+            </div>
 
-									<!-- CITY -->
-									<div class="sm:w-1/2 w-full mb-5">
+        </div>
 
-										<div class="relative">
+        <!-- CITY -->
+        <div class="sm:w-1/2 w-full mb-5">
 
-											<span class="absolute left-0 top-4 text-2xl text-primary">
-												<i class="feather icon-map-pin"></i>
-											</span>
+            <div class="relative">
 
-											<input name="dzCity"
-												type="text"
-												required
-												class="py-3.75 pl-10 text-lg text-bodycolor border-b border-secondary/60 w-full placeholder:text-bodycolor"
-												placeholder="City">
+                <span class="absolute left-0 top-4 text-2xl text-primary">
+                    <i class="feather icon-map-pin"></i>
+                </span>
 
-										</div>
+                <input
+                    id="city"
+                    name="dzCity"
+                    type="text"
+                    required
+                    class="py-3.75 pl-10 text-lg text-bodycolor border-b border-secondary/60 w-full placeholder:text-bodycolor"
+                    placeholder="City">
 
-									</div>
+            </div>
 
-									<!-- SERVICE -->
-									<div class="sm:w-1/2 w-full mb-5">
+        </div>
 
-										<select name="dzService"
-											required
-											class="py-3.75 text-lg text-bodycolor border-b border-secondary/60 w-full bg-transparent">
+        <!-- SERVICE -->
+        <div class="sm:w-1/2 w-full mb-5">
 
-											<option value="">Select Service</option>
+            <select
+                id="service"
+                name="dzService"
+                required
+                class="py-3.75 text-lg text-bodycolor border-b border-secondary/60 w-full bg-transparent">
 
-											<option>Assisted Living</option>
+                <option value="">Select Service</option>
 
-											<option>Home Healthcare</option>
+                <option>Assisted Living</option>
 
-											<option>Dementia Care</option>
+                <option>Home Healthcare</option>
 
-											<option>Palliative Care</option>
+                <option>Dementia Care</option>
 
-											<option>Post Operative Care</option>
+                <option>Palliative Care</option>
 
-											<option>Rehabilitation Care</option>
+                <option>Post Operative Care</option>
 
-										</select>
+                <option>Rehabilitation Care</option>
 
-									</div>
+            </select>
 
-									<!-- AGE -->
-									<div class="sm:w-1/2 w-full mb-5">
+        </div>
 
-										<input name="dzAge"
-											type="number"
-											required
-											min="1"
-											max="120"
-											class="py-3.75 text-lg text-bodycolor border-b border-secondary/60 w-full placeholder:text-bodycolor"
-											placeholder="Age">
+        <!-- AGE -->
+        <div class="sm:w-1/2 w-full mb-5">
 
-									</div>
+            <input
+                id="age"
+                name="dzAge"
+                type="number"
+                required
+                min="1"
+                max="120"
+                class="py-3.75 text-lg text-bodycolor border-b border-secondary/60 w-full placeholder:text-bodycolor"
+                placeholder="Age">
 
-									<!-- MESSAGE -->
-									<div class="w-full mb-5">
+        </div>
 
-										<textarea name="dzMessage"
-											rows="4"
-											required
-											minlength="10"
-											class="py-3.75 text-lg text-bodycolor border-b border-secondary/60 w-full placeholder:text-bodycolor"
-											placeholder="Tell us about your requirement"></textarea>
+        <!-- MESSAGE -->
+        <div class="w-full mb-5">
 
-									</div>
+            <textarea
+                id="message"
+                name="dzMessage"
+                rows="4"
+                required
+                minlength="10"
+                class="py-3.75 text-lg text-bodycolor border-b border-secondary/60 w-full placeholder:text-bodycolor"
+                placeholder="Tell us about your requirement"></textarea>
 
-									<!-- BUTTON -->
-									<div class="w-full mt-2.5">
+        </div>
 
-										<button type="submit"
-											class="btn btn-lg btn-primary w-full justify-center">
+        <!-- BUTTON -->
+        <div class="w-full mt-2.5">
 
-											Submit Enquiry
+            <button type="submit"
+                class="btn btn-lg btn-primary w-full justify-center">
 
-										</button>
+                Submit Enquiry
 
-									</div>
+            </button>
 
-								</div>
+        </div>
 
-							</form>
+    </div>
+
+</form>
+
+
 
 						</div>
 
@@ -525,25 +546,7 @@
 </div>
 <!-- CONTACT SECTION END -->
 
-<!-- FORM SUBMIT SCRIPT -->
-<script>
-	document.getElementById("contactForm").addEventListener("submit", function(e) {
 
-		e.preventDefault();
-
-		// SHOW SUCCESS MESSAGE
-		document.getElementById("formSuccessMessage").classList.remove("hidden");
-
-		// RESET FORM
-		this.reset();
-
-		// AUTO HIDE MESSAGE
-		setTimeout(() => {
-			document.getElementById("formSuccessMessage").classList.add("hidden");
-		}, 5000);
-
-	});
-</script>
 <section class="2xl:py-25 md:py-17.5 sm:py-12.5 py-10 bg-light">
 
 	<div class="container">
