@@ -8482,7 +8482,7 @@ MISSION VISION VALUES SECTION
 .mission-section{
     width: 100%;
     padding: 100px 20px;
-    background: #f7f3eb;
+    background: white;
 }
 
 .mission-section .container{
@@ -8921,7 +8921,7 @@ MOBILE RESPONSIVE
 
 .journey-section{
 	padding:100px 20px;
-	background:#f7f3eb;
+	background:white;
 	position:relative;
 }
 
