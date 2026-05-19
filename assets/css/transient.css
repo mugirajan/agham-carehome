@@ -337,7 +337,14 @@
 		padding-top:50px !important;
 		padding-bottom:40px !important;
 	}
+.agham-location-section{
+	padding: 40px 20px !important;
+}
 
+	.myAccordion .accordion-button {
+  text-align: start;
+  font-size: 22px !important;
+}
 	/* Heading */
 	.row.items-center h2{
 		font-size:32px !important;
@@ -505,8 +512,8 @@
 		   LOCATIONS SECTION
 		══════════════════════════════ */
 		.agham-location-section {
-			padding-top: 100px !important;
-			padding-bottom: 100px !important;
+			padding-top: 100px;
+			padding-bottom: 100px ;
 		}
 		.locations-flex-row {
 			display: grid;
@@ -753,3 +760,78 @@
 				padding: 14px 20px;
 			}
 		}
+
+
+
+		/* =========================================
+   FAQ Responsive Styles
+========================================= */
+
+/* FAQ Heading */
+@media only screen and (max-width: 1024px) {
+
+    .faq-section h2 {
+        font-size: 34px !important;
+        line-height: 32px !important;
+    }
+
+    /* FAQ Questions */
+    .faq-section .accordion-button {
+        font-size: 22px !important;
+        line-height: 32px !important;
+
+    }
+
+    /* FAQ Answers */
+    .faq-section .content-inner p {
+        font-size: 15px;
+        line-height: 26px;
+			text-align: left !important;
+		padding-top: 20px !important;
+    }
+
+    /* FAQ Image */
+    .faq-section .faq img {
+        border-radius: 20px;
+    }
+	 .faq-section p{
+		   font-size: 16px !important; 
+		   padding-top: 20px !important;
+		   text-align: left !important;
+	 }
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+
+    .faq-section {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .faq-section h2 {
+        font-size: 22px !important;
+        line-height: 30px !important;
+    }
+
+    .faq-section .accordion-button {
+        font-size: 22px !important;
+        line-height: 30px !important;
+    }
+
+    .faq-section .content-inner p {
+        font-size: 16px;
+        line-height: 24px;
+		text-align: left !important;
+		padding-top: 20px !important;
+    }
+	 .faq-section p{
+		   font-size: 16px !important; 
+		   padding-top: 20px !important;
+		   text-align: left !important;
+	 }
+
+    .faq-section .accordion-item {
+        padding: 10px 0;
+    }
+}
