@@ -8428,7 +8428,7 @@ input[type="time"]::-webkit-calendar-picker-indicator , input[type="date"]::-web
 }
 
 .service-btn:hover{
-	background:#07121E;
+	background:var(--primary);
 	color:#ffffff;
 }
 
@@ -8704,9 +8704,12 @@ MOBILE RESPONSIVE
 @media (max-width: 767px){
 
     .mission-section{
-        padding: 70px 15px;
+        padding: 50px 15px;
     }
 
+    .agham-core-values{
+       padding: 30px 15px !important;
+    }
     .mission-grid{
         grid-template-columns: 1fr;
     }
@@ -9435,15 +9438,16 @@ object-fit: cover;
 
 }
 
- .custom-award-heading {
-        font-size: 38px !important;
-        line-height: 1.2;
-    }
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .custom-award-heading {
         font-size: 38px !important;
         line-height: 1.2;
+    }
+
+    .custom-award-heading{
+      font-size: 20px !important;
     }
 }
 
@@ -9711,9 +9715,18 @@ body{
 
     .style-25 img:first-child{
         width:75% !important;
-        height:400px !important;
+        height:450px !important;
         object-fit:cover;
     }
+
+
+    .mission-card{
+              border: 2px solid #227675;
+        width: 1200px !important;
+    }
+        .mission-grid{
+          gap:50px
+        }
 
     .style-25 img:last-child{
         width:170px !important;
@@ -9821,7 +9834,7 @@ body{
 @media only screen and (max-width: 480px){
 
     .style-25 img:first-child{
-        height:260px !important;
+        height:330px !important;
     }
 
     .style-25 img:last-child{
@@ -12385,8 +12398,9 @@ MOBILE
 @media (max-width: 991px){
 
     .hero-banner-overlay{
-        min-height: 580px;
+        min-height: 130px !important;
         background-position: 65% center;
+        padding-top: 150px !important;
         padding-top: 90px;
     }
 
