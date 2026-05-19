@@ -271,6 +271,182 @@
 		}
 	</style>
 
+<style>
+	
+		/* ══════════════════════════════
+		   HIGHLIGHTS SECTION
+		══════════════════════════════ */
+		.highlights-section {
+			background: #f7f3eb;
+			padding:80px 0px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+		.highlights-grid {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 80px 20px;
+			width: 100%;
+			margin: 0 auto;
+		}
+		.highlight-item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 20px;
+		}
+		.highlight-icon {
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			background: #f5f5f5;
+			border: 2px dashed #227675;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.highlight-icon i {
+			font-size: 36px;
+			color: #227675;
+			line-height: 1;
+		}
+		.highlight-item h4 {
+			font-size: 22px;
+			font-weight: 600;
+		
+			line-height: 1.4;
+			text-align: center;
+			margin: 0;
+		}
+		@media (max-width: 1024px) {
+			.highlights-grid { grid-template-columns: repeat(4, 1fr); }
+		}
+		@media (max-width: 768px) {
+			.highlights-section { padding: 40px 30px; }
+			.highlights-grid { grid-template-columns: repeat(2, 1fr); }
+		}
+		@media (max-width: 480px) {
+			.highlights-grid { grid-template-columns: repeat(2, 1fr); }
+		}
+
+		/* ══════════════════════════════
+		   STATS SECTION
+		══════════════════════════════ */
+		.stats-section {
+			background: #fff;
+			border-top: 1px solid #e5e7eb;
+			border-bottom: 1px solid #e5e7eb;
+			padding: 50px 0;
+			width: 100%;
+			box-sizing: border-box;
+		}
+		.stats-grid {
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+			gap: 20px;
+			text-align: center;
+		}
+		.stat-item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+		.stat-item span.stat-number {
+			font-size: 42px;
+			font-weight: 700;
+			color: #227675;
+			line-height: 1.1;
+			margin-bottom: 8px;
+			display: block;
+		}
+		.stat-item span.stat-label {
+			font-size: 14px;
+			font-weight: 400;
+			color: #555;
+			line-height: 1.4;
+			display: block;
+		}
+		/* Tablet */
+		@media (min-width: 768px) and (max-width: 1024px) {
+			.stats-grid {
+				grid-template-columns: repeat(3, 1fr) !important;
+				gap: 30px 20px;
+				padding: 0 20px;
+			}
+		}
+		/* Mobile */
+		@media (max-width: 767px) {
+			.stats-grid {
+				grid-template-columns: repeat(2, 1fr) !important;
+				gap: 24px 16px;
+				padding: 0 16px;
+			}
+			.stat-item span.stat-number { font-size: 28px; }
+			.stat-item span.stat-label  { font-size: 12px; }
+		}
+
+		/* ══════════════════════════════
+		   LOCATIONS SECTION
+		══════════════════════════════ */
+		.agham-location-section {
+			padding-top: 100px !important;
+			padding-bottom: 100px !important;
+		}
+		.locations-flex-row {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			gap: 16px;
+		}
+		.location-flex-card { min-width: 0; }
+		.location-card {
+			background: #fff;
+			border-radius: 10px;
+			padding: 20px 12px;
+			text-align: center;
+			border: 1px solid #f0f0f0;
+			transition: all 0.3s;
+			height: 100%;
+		}
+		.location-card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 15px 50px rgba(0,0,0,0.08);
+		}
+		.loc-img-wrap {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 12px;
+		}
+		.loc-img-wrap img {
+			width: 100px;
+			height: 100px;
+			object-fit: contain;
+			opacity: 0.8;
+		}
+		.location-card h3 {
+			font-size: 15px;
+			font-weight: 600;
+			color: #1a1a2e;
+			margin-bottom: 4px;
+		}
+		.location-card p {
+			font-size: 12px;
+			color: #666;
+			line-height: 1.4;
+			margin: 0;
+		}
+		@media (max-width: 1024px) {
+			.locations-flex-row { grid-template-columns: repeat(3, 1fr); }
+		}
+		@media (max-width: 640px) {
+			.locations-flex-row { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+			.location-card h3 { font-size: 14px; }
+			.location-card p  { font-size: 11px; }
+		}
+</style>
+
+
 </head>
 <body id="bg" data-typography="typography_1">
 <div class="page-wraper">
@@ -600,8 +776,139 @@
 
 
 
+	<!-- ══ HIGHLIGHTS SECTION ══ -->
+				<section class="highlights-section ">
+					<div class="container">
+						<div class="text-center sm:mb-12.5 mb-8">
+							
+							<h2 class="2xxl:text-2xxl lg:text-[38px] sm:text-[32px] text-2xxl capitalize mb-4">Complete Care For Seniors</h2>
+							
+							<br>
+						</div>
+						<div class="highlights-grid">
+							<div class="highlight-item">
+								<div class="highlight-icon"><i class="feather icon-home"></i></div>
+								<h4>Senior Friendly</h4>
+							</div>
+							<div class="highlight-item">
+								<div class="highlight-icon"><i class="feather icon-user-check"></i></div>
+								<h4>24/7 Nursing</h4>
+							</div>
+							<div class="highlight-item">
+								<div class="highlight-icon"><i class="feather icon-activity"></i></div>
+								<h4>Onsite Doctor</h4>
+							</div>
+							<div class="highlight-item">
+								<div class="highlight-icon"><i class="feather icon-cpu"></i></div>
+								<h4>Cognitive Activities</h4>
+							</div>
+							<div class="highlight-item">
+								<div class="highlight-icon"><i class="feather icon-heart"></i></div>
+								<h4>Onsite Physio</h4>
+							</div>
+							<div class="highlight-item">
+								<div class="highlight-icon"><i class="feather icon-package"></i></div>
+								<h4>Dietician Nutrition</h4>
+							</div>
+							<div class="highlight-item">
+								<div class="highlight-icon"><i class="feather icon-sun"></i></div>
+								<h4>Appointed Rooms</h4>
+							</div>
+							<div class="highlight-item">
+								<div class="highlight-icon"><i class="feather icon-shield"></i></div>
+								<h4>24/7 Surveillance</h4>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- ══ HIGHLIGHTS SECTION END ══ -->
+
+
+	<!-- ══ STATS SECTION ══ -->
+				<section class="stats-section">
+					<div class="container">
+						<div class="stats-grid">
+							<div class="stat-item">
+								<span class="stat-number">45k+</span>
+								<span class="stat-label">Seniors Served</span>
+							</div>
+							<div class="stat-item">
+								<span class="stat-number">100+</span>
+								<span class="stat-label">Doctors</span>
+							</div>
+							<div class="stat-item">
+								<span class="stat-number">800+</span>
+								<span class="stat-label">Trained Geriatric Caregivers</span>
+							</div>
+							<div class="stat-item">
+								<span class="stat-number">100+</span>
+								<span class="stat-label">Staff Nurses</span>
+							</div>
+							<div class="stat-item">
+								<span class="stat-number">25+</span>
+								<span class="stat-label">Physiotherapists</span>
+							</div>
+							<div class="stat-item">
+								<span class="stat-number">17+</span>
+								<span class="stat-label">Trained Geriatric Nutritionists</span>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- ══ STATS SECTION END ══ -->
+
+				<!-- ══ LOCATIONS SECTION ══ -->
+				<section class="agham-location-section 2xl:py-25 md:py-17.5 py-12.5 bg-light overflow-hidden">
+					<div class="container">
+						<div class="text-center sm:mb-12.5 mb-8">
+							<span class="text-xl font-medium italic text-primary inline-block font-sub-title mb-3">Our Presence</span>
+							<h2 class="2xxl:text-2xxl lg:text-[38px] sm:text-[32px] text-2xxl capitalize mb-4">Locations We Serve</h2>
+							<p class="xl:text-lg text-base font-light text-bodycolor max-w-[760px] mx-auto">Delivering compassionate senior care services across major cities with comfort and dignity.</p>
+						</div>
+						<div class="locations-flex-row">
+							<div class="location-flex-card">
+								<div class="location-card">
+									<div class="loc-img-wrap"><img src="assets/images/hero-banner/bengaluru.webp" alt=""></div>
+									<h3>Bengaluru</h3>
+									<p>Assisted Living Care</p>
+								</div>
+							</div>
+							<div class="location-flex-card">
+								<div class="location-card">
+									<div class="loc-img-wrap"><img src="assets/images/hero-banner/chennai.webp" alt=""></div>
+									<h3>Chennai</h3>
+									<p>Senior Wellness Support</p>
+								</div>
+							</div>
+							<div class="location-flex-card">
+								<div class="location-card">
+									<div class="loc-img-wrap"><img src="assets/images/hero-banner/coimbatore.webp" alt=""></div>
+									<h3>Coimbatore</h3>
+									<p>Elderly Care Services</p>
+								</div>
+							</div>
+							<div class="location-flex-card">
+								<div class="location-card">
+									<div class="loc-img-wrap"><img src="assets/images/hero-banner/hydrabad.webp" alt=""></div>
+									<h3>Hyderabad</h3>
+									<p>Holistic Senior Care</p>
+								</div>
+							</div>
+							<div class="location-flex-card">
+								<div class="location-card">
+									<div class="loc-img-wrap"><img src="assets/images/hero-banner/kochi.webp" alt=""></div>
+									<h3>Kochi</h3>
+									<p>Comfort & Recovery Care</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- ══ LOCATIONS SECTION END ══ -->
+
+
 <!-- Podcast Section -->
-<section class="podcast-section 2xl:py-25 md:py-17.5 py-12.5 bg-light">
+<section class="podcast-section 2xl:py-25 md:py-17.5 py-12.5 bg-white">
 	<div class="container">
 
 		<!-- Heading -->
@@ -728,7 +1035,7 @@
 </section>
 
 
-<section class="2xxl:pt-25 xl:pt-17.5 md:pt-12.5 sm:pt-10 pt-7.5 pg-9 bg-white">
+<section class="2xxl:pt-25 xl:pt-17.5 md:pt-12.5 sm:pt-10 pt-7.5 pg-9 bg-light">
 	<div class="container">
 		<div class="row content-wrapper style-26 items-end">
 
