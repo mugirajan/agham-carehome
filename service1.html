@@ -73,198 +73,18 @@
 	<!-- Custom Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<style>
-          
-
-		/* ── SECTION PADDING (matches your site) ── */
-		.section-pad {
-			padding: 40px 0;
-		}
-		@media (min-width: 640px)  { .section-pad { padding: 50px 0; } }
-		@media (min-width: 768px)  { .section-pad { padding: 70px 0; } }
-		@media (min-width: 1536px) { .section-pad { padding: 100px 0; } }
-
-		/* ── CONTAINER ── */
-		.container {
-			width: 100%;
-			max-width: 1200px;
-			margin: 0 auto;
-			padding: 0 20px;
-		}
-
-		
-
-		/* ══════════════════════════════
-		   HIGHLIGHTS SECTION
-		══════════════════════════════ */
-		.highlights-section {
-			background: #fff;
-			padding-top: 0;
-            text-align: center;
-		}
-		.highlights-title {
-			font-size: 38px;
-			font-weight: 600;
-			color: #1a1a2e;
-			margin-bottom: 40px;
-		}
-		.highlights-grid {
-			display: grid;
-			grid-template-columns: repeat(4, 1fr);
-			gap: 20px;
-		}
-		.highlight-card {
-			border-radius: 20px;
-			padding: 40px 24px 36px;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			gap: 30px;
-			min-height: 260px;
-		}
-		.highlight-card:nth-child(1) { background: #e8f4f4; }
-		.highlight-card:nth-child(2) { background: #e8f4ee; }
-		.highlight-card:nth-child(3) { background: #edf4e8; }
-		.highlight-card:nth-child(4) { background: #ede8f4; }
-		.highlight-card:nth-child(5) { background: #f4ede8; }
-		.highlight-card:nth-child(6) { background: #e8eef4; }
-		.highlight-card:nth-child(7) { background: #f4e8e8; }
-		.highlight-card:nth-child(8) { background: #f4f4e8; }
-
-		.highlight-icon {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;  /* center the icon box itself */
+          .cta-icon i {
+    font-size: 40px;
+    color: #227675;        /* your brand teal */
+    stroke-width: 1;       /* thinner lines = more elegant */
 }
-
-.highlight-icon i {
-    font-size: 48px;
-    color: #227675;
-    display: block;
-    text-align: center;
-    line-height: 1;
-}
-
-.highlight-card h4 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #1a1a2e;
-    line-height: 1.3;
-    text-align: center;
-    width: 100%;
-}
-
-		/* ══════════════════════════════
-		   STATS SECTION
-		══════════════════════════════ */
-		.stats-section {
-			background: #fff;
-			border-top: 1px solid #e5e7eb;
-			border-bottom: 1px solid #e5e7eb;
-		}
-		.stats-grid {
-			display: grid;
-			grid-template-columns: repeat(6, 1fr);
-			gap: 20px;
-			text-align: center;
-			padding: 50px 0;
-		}
-		.stat-item h3 {
-			font-size: 42px;
-			font-weight: 700;
-			color: #227675;
-			line-height: 1.1;
-			margin-bottom: 8px;
-		}
-		.stat-item p {
-			font-size: 14px;
-			font-weight: 400;
-			color: #555;
-			line-height: 1.4;
-		}
-
-		/* ══════════════════════════════
-		   LOCATIONS SECTION
-		══════════════════════════════ */
-		.locations-section {
-			background: #edf6fb;
-		}
-		.locations-title {
-			font-size: 38px;
-			font-weight: 600;
-			color: #1a1a2e;
-			margin-bottom: 50px;
-		}
-		.locations-grid {
-			display: grid;
-			grid-template-columns: repeat(5, 1fr);
-			gap: 20px;
-			text-align: center;
-		}
-		.location-item {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			gap: 20px;
-			cursor: pointer;
-		}
-		.location-item img {
-			width: 160px;
-			height: 120px;
-			object-fit: contain;
-			filter: opacity(0.7);
-			transition: filter 0.3s;
-		}
-		.location-item:hover img { filter: opacity(1); }
-		.location-item h4 {
-			font-size: 18px;
-			font-weight: 500;
-			color: #1a1a2e;
-		}
-
-		/* ══════════════════════════════
-		   RESPONSIVE
-		══════════════════════════════ */
-		@media (max-width: 1024px) {
-			.highlights-grid { grid-template-columns: repeat(2, 1fr); }
-			.stats-grid { grid-template-columns: repeat(3, 1fr); }
-			.locations-grid { grid-template-columns: repeat(3, 1fr); }
-		}
-		@media (max-width: 768px) {
-			.intro-grid { grid-template-columns: 1fr; gap: 30px; }
-			.intro-service-title { font-size: 32px; }
-			.highlights-grid { grid-template-columns: repeat(2, 1fr); }
-			.highlights-title { font-size: 28px; }
-			.stats-grid { grid-template-columns: repeat(2, 1fr); }
-			.locations-grid { grid-template-columns: repeat(2, 1fr); }
-			.assisted-hero { height: 300px; }
-		}
-
-		.benefit-item {
-    margin-bottom: 5px !important; /* reduce from whatever it currently is */
-    padding-bottom: 5px !important;
+.care-benefits-list {
+    gap: 12px !important; /* if using flexbox/grid gap */
 }
 /* ── CTA SECTION ── */
-@media (min-width: 640px) {
-  .cta-section { padding: 50px 0; }
-}
-
-@media (min-width: 768px) {
-  .cta-section { padding: 70px 0; }
-}
-
-@media (min-width: 1536px) {
-  .cta-section { padding: 100px 0; }
-}
-.cta-section {
-    padding-top: 150px;
-    padding-bottom: 100px;
-}
 .cta-section {
   background-color: #f7f3EB;
-  padding: 100px 0;
+  padding: 40px 0;
 }
 
 .cta-grid {
@@ -288,7 +108,7 @@
 
 .cta-illustration-card h2 {
   color: #f7f3EB;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
   line-height: 1.3;
   margin-bottom: 0;
@@ -318,16 +138,16 @@
 }
 
 .cta-card h3 {
-  font-size: 38px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
   color: #1a1a2e;
   line-height: 1.4;
   margin: 0;
 }
 
 .cta-card p {
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 400;
   color: #555;
   line-height: 1.7;
   margin: 0;
@@ -435,6 +255,180 @@
     text-align: center;
     padding: 14px 20px;
   }
+}
+
+
+		/* ── SECTION PADDING (matches your site) ── */
+		.section-pad {
+			padding: 40px 0;
+		}
+		@media (min-width: 640px)  { .section-pad { padding: 50px 0; } }
+		@media (min-width: 768px)  { .section-pad { padding: 70px 0; } }
+		@media (min-width: 1536px) { .section-pad { padding: 100px 0; } }
+
+		/* ── CONTAINER ── */
+		.container {
+			width: 100%;
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+/* Responsive */
+/* @media (max-width: 1024px) {
+    .highlights-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .highlights-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+    .highlights-grid { grid-template-columns: 1fr; }
+} */
+		/* ══════════════════════════════
+		   STATS SECTION
+		══════════════════════════════ */
+		.stats-section {
+			background: #fff;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: center;
+		}
+		.stats-grid {
+			 display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    justify-items: center;        /* ← centers each cell's content */
+    text-align: center;
+    padding: 50px 0;
+		}
+        .stat-item {
+   text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* ← centers flex children */
+    justify-content: center;
+    width: 100%;
+}
+.stat-item h3 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: #227675;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    width: 100%;                  /* ← ensures h3 fills cell */
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 30px 20px;
+        padding: 40px 20px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 24px 16px;
+        padding: 30px 16px !important;
+    }
+    .stat-item h3 {
+        font-size: 28px;
+    }
+    .stat-item p {
+        font-size: 12px;
+    }
+}
+
+/* ══ HIGHLIGHTS SECTION ══ */
+.highlights-section {
+    background: #fff;
+    padding: 60px 0 !important;
+    width: 100%;
+    box-sizing: border-box;
+}
+		.stat-item h3 {
+              text-align: center !important;
+			font-size: 42px;
+			font-weight: 700;
+			color: #227675;
+			line-height: 1.1;
+			margin-bottom: 8px;
+		}
+		.stat-item p {
+              text-align: center !important;
+			font-size: 14px;
+			font-weight: 400;
+			color: #555;
+			line-height: 1.4;
+		}
+
+		/* ══════════════════════════════
+		   LOCATIONS SECTION
+		══════════════════════════════ */
+		.locations-section {
+			background: #edf6fb;
+		}
+		.locations-title {
+			font-size: 38px;
+			font-weight: 600;
+			color: #1a1a2e;
+			margin-bottom: 50px;
+		}
+		.locations-grid {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			gap: 20px;
+			text-align: center;
+		}
+		.location-item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 20px;
+			cursor: pointer;
+		}
+		.location-item img {
+			width: 160px;
+			height: 120px;
+			object-fit: contain;
+			filter: opacity(0.7);
+			transition: filter 0.3s;
+		}
+		.location-item:hover img { filter: opacity(1); }
+		.location-item h4 {
+			font-size: 18px;
+			font-weight: 500;
+			color: #1a1a2e;
+		}
+
+		/* ══════════════════════════════
+		   RESPONSIVE
+		══════════════════════════════ */
+		@media (max-width: 1024px) {
+			.highlights-grid { grid-template-columns: repeat(2, 1fr); }
+			.stats-grid { grid-template-columns: repeat(3, 1fr); }
+			.locations-grid { grid-template-columns: repeat(3, 1fr); }
+		}
+		@media (max-width: 768px) {
+			.intro-grid { grid-template-columns: 1fr; gap: 30px; }
+			.intro-service-title { font-size: 32px; }
+			.highlights-grid { grid-template-columns: repeat(2, 1fr); }
+			.highlights-title { font-size: 28px; }
+			.stats-grid { grid-template-columns: repeat(2, 1fr); }
+			.locations-grid { grid-template-columns: repeat(2, 1fr); }
+			.assisted-hero { height: 300px; }
+		}
+
+		.benefit-item {
+    margin-bottom: 5px !important; /* reduce from whatever it currently is */
+    padding-bottom: 5px !important;
 }
 </style>
 
@@ -686,7 +680,7 @@
 
 	
 
-	<section class="2xl:pt-25 2xl:pb-17.5 md:pt-17.5 md:pb-10 sm:pt-12.5 sm:pb-5 pt-10 pb-5 bg-white">
+	<section class="2xl:pt-25 md:pt-17.5 sm:pt-12.5 pt-10 bg-white" style="padding-bottom: 0 !important;">
 	<div class="container">
 		<div class="row content-wrapper style-25 items-center">
 
@@ -829,78 +823,170 @@
     .intro-image-wrap { height: 350px; }
 }
 </style>
-	
-		<!-- ══ HIGHLIGHTS SECTION ══ -->
-		<section class="highlights-section section-pad" style="padding-top: 0;">
-			<div class="container">
+	<section class="highlights-section">
+           <div class="container">
+    <div class="text-center sm:mb-12.5 mb-8">
 
-				<h2 class="highlights-title">Assisted Living Highlights</h2>
+			<span class="text-xl font-medium italic text-primary inline-block font-sub-title mb-3">
+				Our Care Highlights
+			</span>
 
-				<div class="highlights-grid">
+			<h2 class="2xxl:text-2xxl lg:text-[38px] sm:text-[32px] text-2xxl capitalize mb-4">
+				Complete Care For Seniors
+			</h2>
 
-					<div class="highlight-card">
-						<div class="highlight-icon">
-							<i class="feather icon-home"></i>
-						</div>
-						<h4>Senior Friendly Infrastructure</h4>
-					</div>
+			<p class="xl:text-lg text-base font-light text-bodycolor max-w-[760px] mx-auto">
+				Bringing expert senior care from 24/7 nursing and onsite doctors to physio and nutrition — closer to home, across every city we serve.
+			</p>
+            <br>
+		</div>
 
-					<div class="highlight-card">
-						<div class="highlight-icon">
-							<i class="feather icon-user-check"></i>
-						</div>
-						<h4>24/7 Nursing Assistance</h4>
-					</div>
+    <div class="highlights-grid">
 
-					<div class="highlight-card">
-						<div class="highlight-icon">
-							<i class="feather icon-activity"></i>
-						</div>
-						<h4>Onsite Doctor & Medicine Management</h4>
-					</div>
+        <div class="highlight-item">
+            <div class="highlight-icon">
+                <i class="feather icon-home"></i>
+            </div>
+            <h4>Senior Friendly</h4>
+        </div>
 
-					<div class="highlight-card">
-						<div class="highlight-icon">
-							<i class="feather icon-cpu"></i>
-						</div>
-						<h4>Cognitive Activities</h4>
-					</div>
+        <div class="highlight-item">
+            <div class="highlight-icon">
+                <i class="feather icon-user-check"></i>
+            </div>
+            <h4>24/7 Nursing</h4>
+        </div>
 
-					<div class="highlight-card">
-						<div class="highlight-icon">
-							<i class="feather icon-heart"></i>
-						</div>
-						<h4>Onsite Physio</h4>
-					</div>
+        <div class="highlight-item">
+            <div class="highlight-icon">
+                <i class="feather icon-activity"></i>
+            </div>
+            <h4>Onsite Doctor</h4>
+        </div>
 
-					<div class="highlight-card">
-						<div class="highlight-icon">
-							<i class="feather icon-package"></i>
-						</div>
-						<h4>Dietician Monitored Nutrition</h4>
-					</div>
+        <div class="highlight-item">
+            <div class="highlight-icon">
+                <i class="feather icon-cpu"></i>
+            </div>
+            <h4>Cognitive Activities</h4>
+        </div>
 
-					<div class="highlight-card">
-						<div class="highlight-icon">
-							<i class="feather icon-sun"></i>
-						</div>
-						<h4>Individually Appointed Rooms</h4>
-					</div>
+        <div class="highlight-item">
+            <div class="highlight-icon">
+                <i class="feather icon-heart"></i>
+            </div>
+            <h4>Onsite Physio</h4>
+        </div>
 
-					<div class="highlight-card">
-						<div class="highlight-icon">
-							<i class="feather icon-shield"></i>
-						</div>
-						<h4>24/7 Surveillance</h4>
-					</div>
+        <div class="highlight-item">
+            <div class="highlight-icon">
+                <i class="feather icon-package"></i>
+            </div>
+            <h4>Dietician Nutrition</h4>
+        </div>
 
-				</div>
+        <div class="highlight-item">
+            <div class="highlight-icon">
+                <i class="feather icon-sun"></i>
+            </div>
+            <h4>Appointed Rooms</h4>
+        </div>
 
-			</div>
-		</section>
+        <div class="highlight-item">
+            <div class="highlight-icon">
+                <i class="feather icon-shield"></i>
+            </div>
+            <h4>24/7 Surveillance</h4>
+        </div>
+</div>
+    </div>
+</section>
+<style>
+    .highlights-section {
+    background: #fff;
+    padding: 60px 0;
+}
+    .highlights-section {
+    background: #fff;
+    padding: 60px 80px;
+    width: 100%;
+    box-sizing: border-box;
+}
 
+.highlights-title {
+    font-size: 38px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin: 0 auto 40px auto;
+    text-align: center !important;
+    width: 100%;
+    display: block;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.highlight-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.highlight-icon {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    border: 2px dashed #227675;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight-icon i {
+    font-size: 36px;
+    color: #227675;
+    line-height: 1;
+}
+
+.highlight-item h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a2e;
+    line-height: 1.4;
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .highlights-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .highlights-section { padding: 40px 30px; }
+    .highlights-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+    .highlights-grid { grid-template-columns: 1fr; }
+}
+.stats-section {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.stats-grid {
+    padding: 30px 0 !important;
+}
+</style>
 		<!-- ══ STATS SECTION ══ -->
-		<section class="stats-section">
+		<section class="stats-section" style="padding-bottom: 0; margin-bottom: 0;">
 			<div class="container">
 				<div class="stats-grid">
 
@@ -952,7 +1038,573 @@
 		</div>
 	</div>
 </section>
+<!-- Locations Section -->
+<section class="agham-location-section 2xl:py-25 md:py-17.5 py-12.5 bg-white overflow-hidden">
+	<div class="container">
 
+		<!-- Heading -->
+		<div class="text-center sm:mb-12.5 mb-8">
+
+			<span class="text-xl font-medium italic text-primary inline-block font-sub-title mb-3">
+				Our Presence
+			</span>
+
+			<h2 class="2xxl:text-2xxl lg:text-[38px] sm:text-[32px] text-2xxl capitalize mb-4">
+				Locations We Serve
+			</h2>
+
+			<p class="xl:text-lg text-base font-light text-bodycolor max-w-[760px] mx-auto">
+				Delivering compassionate senior care services across major cities with comfort and dignity.
+			</p>
+
+		</div>
+
+		<!-- Locations Row -->
+		<div class="locations-flex-row">
+
+    <div class="location-flex-card">
+        <div class="location-card">
+            <div class="loc-img-wrap">
+                <img src="assets/images/hero-banner/bengaluru.webp" alt="">
+            </div>
+            <h3>Bengaluru</h3>
+            <p>Assisted Living Care</p>
+        </div>
+    </div>
+
+    <div class="location-flex-card">
+        <div class="location-card">
+            <div class="loc-img-wrap">
+                <img src="assets/images/hero-banner/chennai.webp" alt="">
+            </div>
+            <h3>Chennai</h3>
+            <p>Senior Wellness Support</p>
+        </div>
+    </div>
+
+    <div class="location-flex-card">
+        <div class="location-card">
+            <div class="loc-img-wrap">
+                <img src="assets/images/hero-banner/coimbatore.webp" alt="">
+            </div>
+            <h3>Coimbatore</h3>
+            <p>Elderly Care Services</p>
+        </div>
+    </div>
+
+    <div class="location-flex-card">
+        <div class="location-card">
+            <div class="loc-img-wrap">
+                <img src="assets/images/hero-banner/hydrabad.webp" alt="">
+            </div>
+            <h3>Hyderabad</h3>
+            <p>Holistic Senior Care</p>
+        </div>
+    </div>
+
+    <div class="location-flex-card">
+        <div class="location-card">
+            <div class="loc-img-wrap">
+                <img src="assets/images/hero-banner/kochi.webp" alt="">
+            </div>
+            <h3>Kochi</h3>
+            <p>Comfort & Recovery Care</p>
+        </div>
+    </div>
+
+</div>
+	</div>
+</section>
+<style>
+    .locations-flex-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+.location-flex-card {
+    min-width: 0;
+}
+
+.location-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 12px;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s;
+    height: 100%;
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0,0,0,0.08);
+}
+
+.loc-img-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.loc-img-wrap img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    opacity: 0.8;
+}
+
+.location-card h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 4px;
+    white-space: normal;
+    word-break: normal;
+}
+
+.location-card p {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.4;
+    margin: 0;
+    white-space: normal;
+    word-break: normal;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .locations-flex-row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    .locations-flex-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    .location-card h3 { font-size: 14px; }
+    .location-card p  { font-size: 11px; }
+}
+  .agham-location-section {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    margin-top: 0 !important;
+}
+.stats-section {
+    padding-bottom: 30px !important;
+}
+</style>
+
+
+<!-- Podcast Section -->
+<section class="podcast-section 2xl:py-25 md:py-17.5 py-12.5 bg-light">
+	<div class="container">
+
+		<!-- Heading -->
+		<div class="sm:mb-12.5 mb-8">
+			<h2 class="2xxl:text-4xxl lg:text-[38px] sm:text-[32px] text-2xxl capitalize">
+				Podcast
+			</h2>
+		</div>
+
+		<!-- Podcast Row -->
+		<div class="row -mx-3 podcast-row">
+
+			<!-- Card 1 -->
+			<div class="xl:w-1/4 md:w-1/2 w-full px-3 mb-6">
+				<div class="relative overflow-hidden rounded-[30px] group podcast-card">
+
+					<img src="assets/images/hero-banner/podcast-4.webp"
+						alt=""
+						class="w-full podcast-img object-cover group-hover:scale-105 duration-700">
+
+					<div class="absolute bottom-0 left-0 right-0 bg-[#ef4b8b] px-4 py-4 flex items-center gap-3 rounded-t-[22px]">
+
+						<button type="button"
+							class="size-10 rounded-full bg-white flex items-center justify-center text-[#ef4b8b] shrink-0 open-video"
+							data-video="/assets/videos/podcast1.mp4">
+
+							<i class="feather icon-play text-lg"></i>
+
+						</button>
+
+						<h3 class="text-white xl:text-lg text-base font-medium whitespace-nowrap overflow-hidden text-ellipsis">
+							Alzheimer's / Dementia
+						</h3>
+
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Card 2 -->
+			<div class="xl:w-1/4 md:w-1/2 w-full px-3 mb-6">
+				<div class="relative overflow-hidden rounded-[30px] group podcast-card">
+
+					<img src="assets/images/hero-banner/podcast-3.webp"
+						alt=""
+						class="w-full podcast-img object-cover group-hover:scale-105 duration-700">
+
+					<div class="absolute bottom-0 left-0 right-0 bg-[#ef4b8b] px-4 py-4 flex items-center gap-3 rounded-t-[22px]">
+
+						<button type="button"
+							class="size-10 rounded-full bg-white flex items-center justify-center text-[#ef4b8b] shrink-0 open-video"
+							data-video="/assets/videos/podcast2.mp4">
+
+							<i class="feather icon-play text-lg"></i>
+
+						</button>
+
+						<h3 class="text-white xl:text-lg text-base font-medium whitespace-nowrap overflow-hidden text-ellipsis">
+							Osteoporosis
+						</h3>
+
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Card 3 -->
+			<div class="xl:w-1/4 md:w-1/2 w-full px-3 mb-6">
+				<div class="relative overflow-hidden rounded-[30px] group podcast-card">
+
+					<img src="assets/images/hero-banner/podcast-2.webp"
+						alt=""
+						class="w-full podcast-img object-cover group-hover:scale-105 duration-700">
+
+					<div class="absolute bottom-0 left-0 right-0 bg-[#ef4b8b] px-4 py-4 flex items-center gap-3 rounded-t-[22px]">
+
+						<button type="button"
+							class="size-10 rounded-full bg-white flex items-center justify-center text-[#ef4b8b] shrink-0 open-video"
+							data-video="/assets/videos/podcast3.mp4">
+
+							<i class="feather icon-play text-lg"></i>
+
+						</button>
+
+						<h3 class="text-white xl:text-lg text-base font-medium whitespace-nowrap overflow-hidden text-ellipsis">
+							Urinary Incontinence
+						</h3>
+
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Card 4 -->
+			<div class="xl:w-1/4 md:w-1/2 w-full px-3 mb-6">
+				<div class="relative overflow-hidden rounded-[30px] group podcast-card">
+
+					<img src="assets/images/hero-banner/podcast-1.webp"
+						alt=""
+						class="w-full podcast-img object-cover group-hover:scale-105 duration-700">
+
+					<div class="absolute bottom-0 left-0 right-0 bg-[#ef4b8b] px-4 py-4 flex items-center gap-3 rounded-t-[22px]">
+
+						<button type="button"
+							class="size-10 rounded-full bg-white flex items-center justify-center text-[#ef4b8b] shrink-0 open-video"
+							data-video="assets/images/hero-banner/podcast-video.mp4">
+
+							<i class="feather icon-play text-lg"></i>
+
+						</button>
+
+						<h3 class="text-white xl:text-lg text-base font-medium whitespace-nowrap overflow-hidden text-ellipsis">
+							Senior Wellness & Care
+						</h3>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</section>
+
+
+
+<section class="2xxl:pt-25 xl:pt-17.5 md:pt-12.5 sm:pt-10 pt-7.5 pg-9 bg-white">
+	<div class="container">
+		<div class="row content-wrapper style-26 items-end">
+
+			<!-- Content -->
+			<div class="lg:w-1/2 w-full xl:order-1 mb-7.5 self-center"  style="padding-left:70px;">
+				<div class="sm:mb-7.5 mb-5">
+
+					<div class="text-xl font-medium italic text-primary inline-block font-sub-title wow fadeInUp"
+						data-wow-delay="0.2s" data-wow-duration="0.8s">
+					Trusted Senior Living Care
+					</div>
+
+					<h2 class="2xxl:text-2xxl lg:text-[38px] sm:text-[32px] text-2xxl capitalize wow fadeInUp"
+						data-wow-delay="0.2s" data-wow-duration="0.8s">
+					Creating a Caring Home for Every Senior
+					</h2>
+
+					<p class="xl:text-lg text-base font-normal wow fadeInUp"
+						data-wow-delay="0.4s" data-wow-duration="0.8s">
+
+						At <strong class="text-secondary font-semibold">Agham Care Home</strong>,
+						we provide compassionate assisted living and elderly care services
+						in a warm, peaceful, and secure environment. Our dedicated caregivers
+						support seniors with dignity, comfort, emotional well-being, and
+						personalized attention — helping every resident feel safe, respected,
+						and truly at home.
+					</p>
+				</div>
+
+				<!-- Highlights -->
+				<h3 class="text-primary text-xl font-semibold pb-2.5 relative mb-3 
+					after:absolute after:bottom-0 after:left-0 after:right-0 
+					after:h-px after:bg-linear-(--title4-gradient) wow fadeInUp"
+					data-wow-delay="0.6s" data-wow-duration="0.8s">
+
+					Why Families Choose Us
+				</h3>
+
+				<ul class="flex flex-wrap text-secondary font-medium mb-7.5 wow fadeInUp"
+					data-wow-delay="0.8s" data-wow-duration="0.8s">
+
+					<li class="sm:w-1/2 w-full relative lg:p-1.25 p-1 lg:ps-7.5 ps-6.25 xl:text-base text-2sm before:absolute before:left-0 before:bg-circle-check before:size-5 before:bg-contain">
+						24/7 Compassionate Care
+					</li>
+
+					<li class="sm:w-1/2 w-full relative lg:p-1.25 p-1 lg:ps-7.5 ps-6.25 xl:text-base text-2sm before:absolute before:left-0 before:bg-circle-check before:size-5 before:bg-contain">
+						Safe & Peaceful Environment
+					</li>
+
+					<li class="sm:w-1/2 w-full relative lg:p-1.25 p-1 lg:ps-7.5 ps-6.25 xl:text-base text-2sm before:absolute before:left-0 before:bg-circle-check before:size-5 before:bg-contain">
+						Personalized Elderly Support
+					</li>
+
+					<li class="sm:w-1/2 w-full relative lg:p-1.25 p-1 lg:ps-7.5 ps-6.25 xl:text-base text-2sm before:absolute before:left-0 before:bg-circle-check before:size-5 before:bg-contain">
+						Professional Nursing Assistance
+					</li>
+
+					<li class="sm:w-1/2 w-full relative lg:p-1.25 p-1 lg:ps-7.5 ps-6.25 xl:text-base text-2sm before:absolute before:left-0 before:bg-circle-check before:size-5 before:bg-contain">
+						Emotional & Social Well-being
+					</li>
+
+					<li class="sm:w-1/2 w-full relative lg:p-1.25 p-1 lg:ps-7.5 ps-6.25 xl:text-base text-2sm before:absolute before:left-0 before:bg-circle-check before:size-5 before:bg-contain">
+						Home-like Comfort for Seniors
+					</li>
+
+				</ul>
+
+				<!-- Button -->
+				<a href="contact-us.html"
+					class="btn btn-primary btn-rounded btn-hover1 wow fadeInUp"
+					data-wow-delay="0.6s"
+					data-wow-duration="0.8s">
+
+					Enquire Now
+					<i class="feather icon-arrow-right ms-2"></i>
+
+				</a>
+			</div>
+
+			<!-- Image -->
+			<div class="lg:w-1/2 w-full wow fadeInLeft"
+				data-wow-delay="0.2s"
+				data-wow-duration="0.8s" >
+
+				<div class="content-media bg-shape-media" >
+					<div class="relative overflow-hidden z-0 after:absolute after:left-0 after:top-0 after:bg-cover after:bg-no-repeat after:size-full after:-z-1 after:bg-media-after">
+
+						<img src="assets/images/hero-banner/agham1.webp" alt="Agham Care Home" class="w-full" style="border-radius: 20px;">
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+	<section class="2xl:pt-25 2xl:pb-17.5 md:pt-17.5 md:pb-10 sm:pt-12.5 sm:pb-5 pt-10 pb-5 bg-light">
+			<div class="container">
+				<div class="row content-wrapper style-5 items-center">
+					<div class="2xl:w-7/12 lg:w-1/2 w-full mb-7.5 self-center">
+						<div class="xl:pr-7.5">
+							<div class="sm:mb-7.5 mb-5 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
+								<h2 class="2xxl:text-2xxl lg:text-[38px] sm:text-[32px] text-2xxl capitalize mb-3.75">Frequently Asked Questions</h2>
+								<p class="xl:text-lg sm:text-base text-sm font-light">Find answers to common questions about our care services, facilities, and support at Agham Care Home.</p>
+							</div>
+							<div class="myAccordion style-3 mb-8.75 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.8s" id="accordionExample">
+								<div class="accordion-item">
+									<h2 class="accordion-header open">
+										<button class="accordion-button" type="button">
+									What is Agham Care Home?
+										</button>
+										<span class="arrow active">
+											<i class="icon feather icon-chevron-right [.arrow.active_&]:hidden block"></i>
+                                            <i class="icon feather icon-chevron-down [.arrow.active_&]:block hidden"></i>
+										</span>
+									</h2>
+									<div class="accordion-content show">
+										<div class="content-inner">
+											<p class="mb-0">Agham Care Home is a compassionate senior living and assisted care facility dedicated to providing safe, comfortable, and personalized care for elderly residents.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button" type="button">
+							Why choose Agham Care Home?
+										</button>
+										<span class="arrow">
+											<i class="icon feather icon-chevron-right [.arrow.active_&]:hidden block"></i>
+                                            <i class="icon feather icon-chevron-down [.arrow.active_&]:block hidden"></i>
+										</span>
+									</h2>
+									<div class="accordion-content">
+										<div class="content-inner">
+											<p class="mb-0">We focus on dignity, comfort, and emotional well-being through experienced caregivers, personalized support, and a peaceful family-like environment.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button" type="button">
+									What makes Agham Care Home different from others?
+										</button>
+										<span class="arrow">
+											<i class="icon feather icon-chevron-right [.arrow.active_&]:hidden block"></i>
+                                            <i class="icon feather icon-chevron-down [.arrow.active_&]:block hidden"></i>
+										</span>
+									</h2>
+									<div class="accordion-content">
+										<div class="content-inner">
+											<p class="mb-0">Our holistic approach combines medical assistance, emotional support, wellness activities, and personalized attention to ensure every resident feels valued and cared for.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button" type="button">
+										Why should families trust Agham Care Home?
+										</button>
+										<span class="arrow">
+											<i class="icon feather icon-chevron-right [.arrow.active_&]:hidden block"></i>
+                                            <i class="icon feather icon-chevron-down [.arrow.active_&]:block hidden"></i>
+										</span>
+									</h2>
+									<div class="accordion-content">
+										<div class="content-inner">
+											<p class="mb-0">We provide professional caregiving, 24/7 support, hygienic facilities, and compassionate care designed to give families peace of mind.</p>
+										</div>
+									</div>
+								</div>
+									<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button" type="button">
+									Does Agham Care Home provide affordable care services?
+										</button>
+										<span class="arrow">
+											<i class="icon feather icon-chevron-right [.arrow.active_&]:hidden block"></i>
+                                            <i class="icon feather icon-chevron-down [.arrow.active_&]:block hidden"></i>
+										</span>
+									</h2>
+									<div class="accordion-content">
+										<div class="content-inner">
+											<p class="mb-0">Yes, we offer quality elderly care services with flexible and affordable care plans tailored to individual needs and lifestyles.</p>
+										</div>
+									</div>
+								</div>
+					
+							</div>
+							
+						
+						</div>
+						
+					</div>
+					<div class="2xl:w-5/12 lg:w-1/2 w-full mb-7.5">
+						<div class="relative wow fadeInUp" data-wow-delay="1.0s" data-wow-duration="0.8s">
+							<div class="rounded-2xl relative overflow-hidden faq">
+								<img src="assets/images/hero-banner/faq.webp" alt="" clas="w-full">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+	<!-- CTA SECTION -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-grid">
+
+      <!-- LEFT CARD - Illustration -->
+      <div>
+        <div class="cta-illustration-card">
+          <h2>Let Us Guide You to the Right Care</h2>
+          <img src="assets/images/service-images/Dementia-bro-removebg-preview.png" alt="Care Illustration">
+        </div>
+      </div>
+
+      <!-- MIDDLE CARD - Visit -->
+      <div>
+        <div class="cta-card">
+          <div class="cta-icon">
+            <i class="feather icon-home"></i>
+          </div>
+          <h3>Building Trust Through Care: Experience Our Senior Living Community</h3>
+          <p>
+            Finding the right care goes beyond a simple decision—it's about discovering 
+a place that feels like home. We welcome you to tour our community, connect 
+with our residents, and witness our compassionate care firsthand. We are glad 
+to arrange a personalized visit that suits your convenience.
+          </p>
+          <a href="contact-us.html" class="cta-link">Connect with us now</a>
+        </div>
+      </div>
+
+      <!-- RIGHT CARD - Call Us (spans full width on mobile) -->
+      <div class="cta-last-card">
+        <div class="cta-card">
+          <div class="cta-icon">
+            <i class="feather icon-users"></i>
+          </div>
+          <h3>Connect With Our Care Experts</h3>
+          <p>
+            Our dedicated support team is ready to guide you toward the right care option 
+or offer tailored recommendations at every step of your decision.
+          </p>
+         <a href="tel:+919999999999" class="cta-btn">Call Us</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+				
+	
+				
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+				
 				
 
 			</main>
