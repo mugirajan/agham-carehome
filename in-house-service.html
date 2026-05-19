@@ -38,9 +38,41 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/services.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/transient.css">
 
 	<style>
+        /* ══ FULL WIDTH SECTIONS — background edge to edge ══ */
+main section {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
 
+/* ══ CONTAINER — content stays centered at max 1200px ══ */
+.container {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+    box-sizing: border-box !important;
+}
+
+/* ══ WIDER SCREENS — increase container for 1440px+ ══ */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1390px !important;
+        padding: 0 40px !important;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1600px !important;
+        padding: 0 60px !important;
+    }
+}
 		/* ══════════════════════════════
 		   CONTAINER
 		══════════════════════════════ */
@@ -588,33 +620,62 @@
 				</div>
 				<!-- ══ HERO BANNER END ══ -->
 
-				<!-- ══ INTRO SECTION ══ -->
-				<section class="intro-section">
-					<div class="container">
-						<div class="intro-grid">
+				<!-- Care Service Layout Section -->
+<section class="2xl:pt-25 2xl:pb-17.5 md:pt-17.5 md:pb-10 sm:pt-12.5 pt-10 pb-10 bg-white overflow-hidden">
 
-							<div class="intro-title-col">
-								<p class="intro-service-title">In House Care</p>
-							</div>
+	<div class="container">
 
-							<div class="intro-image-wrap">
-								<img src="assets/images/hero-banner/why-choose2.webp" alt="Assisted Living">
-								<div class="intro-curve"></div>
-							</div>
+		<div class="row items-center justify-between">
 
-							<div class="intro-right">
-								<h2>
-									<span>Assisted Living at Agham Senior Care is thoughtfully designed for seniors who value their independence</span>
-									while appreciating the reassurance of professional care and support.
-								</h2>
-								<p>Our communities enable residents to enjoy an active life supported by trained geriatric caregivers. Seniors enjoy an active, comfortable lifestyle while receiving personalised assistance with daily activities, medication management and personal care.</p>
-								<a href="contact-us.html" class="intro-read-more">Read More</a>
-							</div>
+			<!-- Left Heading -->
+			<div class="xl:w-1/3 lg:w-1/3 w-full mb-10 lg:mb-0">
 
-						</div>
-					</div>
-				</section>
-				<!-- ══ INTRO SECTION END ══ -->
+				<h2 class="2xxl:text-4xxl lg:text-[42px] sm:text-[34px] text-[28px] font-semibold leading-[1.2] capitalize text-secondary">
+			Transient Care
+				</h2>
+
+			</div>
+
+			<!-- Center Image -->
+			<div class="xl:w-1/3 lg:w-1/3 w-full mb-10 lg:mb-0 text-center">
+
+				<div class="service-round-wrap mx-auto">
+
+					<img src="assets/images/transient-care/transient-care1.webp"
+						alt="Palliative Care"
+						class="service-round-image">
+
+				</div>
+
+			</div>
+<!-- Right Content -->
+<div class="xl:w-1/3 lg:w-1/3 w-full ">
+
+	<p class="xl:text-lg text-base leading-[1.9] text-bodycolor font-semibold mb-5 service-content">
+
+		Our Transient Care services provide short-term support for seniors during travel, illness, and post-operative recovery in a safe and comfortable environment.
+
+	</p>
+
+	<p class="xl:text-lg text-base leading-[1.9] text-bodycolor font-semibold mb-5 service-content">
+
+		Transient care includes Travel Care for families who are away, Sick Care for seniors requiring temporary medical attention, and Post-Operative Care for recovery after hospitalization or surgery.
+
+	</p>
+
+	<p class="xl:text-lg text-base leading-[1.9] text-bodycolor font-semibold mb-0 service-content">
+
+		With compassionate caregivers, personalized assistance, nutritious meals, medication support, and continuous monitoring, we ensure peace of mind for both residents and their families.
+
+	</p>
+
+</div>
+
+		</div>
+
+	</div>
+
+</section>
 
 				<!-- ══ HIGHLIGHTS SECTION ══ -->
 				<section class="highlights-section">
