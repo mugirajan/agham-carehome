@@ -11,7 +11,7 @@ header('Content-Type: application/json');
    EMAIL SETTINGS
 ----------------------------------------- */
 
-$dzEmailTo   = "contact@blackitechs.com";
+$dzEmailTo   = "roja@blackitechs.com";
 $dzEmailFrom = "Agham Care Home";
 
 /* -----------------------------------------
