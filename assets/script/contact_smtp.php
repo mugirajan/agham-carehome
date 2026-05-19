@@ -11,7 +11,7 @@ header('Content-Type: application/json');
    EMAIL SETTINGS
 ----------------------------------------- */
 
-$dzEmailTo   = "roja@blackitechs.com";
+$dzEmailTo   = "contact@blackitechs.com";
 $dzEmailFrom = "Agham Care Home";
 
 /* -----------------------------------------
@@ -32,7 +32,7 @@ function smtp_mail($dzEmailTo, $dzEmailFrom, $dzEmail, $dzMailSubject, $dzMailMe
 
         $mail->Username   = 'contact@blackitechs.com';
 
-        $mail->Password   = 'Contact@BITS#248';
+        $mail->Password   = 'Contact@bits#737';
 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
