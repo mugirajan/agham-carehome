@@ -1609,6 +1609,62 @@
 
 </section>
 <!-- AWARDS & RECOGNITION SECTION END -->
+ <style>
+	.award-card {
+    width: 260px;
+    margin-right: 24px;
+    border: 1px solid #e5e7eb;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #fff;
+    flex-shrink: 0;
+    transition: 0.4s ease;
+}
+
+.award-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.award-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.award-content h4 {
+    font-size: 18px;
+    color: #1f2937;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.award-content span {
+    font-size: 13px;
+    color: #6b7280;
+    display: block;
+}
+
+@media (max-width: 991px) {
+    .award-card {
+        width: 220px;
+    }
+    .award-card img {
+        height: 160px;
+    }
+}
+
+@media (max-width: 767px) {
+    .award-card {
+        width: 180px;
+        margin-right: 16px;
+    }
+    .award-card img {
+        height: 140px;
+    }
+}
+ </style>
 
 
 
@@ -1997,11 +2053,11 @@ or offer tailored recommendations at every step of your decision.
     </p>
 	
 
-    <div class="agham-footer-badge">
+    <!-- <div class="agham-footer-badge">
         <img src="assets/images/hero-banner/logo.png" alt="Agham Badge" 
              style="width:40px;height:40px;object-fit:contain;">
         <span>Caring Beyond Comfort</span>
-    </div>
+    </div> -->
 
 </div>
 
@@ -2048,10 +2104,10 @@ or offer tailored recommendations at every step of your decision.
                 <i class="feather icon-arrow-right"></i>
             </button>
         </div>
-        <label class="agham-footer-checkbox">
+        <!-- <label class="agham-footer-checkbox">
             <input type="checkbox" required>
             <span>Accept Terms And Conditions*</span>
-        </label>
+        </label> -->
         <p id="footerSuccessMsg" style="display:none; color:#227675; font-size:13px; margin-top:8px;">
             Subscribed successfully!
         </p>
