@@ -310,6 +310,9 @@
     color: rgba(255,255,255,0.5);
     font-size: 12px;
 }
+.agham-footer-col:first-child {
+    align-self: center;
+}
 
 /* =========================================
    TABLET - 826px EXACT ANTARA MATCH
