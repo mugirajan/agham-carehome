@@ -329,7 +329,30 @@
 						</div>
 					</div>
 
-	
+	<style>
+			.agham-callback-popup {
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh;
+    overflow: hidden;
+}
+
+.agham-scroll-area {
+    overflow-y: scroll !important;
+    flex: 1;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+}
+		 </style>
+		 <script>
+			document.querySelector('.agham-scroll-area').addEventListener('wheel', function(e) {
+    e.stopPropagation();
+}, { passive: true });
+
+document.querySelector('.agham-scroll-area').addEventListener('touchmove', function(e) {
+    e.stopPropagation();
+}, { passive: true });
+		 </script>
 
 						<!--<div class="relative 2xxl:p-7.5 sm:p-5 p-3.75 bg-secondary overflow-hidden">
 			<ul class="flex items-center flex-nowrap animate-ticker [animation-duration:15s]">
@@ -1738,6 +1761,7 @@ document.getElementById('footerSubscribeForm').addEventListener('submit', async 
     }
 });
 </script>
+
 </body>
 
 </html>						
