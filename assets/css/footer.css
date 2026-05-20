@@ -1,0 +1,486 @@
+	/* =========================================
+   AGHAM FOOTER - ANTARA STYLE
+========================================= */
+
+
+.agham-footer-logo {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    line-height: 0 !important;
+}
+
+.agham-footer-logo img {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    display: block !important;
+}
+
+/* Fix global p margin affecting footer desc */
+.agham-footer-col p.agham-footer-desc {
+    margin-top: 12px !important;
+    margin-bottom: 20px !important;
+}
+
+/* Fix global img styles adding extra space */
+.agham-footer-new img {
+    display: block !important;
+    vertical-align: top !important;
+}
+.agham-footer-new {
+    background-color: #f7f3eb;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* TOP SECTION */
+.agham-footer-top {
+    padding: 60px 0 40px;
+    border-bottom: 1px solid rgba(34, 118, 117, 0.15);
+}
+
+/* GRID - 4 COLUMNS */
+.agham-footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1.4fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* COLUMN */
+.agham-footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* LOGO */
+.agham-footer-logo {
+    margin-bottom: 18px;
+}
+
+.agham-footer-logo img {
+    width: 130px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* DESCRIPTION */
+.agham-footer-desc {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* BADGE */
+.agham-footer-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    border: 1px solid rgba(34,118,117,0.2);
+    border-radius: 12px;
+    padding: 12px 16px;
+    width: fit-content;
+}
+
+.agham-footer-badge span {
+    font-size: 13px;
+    font-weight: 600;
+    color: #227675;
+    line-height: 1.3;
+}
+
+/* HEADING */
+.agham-footer-heading {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #227675;
+    display: inline-block;
+}
+
+/* LIST */
+.agham-footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.agham-footer-list li a {
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.agham-footer-list li a:hover {
+    color: #227675;
+}
+
+/* BULLET LIST */
+.agham-bullet-list li {
+    position: relative;
+    padding-left: 16px;
+}
+
+.agham-bullet-list li::before {
+    content: "●";
+    position: absolute;
+    left: 0;
+    font-size: 10px;
+    color: #227675;
+    top: 2px;
+}
+
+.agham-bullet-list li a {
+    padding-left: 0;
+}
+
+/* SUBSCRIBE - ANTARA STYLE */
+.agham-footer-sub-text {
+    font-size: 13px !important;
+    color: #444 !important;
+    margin-bottom: 14px;
+    line-height: 1.6;
+    font-weight: 400 !important;
+}
+
+
+.agham-footer-subscribe {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #c8c8c8;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 12px;
+    height: 50px;
+    width: 100%;
+}
+
+.agham-footer-subscribe input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 14px;
+    font-size: 14px !important;
+    color: #333;
+    background: transparent;
+    height: 100%;
+    font-weight: 400;
+}
+
+.agham-footer-subscribe input::placeholder {
+    color: #333 !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+}
+
+.agham-footer-subscribe button {
+    width: 38px;
+    height: 47px;
+    background: #227675;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+    flex-shrink: 0;
+    transition: background 0.3s ease;
+}
+
+.agham-footer-subscribe button:hover {
+    background: #1d6463;
+}
+/* CHECKBOX */
+.agham-footer-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13px;
+    color: #555;
+    cursor: pointer;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.agham-footer-checkbox input {
+    margin-top: 2px;
+    accent-color: #227675;
+    flex-shrink: 0;
+}
+
+/* TAGLINE */
+.agham-footer-tagline {
+    font-size: 18px;
+    font-weight: 700;
+    color: #227675;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.agham-footer-tagline em {
+    font-style: italic;
+}
+
+/* FOLLOW */
+.agham-footer-follow {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+/* SOCIAL */
+.agham-footer-social {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.agham-footer-social a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1.5px solid #227675;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #227675;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.agham-footer-social a:hover {
+    background: #227675;
+    color: #fff;
+}
+
+/* BOTTOM */
+.agham-footer-bottom {
+    background: #227675;
+    padding: 16px 0;
+}
+
+.agham-footer-bottom-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.agham-footer-bottom p {
+    font-size: 13px;
+    color: #fff;
+    margin: 0;
+}
+
+.agham-footer-bottom-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.agham-footer-bottom-links a {
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.agham-footer-bottom-links a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.agham-footer-bottom-links span {
+    color: rgba(255,255,255,0.5);
+    font-size: 12px;
+}
+
+/* =========================================
+   TABLET - 826px EXACT ANTARA MATCH
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .agham-footer-top {
+        padding: 30px 0 20px !important;
+    }
+
+    /* 2 column grid */
+    .agham-footer-grid {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 20px !important;
+    }
+
+    /* Col 1 - logo spans full width */
+    .agham-footer-col:nth-child(1) {
+        grid-column: 1 / -1 !important;
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+
+    /* Remove extra space in logo col */
+    .agham-footer-logo {
+        margin-bottom: 5px !important;
+    }
+
+    .agham-footer-desc {
+        margin-top: 8px !important;
+        margin-bottom: 10px !important;
+        font-size: 13px !important;
+    }
+
+    .agham-footer-badge {
+        margin-top: 5px !important;
+    }
+
+    /* Services + Quick Links side by side */
+    .agham-footer-col:nth-child(2) {
+        grid-column: 1 !important;
+    }
+
+    .agham-footer-col:nth-child(3) {
+        grid-column: 2 !important;
+    }
+
+    /* Remove heading border/divider on tablet */
+    .agham-footer-heading {
+        border-bottom: none !important;
+        padding-bottom: 5px !important;
+        margin-bottom: 12px !important;
+        font-size: 16px !important;
+    }
+
+    /* Subscribe full width */
+    .agham-footer-col:nth-child(4) {
+        grid-column: 1 / -1 !important;
+    }
+
+    .agham-footer-subscribe {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    /* List gap reduce */
+    .agham-footer-list {
+        gap: 8px !important;
+    }
+
+    .agham-footer-list li a {
+        font-size: 13px !important;
+    }
+}
+
+/* =========================================
+   MOBILE - 420px EXACT ANTARA MATCH
+========================================= */
+
+/* =========================================
+   MOBILE FOOTER BOTTOM FIX
+========================================= */
+
+@media (max-width: 767px) {
+     /* Push footer above the fixed appointment button */
+    
+
+    /* OR hide the appointment button on footer area */
+    .extra-nav {
+        z-index: 999 !important;
+    }
+
+    /* Footer bottom must be above the button */
+    .agham-footer-bottom {
+        position: relative !important;
+        z-index: 1000 !important;
+    }
+
+
+    .agham-footer-bottom {
+        background: #227675 !important;
+        padding: 12px 15px !important;
+        width: 100% !important;
+        display: block !important;
+    }
+
+    .agham-footer-bottom .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .agham-footer-bottom-inner {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 4px !important;
+        width: 100% !important;
+    }
+
+    .agham-footer-bottom p {
+        font-size: 11px !important;
+        color: #fff !important;
+        margin: 0 !important;
+        line-height: 1.5 !important;
+        white-space: normal !important;
+        word-break: break-word !important;
+    }
+
+    .agham-footer-bottom-links {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 4px 8px !important;
+        width: 100% !important;
+    }
+
+    .agham-footer-bottom-links a {
+        font-size: 11px !important;
+        color: #fff !important;
+        white-space: nowrap !important;
+    }
+
+    .agham-footer-bottom-links span {
+        font-size: 10px !important;
+        color: rgba(255,255,255,0.5) !important;
+    }
+}
+
+/* Very small mobile */
+@media (max-width: 420px) {
+   
+
+    .agham-footer-bottom {
+        padding: 10px 10px !important;
+    }
+
+    .agham-footer-bottom p {
+        font-size: 10px !important;
+    }
+
+    .agham-footer-bottom-links a {
+        font-size: 10px !important;
+    }
+
+    /* Stack links vertically if too long */
+    .agham-footer-bottom-links {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 3px !important;
+    }
+
+    /* Hide separators on very small */
+    .agham-footer-bottom-links span {
+        display: none !important;
+    }
+}
