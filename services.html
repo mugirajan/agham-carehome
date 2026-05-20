@@ -1981,7 +1981,7 @@ or offer tailored recommendations at every step of your decision.
                 <!-- Column 3: Quick Links -->
                 <div class="agham-footer-col">
                     <h3 class="agham-footer-heading">Quick Links</h3>
-                    <ul class="agham-footer-list">
+                    <ul class="agham-footer-list agham-bullet-list">
 						<li><a href="index.html">Home</a></li>
                         <li><a href="about-agham.html">About Agham</a></li>
                         <li><a href="services.html">Services</a></li>
@@ -2091,7 +2091,7 @@ or offer tailored recommendations at every step of your decision.
 
     </div>
 
-    <!-- Popup -->
+       <!-- Popup -->
 
     <div class="agham-callback-popup" id="callbackPopup">
 
@@ -2285,7 +2285,30 @@ or offer tailored recommendations at every step of your decision.
         </div>
 
         <!-- Bottom Chat -->
+		 <style>
+			.agham-callback-popup {
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh;
+    overflow: hidden;
+}
 
+.agham-scroll-area {
+    overflow-y: scroll !important;
+    flex: 1;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+}
+		 </style>
+		 <script>
+			document.querySelector('.agham-scroll-area').addEventListener('wheel', function(e) {
+    e.stopPropagation();
+}, { passive: true });
+
+document.querySelector('.agham-scroll-area').addEventListener('touchmove', function(e) {
+    e.stopPropagation();
+}, { passive: true });
+		 </script>					
        <!-- <div class="agham-chat-footer">
 
             <input type="text" placeholder="Type your message...">

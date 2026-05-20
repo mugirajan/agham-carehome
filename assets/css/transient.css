@@ -239,10 +239,37 @@
 	display:block;
  
 }
+/* Fix all mb-0 paragraphs to 18px */
+p.mb-0 {
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    line-height: 1.8;
+}
+/* Fix location section description */
+.agham-location-section p,
+.agham-location-section div.text-center p,
+.agham-location-section .text-lg {
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    line-height: 1.8;
+}
+span.stat-label {
+    font-size: 16px !important; /* or 18px if you prefer */
+}
+p.text-gray {
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    line-height: 1.8;
+}
 
 /* Content */
 .service-content{
-	font-weight:600;
+	 font-size: 18px !important;
+    font-weight: 300 !important;
+}
+.highlights-section .section-desc,
+.highlights-section > .container > p {
+    font-size: 18px !important;
 }
 
 /* =========================
@@ -360,7 +387,7 @@
 
 	/* Content */
 	.service-content p{
-		font-size:16px;
+		font-size:18px;
 		line-height:1.8;
 		text-align:center;
 	}
@@ -384,7 +411,7 @@
 	}
 
 	.service-content {
-		font-size:16px !important;
+		font-size:18px !important;
         text-align: left !important;
         padding-top: 0;
         margin-top: -20px;

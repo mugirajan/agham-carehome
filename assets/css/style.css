@@ -12839,3 +12839,52 @@ MOBILE
     background: #0f766e;
     color: #fff;
 }
+/* Fix 1 — FAQ, service section descriptions */
+p.mb-0 {
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    line-height: 1.8;
+}
+
+/* Fix 2 — Highlights section description */
+p.text-gray {
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    line-height: 1.8;
+}
+
+/* Fix 3 — Location section description */
+.agham-location-section p {
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    line-height: 1.8;
+}
+.mission-card p {
+    font-size: 18px !important;
+    line-height: 1.8;
+}
+/* ── Global 18px fix for all body paragraphs ── */
+p {
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    line-height: 1.8;
+}
+
+/* Keep these smaller — don't change */
+.stat-item span.stat-label,
+.location-card p,
+p.text-2sm {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+/* Keep these smaller — don't change */
+
+.agham-footer-desc, .agham-footer-sub-text, .agham-footer-tagline {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+.cta-card p {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 1.7;
+}

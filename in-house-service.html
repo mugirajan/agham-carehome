@@ -153,14 +153,49 @@
 
     </li>
 
-<li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 relative group">
 
-    <a class="lg:py-7 py-2 xl:px-4 lg:px-2 relative lg:inline-block block xl:text-lg text-2sm font-medium hover:text-primary"
-        href="services.html">
+<!-- SERVICES MENU -->
+<li class="relative services-menu">
 
-        <span class="inline-block leading-7.5">Services</span>
+    <!-- Main Menu -->
+    <a href="services.html"
+       class="lg:py-7 py-3 xl:px-4 lg:px-2 flex items-center gap-2 xl:text-lg text-2sm font-medium hover:text-primary">
 
+        Services
+
+        <!-- Dropdown Icon -->
+        <i class="fa fa-chevron-down text-xs"></i>
     </a>
+
+    <!-- DROPDOWN -->
+  <!-- DROPDOWN -->
+<ul class="services-dropdown">
+
+    <li>
+        <a href="senior-care-homes.html">Senior Care - Care Home</a>
+    </li>
+
+    <li>
+        <a href="transient-care.html">Transient Care</a>
+    </li>
+
+    <li>
+        <a href="in-house-service.html">In-House Care</a>
+    </li>
+
+    <li>
+        <a href="assisted-living.html">Assisted Living</a>
+    </li>
+
+    <li>
+        <a href="mind-memory.html">Mind & Memory</a>
+    </li>
+
+    <li>
+        <a href="palliative-care.html">Palliative Care</a>
+    </li>
+
+</ul>
 
 </li>
 
@@ -1400,7 +1435,7 @@ or offer tailored recommendations at every step of your decision.
                 <!-- Column 3: Quick Links -->
                 <div class="agham-footer-col">
                     <h3 class="agham-footer-heading">Quick Links</h3>
-                    <ul class="agham-footer-list">
+                    <ul class="agham-footer-list agham-bullet-list">
 						<li><a href="index.html">Home</a></li>
                         <li><a href="about-agham.html">About Agham</a></li>
                         <li><a href="services.html">Services</a></li>
@@ -1510,7 +1545,7 @@ or offer tailored recommendations at every step of your decision.
 
     </div>
 
-    <!-- Popup -->
+       <!-- Popup -->
 
     <div class="agham-callback-popup" id="callbackPopup">
 
@@ -1704,7 +1739,30 @@ or offer tailored recommendations at every step of your decision.
         </div>
 
         <!-- Bottom Chat -->
+		 <style>
+			.agham-callback-popup {
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh;
+    overflow: hidden;
+}
 
+.agham-scroll-area {
+    overflow-y: scroll !important;
+    flex: 1;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+}
+		 </style>
+		 <script>
+			document.querySelector('.agham-scroll-area').addEventListener('wheel', function(e) {
+    e.stopPropagation();
+}, { passive: true });
+
+document.querySelector('.agham-scroll-area').addEventListener('touchmove', function(e) {
+    e.stopPropagation();
+}, { passive: true });
+		 </script>					
        <!-- <div class="agham-chat-footer">
 
             <input type="text" placeholder="Type your message...">
