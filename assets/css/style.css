@@ -8363,7 +8363,7 @@ input[type="time"]::-webkit-calendar-picker-indicator , input[type="date"]::-web
 }
 
 .service-grids{
-  padding: 80px 0px 0px 0px;
+  padding: 80px 0px 80px 0px !important;
 }
 
 /* CARD */
@@ -8406,10 +8406,11 @@ input[type="time"]::-webkit-calendar-picker-indicator , input[type="date"]::-web
 
 /* TEXT */
 .service-text{
-	font-size:15px;
+	font-size:17px;
 	line-height:1.7;
 	color:#6b7280;
 	margin-bottom:25px;
+  font-weight: 300;
 }
 
 /* BUTTON */
@@ -12696,4 +12697,136 @@ MOBILE
         height: 260px !important;
     }
 
+}
+
+
+/* SERVICE GRID */
+.service-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px){
+    .service-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px){
+    .service-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* FORCE 3 COLUMN GRID */
+.service-grid{
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 30px !important;
+}
+
+/* TABLET */
+@media (max-width: 991px){
+    .service-grid{
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 767px){
+    .service-grid{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}
+
+/* CARD FULL WIDTH */
+.service-card{
+    width: 100% !important;
+}
+
+
+
+.group {
+    position: relative;
+}
+
+.group:hover ul {
+    display: block !important;
+}
+
+.group ul {
+    display: none;
+}
+
+/* DROPDOWN MENU */
+.services-menu{
+    position: relative;
+}
+
+.services-dropdown{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+/* SHOW ON HOVER */
+.services-menu:hover .services-dropdown{
+    display: block;
+}
+
+
+/* SERVICES MENU */
+.services-menu{
+    position: relative;
+}
+
+/* DROPDOWN */
+.services-dropdown{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 280px;
+    min-width: 280px;
+
+    background: #fff;
+    border-radius: 0px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+
+    padding: 10px 0;
+    z-index: 99999;
+}
+
+/* SHOW DROPDOWN */
+.services-menu:hover .services-dropdown{
+    display: block;
+}
+
+/* MENU ITEMS */
+.services-dropdown li{
+    width: 100%;
+    list-style: none;
+}
+
+/* LINKS */
+.services-dropdown li a{
+    display: block;
+    width: 100%;
+    padding: 14px 22px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #222;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.services-dropdown li a:hover{
+    background: #0f766e;
+    color: #fff;
 }
