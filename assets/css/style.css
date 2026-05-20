@@ -171,6 +171,8 @@
     -webkit-text-decoration: inherit;
     text-decoration: inherit;
   }
+
+  
   b, strong {
     font-weight: bolder;
   }
@@ -6487,31 +6489,38 @@ html[data-theme-color="skin-4"] {
   html {
     overflow: unset !important;
   }
-  body {
+body {
     overflow-x: clip !important;
     overflow-y: scroll !important;
     background-color: var(--color-bodybg);
-    font-family: var(--font-base);
+
+    font-family: "Karla", sans-serif;
+
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
     color: var(--color-bodycolor);
+
     & *::selection {
-      background-color: var(--color-primary);
+        background-color: var(--color-primary);
     }
+
     &::selection {
-      background-color: var(--color-primary);
+        background-color: var(--color-primary);
     }
+
     & *::selection {
-      color: var(--color-white);
+        color: var(--color-white);
     }
+
     &::selection {
-      color: var(--color-white);
+        color: var(--color-white);
     }
+
     @media (width >= 576px) {
-      font-size: var(--text-base);
-      line-height: var(--tw-leading, var(--text-base--line-height));
+        font-size: var(--text-base);
+        line-height: var(--tw-leading, var(--text-base--line-height));
     }
-  }
+}
   section {
     position: relative;
   }
