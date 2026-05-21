@@ -1084,39 +1084,119 @@
 
                 <!-- Column 4: Subscribe -->
 <div class="agham-footer-col">
+
     <h3 class="agham-footer-heading">Subscribe</h3>
+
     <p class="agham-footer-sub-text">
         To Get Regular Updates From Agham, Share Your Email ID
     </p>
-    <form id="footerSubscribeForm" action="https://formspree.io/f/mlgvgkyo" method="POST">
+
+    <form id="footerSubscribeForm">
+
         <input type="hidden" name="_subject" value="New Newsletter Subscription - Agham">
+
         <div class="agham-footer-subscribe">
-            <input type="email" name="email" id="footerEmail" placeholder="Enter Your Email ID" required>
+
+            <input 
+                type="email"
+                name="email"
+                id="footerEmail"
+                placeholder="Enter Your Email ID"
+                required
+            >
+
             <button type="submit">
                 <i class="feather icon-arrow-right"></i>
             </button>
+
         </div>
-        <!-- <label class="agham-footer-checkbox">
-            <input type="checkbox" required>
-            <span>Accept Terms And Conditions*</span>
-        </label> -->
-        <p id="footerSuccessMsg" style="display:none; color:#227675; font-size:13px; margin-top:8px;">
+
+        <p id="footerSuccessMsg"
+           style="display:none; color:#227675; font-size:13px; margin-top:8px;">
             Subscribed successfully!
         </p>
-    </form>  
+
+        <p id="footerErrorMsg"
+           style="display:none; color:red; font-size:13px; margin-top:8px;">
+            Something went wrong. Please try again.
+        </p>
+
+    </form>
 
     <p class="agham-footer-tagline">
         Expert Senior Care, <em>Only at Agham</em>
     </p>
+
     <h4 class="agham-footer-follow">Follow us on</h4>
+
     <div class="agham-footer-social">
-        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://www.linkedin.com" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="https://www.youtube.com" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+
+        <a href="https://twitter.com" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
     </div>
-</div>            </div>
+
+</div>
+
+<script>
+document.getElementById("footerSubscribeForm").addEventListener("submit", async function(e) {
+
+    e.preventDefault();
+
+    const form = this;
+    const email = document.getElementById("footerEmail").value;
+
+    const successMsg = document.getElementById("footerSuccessMsg");
+    const errorMsg = document.getElementById("footerErrorMsg");
+
+    successMsg.style.display = "none";
+    errorMsg.style.display = "none";
+
+    try {
+
+        const response = await fetch("https://formspree.io/f/mlgvgkyo", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify({
+                email: email
+            })
+        });
+
+        if (response.ok) {
+
+            successMsg.style.display = "block";
+            form.reset();
+
+        } else {
+
+            errorMsg.style.display = "block";
+        }
+
+    } catch (error) {
+
+        errorMsg.style.display = "block";
+    }
+
+});
+</script>               </div>
         </div>
     </div>
 
