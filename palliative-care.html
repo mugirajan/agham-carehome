@@ -177,21 +177,32 @@
     </li>
 
     <li>
-        <a href="in-house-service.html">In-House Care</a>
-    </li>
-
-    <li>
         <a href="assisted-living.html">Assisted Living</a>
     </li>
 
     <li>
-        <a href="mind-memory.html">Mind & Memory</a>
+         <a href="palliative-care.html">Palliative Care</a>
     </li>
 
     <li>
-        <a href="palliative-care.html">Palliative Care</a>
+        <a href="post-operative-care.html">Post operative care</a>
     </li>
 
+    <li>
+        <a href="rehabilitation-care.html">Rehabilitation & Physiotherapy</a>
+    </li>
+
+	<li>
+        <a href="companionship-care.html">Companionship Care</a>
+    </li>
+
+	<li>
+        <a href="continuous-care.html">Continuous Care</a>
+    </li>
+
+	<li>
+        <a href="home-care.html">Home care</a>
+    </li>
 </ul>
 
 </li>
@@ -1434,17 +1445,22 @@ or offer tailored recommendations at every step of your decision.
 
 </div>
 
-              <!-- Column 2: Our Services -->
+      <!-- Column 2: Our Services -->
 <div class="agham-footer-col">
     <h3 class="agham-footer-heading">Our Services</h3>
     <ul class="agham-footer-list agham-bullet-list">
         <li><a href="senior-care-homes.html">senior care Homes</a></li>
         <li><a href="transient-care.html">Transient Care</a></li>
         <li><a href="assisted-living.html">Assisted Living</a></li>
-        <li><a href="mind-memory.html">Mind & Memory</a></li>
-        <li><a href="in-house-service.html">In-House Care</a></li>
         <li><a href="palliative-care.html">Palliative Care</a></li>
-    </ul>
+        <li><a href="post-operative-care.html">Post operative care</a></li>
+        <li><a href="rehabilitation-care.html">Rehabilitation & Physiotherapy</a></li>
+        <li><a href="companionship-care.html"> Companionship</a></li>
+        <li><a href="continuous-care.html">Continuous Care</a></li>
+        <li><a href="home-care.html">Home care</a></li>
+    
+	
+	</ul>
 
   
 
@@ -1632,16 +1648,16 @@ document.getElementById("footerSubscribeForm").addEventListener("submit", async 
 <script src="assets/js/custom.js"></script>
 
 
+
 <!-- FLOATING CALLBACK FORM -->
 <div class="agham-callback-wrapper">
 
     <!-- Floating Icon -->
+<div class="agham-callback-icon" id="openCallback">
+   <i class="fa-solid fa-user-nurse agham-support-icon"></i>
+</div>
 
-    <div class="agham-callback-icon" id="openCallback">
-
-        <img src="assets/images/hero-banner/logo.png" alt="">
-
-       <!-- Popup -->
+    <!-- Popup -->
 
     <div class="agham-callback-popup" id="callbackPopup">
 
@@ -1773,19 +1789,21 @@ document.getElementById("footerSubscribeForm").addEventListener("submit", async 
 
             <option value="">What service are you looking for?</option>
 
-			<option>senior care - care home</option>
+	      <option>senior care - care home</option>
+				 
 
-            <option>Transient Care</option>
-			  <option>Inhouse Care</option>
+                <option>Transient Care</option>
+				  <option>Assisted Living</option>
+				  <option>Palliative Care</option>
+				    <option>Post Operative Care</option>
 
-            <option>Assisted Living</option>
+                <option>Rehabilitation & Physio Care</option>
 
-            <option>Mind & Memory</option>
 
-            <option>Rehabilitation Care</option>
-
-            <option>Palliative Care</option>
-			<option>Home Health Care</option>
+                <option>Companionship</option>
+				   <option>Continuous Care</option>
+				      <option>Home care</option>
+			
 
           
 
@@ -1858,8 +1876,7 @@ document.getElementById("footerSubscribeForm").addEventListener("submit", async 
 document.querySelector('.agham-scroll-area').addEventListener('touchmove', function(e) {
     e.stopPropagation();
 }, { passive: true });
-		 </script>					
-        <!-- Bottom Chat -->
+		 </script>
 
        <!-- <div class="agham-chat-footer">
 
@@ -1875,7 +1892,29 @@ document.querySelector('.agham-scroll-area').addEventListener('touchmove', funct
 
     </div>
 
-</div>
+</div><style>
+	.agham-callback-icon{
+    width: 75px;
+    height: 75px;
+    background: linear-gradient(135deg, #1f8b87, #146b68);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    transition: 0.3s ease;
+}
+
+.agham-callback-icon:hover{
+    transform: scale(1.08);
+}
+
+.agham-support-icon{
+    font-size: 30px !important;
+    color: #ffffff;
+}
+</style>
 <script>
 document.getElementById('footerSubscribeForm').addEventListener('submit', async function(e) {
     e.preventDefault();
@@ -1898,6 +1937,67 @@ document.getElementById('footerSubscribeForm').addEventListener('submit', async 
     }
 });
 </script>
+<!-- WhatsApp Button -->
+
+<a
+  href="https://wa.me/919876543210?text=Hello%20I%20need%20details"
+  class="whatsapp-float"
+  target="_blank"
+>
+  <img
+    src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+    alt="WhatsApp"
+  />
+</a>
+<script>document
+  .querySelector(".whatsapp-float")
+  .addEventListener("click", function () {
+
+    console.log("WhatsApp Button Clicked");
+
+  });</script>
+  <style>.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 190px;
+  right: 30px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+@media (max-width: 767px){
+
+    .whatsapp-float{
+        width: 55px;
+        height: 55px;
+        bottom: 100px;
+        right: 30px;
+    }
+
+    .whatsapp-float img{
+        width: 32px;
+        height: 32px;
+    }
+
+}</style>
+
 </body>
 
 </html>						
