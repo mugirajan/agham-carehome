@@ -98,7 +98,45 @@
 .whatsapp-float img {
   width: 35px;
   height: 35px;
+}
+@media (max-width: 767px){
+
+    .whatsapp-float{
+        width: 55px;
+        height: 55px;
+        bottom: 100px;
+        right: 30px;
+    }
+
+    .whatsapp-float img{
+        width: 32px;
+        height: 32px;
+    }
+
 }</style>
+<style>
+	.agham-callback-icon{
+    width: 75px;
+    height: 75px;
+    background: linear-gradient(135deg, #1f8b87, #146b68);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    transition: 0.3s ease;
+}
+
+.agham-callback-icon:hover{
+    transform: scale(1.08);
+}
+
+.agham-support-icon{
+    font-size: 30px !important;
+    color: #ffffff;
+}
+</style>
 </head>
 <body id="bg">
 <div class="page-wraper">
@@ -188,7 +226,7 @@
 <ul class="services-dropdown">
 
     <li>
-        <a href="senior-care-homes.html">Senior Care - Care Home</a>
+        <a href="senior-care-homes.html">senior care - Care Home</a>
     </li>
 
     <li>
@@ -275,7 +313,7 @@
 			<div class="w-40 mb-5">
 				<a href="index.html"><img src="assets/images/hero-banner/logo.png" alt="/"></a>
 			</div>
-			<p>Agham Senior Care Homes provides a safe, supportive, and home-like environment for senior citizens with personalized care, wellness support, and compassionate assistance.</p>
+			<p>Agham senior care Homes provides a safe, supportive, and home-like environment for senior citizens with personalized care, wellness support, and compassionate assistance.</p>
 		</div>
 		
 		<div class="mb-8.75">
@@ -506,7 +544,7 @@
 
                 <option value="">Select Service</option>
 
-                <option>Senior care - care home</option>
+                <option>senior care - care home</option>
 
                 <option>Transient Care</option>
 
@@ -1065,7 +1103,7 @@
     </div>
 
     <p class="agham-footer-desc">
-        Agham Senior Care Homes provides a safe, supportive, 
+        Agham senior care Homes provides a safe, supportive, 
         and home-like environment for senior citizens with 
         personalized care, wellness support, and compassionate assistance.
     </p>
@@ -1083,7 +1121,7 @@
 <div class="agham-footer-col">
     <h3 class="agham-footer-heading">Our Services</h3>
     <ul class="agham-footer-list agham-bullet-list">
-        <li><a href="senior-care-homes.html">Senior Care Homes</a></li>
+        <li><a href="senior-care-homes.html">senior care Homes</a></li>
         <li><a href="transient-care.html">Transient Care</a></li>
         <li><a href="assisted-living.html">Assisted Living</a></li>
         <li><a href="mind-memory.html">Mind & Memory</a></li>
@@ -1150,7 +1188,7 @@
     </form>
 
     <p class="agham-footer-tagline">
-        Expert Senior Care, <em>Only at Agham</em>
+        Expert senior care, <em>Only at Agham</em>
     </p>
 
     <h4 class="agham-footer-follow">Follow us on</h4>
@@ -1230,7 +1268,7 @@ document.getElementById("footerSubscribeForm").addEventListener("submit", async 
     <div class="agham-footer-bottom">
         <div class="container">
             <div class="agham-footer-bottom-inner">
-                <p>Agham Senior Care Homes 2025 | All Rights Reserved</p>
+                <p>Agham senior care Homes 2025 | All Rights Reserved</p>
                 <div class="agham-footer-bottom-links">
                      <a href="terms-of-use.html">Terms of Use</a>
                     <span>|</span>
@@ -1280,13 +1318,10 @@ document.getElementById("footerSubscribeForm").addEventListener("submit", async 
 <!-- FLOATING CALLBACK FORM -->
 <div class="agham-callback-wrapper">
 
-    <!-- Floating Icon -->
-
-    <div class="agham-callback-icon" id="openCallback">
-
-        <img src="assets/images/hero-banner/logo.png" alt="">
-
-    </div>
+      <!-- Floating Icon -->
+<div class="agham-callback-icon" id="openCallback">
+   <i class="fa-solid fa-user-nurse agham-support-icon"></i>
+</div>
 
        <!-- Popup -->
 
@@ -1420,7 +1455,7 @@ document.getElementById("footerSubscribeForm").addEventListener("submit", async 
 
             <option value="">What service are you looking for?</option>
 
-			<option>Senior care - care home</option>
+			<option>senior care - care home</option>
 
             <option>Transient Care</option>
 			  <option>Inhouse Care</option>
