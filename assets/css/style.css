@@ -12874,7 +12874,7 @@ p {
 .stat-item span.stat-label,
 .location-card p,
 p.text-2sm {
-    font-size: 14px !important;
+    font-size: 18px !important;
     font-weight: 400 !important;
 }
 /* Keep these smaller — don't change */
