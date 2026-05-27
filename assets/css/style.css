@@ -8496,7 +8496,7 @@ MISSION VISION VALUES SECTION
 .mission-section{
     width: 100%;
     padding: 100px 20px;
-    background: white;
+    background: #f7f3eb;
   
 }
 
@@ -12445,7 +12445,7 @@ MOBILE
 }
 .agham-core-values{
   padding: 80px 20px 50px 0px !important;
-  background-color: #f7f3eb;
+  background-color: white;
 }
 .agham-core-values h2{
   font-size: 38px ;

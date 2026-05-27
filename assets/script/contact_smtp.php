@@ -12,7 +12,7 @@ header('Content-Type: application/json');
 ----------------------------------------- */
 
 $dzEmailTo   = "contact@blackitechs.com";
-$dzEmailFrom = "Agham Care Home";
+$dzEmailFrom = "Agham Senior Care Home";
 
 /* -----------------------------------------
    SMTP MAIL FUNCTION
@@ -174,7 +174,7 @@ try {
                MAIL SUBJECT
             ----------------------------------------- */
 
-            $dzMailSubject = "New Enquiry From Agham Care Home Website";
+            $dzMailSubject = "New Enquiry From Agham Senior Care Home Website";
 
 
             /* -----------------------------------------
