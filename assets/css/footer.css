@@ -314,6 +314,10 @@
     align-self: center;
 }
 
+.agham-footer-bottom-inner p{
+    font-size:15px !important;
+}
+
 /* =========================================
    TABLET - 826px EXACT ANTARA MATCH
 ========================================= */
