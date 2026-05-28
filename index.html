@@ -85,184 +85,192 @@
     gap: 12px !important; /* if using flexbox/grid gap */
 }
 /* ── CTA SECTION ── */
-.cta-section {
-  background-color: #f7f3EB;
-  padding: 40px 0;
-}
+		.cta-section {
+			background-color: #f7f3EB;
+			padding: 100px 0;
+		}
 
-.cta-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
+		.cta-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 16px;
+		}
 
-/* Illustration Card */
-.cta-illustration-card {
-  background-color: #227675;
-  border-radius: 16px;
-  padding: 32px 24px 0;
-  height: 100%;
-  min-height: 480px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-}
+		/* Illustration Card */
+		.cta-illustration-card {
+			background-color: #227675;
+			border-radius: 16px;
+			padding: 32px 24px 0;
+			height: 100%;
+			min-height: 480px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			overflow: hidden;
+		}
 
-.cta-illustration-card h2 {
-  color: #f7f3EB;
-  font-size: 28px;
-  font-weight: 600;
-  line-height: 1.3;
-  margin-bottom: 0;
-}
+		.cta-illustration-card h2 {
+			color: #f7f3EB;
+			font-size: 28px;
+			font-weight: 600;
+			line-height: 1.3;
+			margin-bottom: 0;
+		}
 
-.cta-illustration-card img {
-  width: 100%;
-  object-fit: cover;
-  margin-top: auto;
-  display: block;
-}
+		.cta-illustration-card img {
+			width: 100%;
+			object-fit: cover;
+			margin-top: auto;
+			display: block;
+		}
 
-/* Info Cards */
-.cta-card {
-  background-color: #ffffff;
-  border-radius: 16px;
-  padding: 24px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+		/* Info Cards */
+		.cta-card {
+			background-color: #ffffff;
+			border-radius: 16px;
+			padding: 24px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
 
-.cta-icon i {
-  font-size: 40px;
-  color: #227675;
-}
+		.cta-icon i {
+			font-size: 40px;
+			color: #227675;
+		}
 
-.cta-card h3 {
-  font-size: 18px;
-  font-weight: 700;
-  color: #1a1a2e;
-  line-height: 1.4;
-  margin: 0;
-}
+		.cta-card h3 {
+			font-size: 18px;
+			font-weight: 700;
+			color: #1a1a2e;
+			line-height: 1.4;
+			margin: 0;
+		}
 
-.cta-card p {
-  font-size: 15px;
-  color: #555;
-  line-height: 1.7;
-  margin: 0;
-  flex: 1;
-}
+		.cta-card p {
+			font-size: 15px;
+			color: #555;
+			line-height: 1.7;
+			margin: 0;
+			flex: 1;
+		}
 
-.cta-link {
-  color: #227675;
-  font-size: 15px;
-  font-weight: 500;
-  text-decoration: none;
-  margin-top: auto;
-}
+		.cta-link {
+			color: #227675;
+			font-size: 15px;
+			font-weight: 500;
+			text-decoration: none;
+			margin-top: auto;
+		}
 
-.cta-link:hover { text-decoration: underline; }
+		.cta-link:hover {
+			text-decoration: underline;
+		}
 
-.cta-btn {
-  display: inline-block;
-  background-color: #227675;
-  color: #f7f3EB;
-  padding: 14px 40px;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
-  width: fit-content;
-  margin-top: auto;
-  transition: background 0.3s ease;
-}
+		.cta-btn {
+			display: inline-block;
+			background-color: #227675;
+			color: #f7f3EB;
+			padding: 14px 40px;
+			border-radius: 10px;
+			font-size: 16px;
+			font-weight: 600;
+			text-decoration: none;
+			width: fit-content;
+			margin-top: auto;
+			transition: background 0.3s ease;
+		}
 
-.cta-btn:hover { background-color: #185f5e; }
+		.cta-btn:hover {
+			background-color: #185f5e;
+		}
 
-/* ── TABLET (768px - 1024px) ── */
-@media (max-width: 1024px) {
-  .cta-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-  }
+		/* ── TABLET (768px - 1024px) ── */
+		@media (max-width: 1024px) {
 
-  .cta-illustration-card {
-    min-height: 320px;
-  }
+			.cta-grid {
+				grid-template-columns: 1fr 1fr;
+				gap: 14px;
+			}
 
-  /* Illustration spans full width on tablet */
-  .cta-grid > div:first-child {
-    grid-column: 1 / -1;
-  }
+			.cta-illustration-card {
+				min-height: 320px;
+			}
 
-  .cta-illustration-card {
-    flex-direction: row;
-    align-items: center;
-    padding: 24px 32px;
-    min-height: 200px;
-  }
+			/* Illustration spans full width on tablet */
+			.cta-grid>div:first-child {
+				grid-column: 1 / -1;
+			}
 
-  .cta-illustration-card h2 {
-    font-size: 24px;
-    flex: 1;
-  }
+			.cta-illustration-card {
+				flex-direction: row;
+				align-items: center;
+				padding: 24px 32px;
+				min-height: 200px;
+			}
 
-  .cta-illustration-card img {
-    width: 180px;
-    margin-top: 0;
-    margin-left: 24px;
-  }
-}
+			.cta-illustration-card h2 {
+				font-size: 24px;
+				flex: 1;
+			}
 
-/* ── MOBILE (below 768px) ── */
-@media (max-width: 768px) {
-  .cta-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
+			.cta-illustration-card img {
+				width: 180px;
+				margin-top: 0;
+				margin-left: 24px;
+			}
+		}
 
-  .cta-grid > div:first-child {
-    grid-column: 1;
-  }
+		/* ── MOBILE (below 768px) ── */
+		@media (max-width: 768px) {
 
-  .cta-grid .cta-last-card {
-    grid-column: 1;
-  }
+			.cta-grid {
+				grid-template-columns: 1fr;
+				gap: 12px;
+			}
 
-  .cta-illustration-card {
-    flex-direction: column;
-    min-height: 280px;
-    padding: 24px 20px 0;
-  }
+			.cta-grid>div:first-child {
+				grid-column: 1;
+			}
 
-  .cta-illustration-card h2 {
-    font-size: 22px;
-  }
+			.cta-grid .cta-last-card {
+				grid-column: 1;
+			}
 
-  .cta-illustration-card img {
-    width: 70%;
-    margin: 16px auto 0;
-  }
+			.cta-illustration-card {
+				flex-direction: column;
+				min-height: 280px;
+				padding: 24px 20px 0;
+			}
 
-  .cta-card {
-    height: auto;
-    min-height: unset;
-  }
+			.cta-illustration-card h2 {
+				font-size: 22px;
+			}
 
-  .cta-btn {
-    width: 100%;
-    text-align: center;
-    padding: 14px 20px;
-  }
-}
+			.cta-illustration-card img {
+				width: 70%;
+				margin: 16px auto 0;
+			}
+
+			.cta-card {
+				height: auto;
+				min-height: unset;
+			}
+
+			.cta-btn {
+				width: 100%;
+				text-align: center;
+				padding: 14px 20px;
+			}
+		}
+
+
 	</style>
 <style>.whatsapp-float {
   position: fixed;
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   bottom: 190px;
   right: 30px;
   background-color: #25D366;
@@ -303,8 +311,8 @@
 
 <style>
 	.agham-callback-icon{
-    width: 75px;
-    height: 75px;
+    width: 15px;
+    height: 15px;
     background: linear-gradient(135deg, #1f8b87, #146b68);
     border-radius: 50%;
     display: flex;
@@ -1364,136 +1372,7 @@ Providing compassionate care, comfort, and dignity in a safe and nurturing envir
 
 
 
-<!-- Podcast Section -->
-<section class="podcast-section 2xl:py-25 md:py-17.5 py-12.5 bg-light">
-	<div class="container">
-
-		<!-- Heading -->
-		<div class="sm:mb-12.5 mb-8">
-			<h2 class="2xxl:text-4xxl lg:text-[38px] sm:text-[32px] text-2xxl capitalize">
-				Podcast
-			</h2>
-		</div>
-
-		<!-- Podcast Row -->
-		<div class="row -mx-3 podcast-row">
-
-			<!-- Card 1 -->
-			<div class="xl:w-1/4 md:w-1/2 w-full px-3 mb-6">
-				<div class="relative overflow-hidden rounded-[30px] group podcast-card">
-
-					<img src="assets/images/hero-banner/podcast-4.webp"
-						alt=""
-						class="w-full podcast-img object-cover group-hover:scale-105 duration-700">
-
-					<div class="absolute bottom-0 left-0 right-0 bg-[#ef4b8b] px-4 py-4 flex items-center gap-3 rounded-t-[22px]">
-
-						<button type="button"
-							class="size-10 rounded-full bg-white flex items-center justify-center text-[#ef4b8b] shrink-0 open-video"
-							data-video="/assets/videos/podcast1.mp4">
-
-							<i class="feather icon-play text-lg"></i>
-
-						</button>
-
-						<h3 class="text-white xl:text-lg text-base font-medium whitespace-nowrap overflow-hidden text-ellipsis">
-							Alzheimer's / Dementia
-						</h3>
-
-					</div>
-
-				</div>
-			</div>
-
-			<!-- Card 2 -->
-			<div class="xl:w-1/4 md:w-1/2 w-full px-3 mb-6">
-				<div class="relative overflow-hidden rounded-[30px] group podcast-card">
-
-					<img src="assets/images/hero-banner/podcast-3.webp"
-						alt=""
-						class="w-full podcast-img object-cover group-hover:scale-105 duration-700">
-
-					<div class="absolute bottom-0 left-0 right-0 bg-[#ef4b8b] px-4 py-4 flex items-center gap-3 rounded-t-[22px]">
-
-						<button type="button"
-							class="size-10 rounded-full bg-white flex items-center justify-center text-[#ef4b8b] shrink-0 open-video"
-							data-video="/assets/videos/podcast2.mp4">
-
-							<i class="feather icon-play text-lg"></i>
-
-						</button>
-
-						<h3 class="text-white xl:text-lg text-base font-medium whitespace-nowrap overflow-hidden text-ellipsis">
-							Osteoporosis
-						</h3>
-
-					</div>
-
-				</div>
-			</div>
-
-			<!-- Card 3 -->
-			<div class="xl:w-1/4 md:w-1/2 w-full px-3 mb-6">
-				<div class="relative overflow-hidden rounded-[30px] group podcast-card">
-
-					<img src="assets/images/hero-banner/podcast-2.webp"
-						alt=""
-						class="w-full podcast-img object-cover group-hover:scale-105 duration-700">
-
-					<div class="absolute bottom-0 left-0 right-0 bg-[#ef4b8b] px-4 py-4 flex items-center gap-3 rounded-t-[22px]">
-
-						<button type="button"
-							class="size-10 rounded-full bg-white flex items-center justify-center text-[#ef4b8b] shrink-0 open-video"
-							data-video="/assets/videos/podcast3.mp4">
-
-							<i class="feather icon-play text-lg"></i>
-
-						</button>
-
-						<h3 class="text-white xl:text-lg text-base font-medium whitespace-nowrap overflow-hidden text-ellipsis">
-							Urinary Incontinence
-						</h3>
-
-					</div>
-
-				</div>
-			</div>
-
-			<!-- Card 4 -->
-			<div class="xl:w-1/4 md:w-1/2 w-full px-3 mb-6">
-				<div class="relative overflow-hidden rounded-[30px] group podcast-card">
-
-					<img src="assets/images/hero-banner/podcast-1.webp"
-						alt=""
-						class="w-full podcast-img object-cover group-hover:scale-105 duration-700">
-
-					<div class="absolute bottom-0 left-0 right-0 bg-[#ef4b8b] px-4 py-4 flex items-center gap-3 rounded-t-[22px]">
-
-						<button type="button"
-							class="size-10 rounded-full bg-white flex items-center justify-center text-[#ef4b8b] shrink-0 open-video"
-							data-video="assets/images/hero-banner/podcast-video.mp4">
-
-							<i class="feather icon-play text-lg"></i>
-
-						</button>
-
-						<h3 class="text-white xl:text-lg text-base font-medium whitespace-nowrap overflow-hidden text-ellipsis">
-							Senior Wellness & Care
-						</h3>
-
-					</div>
-
-				</div>
-			</div>
-
-		</div>
-
-	</div>
-</section>
-
-
-
-<section class="2xxl:pt-25 xl:pt-17.5 md:pt-12.5 sm:pt-10 pt-7.5 pg-9 bg-white">
+<section class="2xxl:pt-25 xl:pt-17.5 md:pt-12.5 sm:pt-10 pt-7.5 pg-9 bg-light">
 	<div class="container">
 		<div class="row content-wrapper style-26 items-end">
 
@@ -1757,7 +1636,7 @@ Providing compassionate care, comfort, and dignity in a safe and nurturing envir
 		</div>
 	</div>
 </section>-->
-			        <section class="2xl:pt-25 2xl:pb-17.5 md:pt-17.5 md:pb-10 sm:pt-12.5 sm:pb-5 pt-10 pb-5 bg-light">
+			        <section class="2xl:pt-25 2xl:pb-17.5 md:pt-17.5 md:pb-10 sm:pt-12.5 sm:pb-5 pt-10 pb-5 bg-white">
 			<div class="container">
 				<div class="sm:mb-7.5 mb-5 row items-end">
 					<div class="md:w-7/12 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
@@ -1963,7 +1842,7 @@ Providing compassionate care, comfort, and dignity in a safe and nurturing envir
 
 </section> -->
 
-				        <section class="2xl:pt-25 2xl:pb-17.5 md:pt-17.5 md:pb-10 sm:pt-12.5 sm:pb-5 pt-10 pb-5">
+				        <section class="2xl:pt-25 2xl:pb-17.5 md:pt-17.5 md:pb-10 sm:pt-12.5 sm:pb-5 pt-10 pb-5 bg-light">
 			<div class="container">
 				<div class="row content-wrapper style-5 items-center">
 					<div class="2xl:w-7/12 lg:w-1/2 w-full mb-7.5 self-center">
@@ -2074,7 +1953,7 @@ Providing compassionate care, comfort, and dignity in a safe and nurturing envir
 	
 
 	<!-- CTA SECTION -->
-<section class="cta-section">
+<section class="cta-section" style="background-color: white;">
   <div class="container">
     <div class="cta-grid">
 
@@ -2088,7 +1967,7 @@ Providing compassionate care, comfort, and dignity in a safe and nurturing envir
 
       <!-- MIDDLE CARD - Visit -->
       <div>
-        <div class="cta-card">
+        <div class="cta-card" style="background-color: #f7f3eb;">
           <div class="cta-icon">
             <i class="feather icon-home"></i>
           </div>
@@ -2105,7 +1984,7 @@ to arrange a personalized visit that suits your convenience.
 
       <!-- RIGHT CARD - Call Us (spans full width on mobile) -->
       <div class="cta-last-card">
-        <div class="cta-card">
+        <div class="cta-card" style="background-color: #f7f3eb;">
           <div class="cta-icon">
             <i class="feather icon-users"></i>
           </div>
@@ -2609,8 +2488,8 @@ document.querySelector('.agham-scroll-area').addEventListener('touchmove', funct
 
 </div><style>
 	.agham-callback-icon{
-    width: 75px;
-    height: 75px;
+    width: 55px;
+    height: 55px;
     background: linear-gradient(135deg, #1f8b87, #146b68);
     border-radius: 50%;
     display: flex;
