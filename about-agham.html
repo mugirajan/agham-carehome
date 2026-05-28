@@ -152,202 +152,273 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 }
 		
 .cta-icon i {
-    font-size: 40px;
-    color: #227675;        /* your brand teal */
-    stroke-width: 1;       /* thinner lines = more elegant */
-}
-.care-benefits-list {
-    gap: 12px !important; /* if using flexbox/grid gap */
-}
-/* ── CTA SECTION ── */
-.cta-section {
-  background-color: #f7f3EB;
-  padding: 40px 0;
-}
+			font-size: 40px;
+			color: #227675;
+			stroke-width: 1;
+		}
 
-.cta-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
+		.care-benefits-list {
+			gap: 12px !important;
+		}
 
-/* Illustration Card */
-.cta-illustration-card {
-  background-color: #227675;
-  border-radius: 16px;
-  padding: 32px 24px 0;
-  height: 100%;
-  min-height: 480px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-}
+		/* ── CTA SECTION ── */
+		.cta-section {
+			background-color: #f7f3EB;
+			padding: 100px 0;
+		}
 
-.cta-illustration-card h2 {
-  color: #f7f3EB;
-  font-size: 28px;
-  font-weight: 600;
-  line-height: 1.3;
-  margin-bottom: 0;
-}
+		.cta-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 16px;
+		}
 
-.cta-illustration-card img {
-  width: 100%;
-  object-fit: cover;
-  margin-top: auto;
-  display: block;
-}
+		/* Illustration Card */
+		.cta-illustration-card {
+			background-color: #227675;
+			border-radius: 16px;
+			padding: 32px 24px 0;
+			height: 100%;
+			min-height: 480px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			overflow: hidden;
+		}
 
-/* Info Cards */
-.cta-card {
-  background-color: #ffffff;
-  border-radius: 16px;
-  padding: 24px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+		.cta-illustration-card h2 {
+			color: #f7f3EB;
+			font-size: 28px;
+			font-weight: 600;
+			line-height: 1.3;
+			margin-bottom: 0;
+		}
 
-.cta-icon i {
-  font-size: 40px;
-  color: #227675;
-}
+		.cta-illustration-card img {
+			width: 100%;
+			object-fit: cover;
+			margin-top: auto;
+			display: block;
+		}
 
-.cta-card h3 {
-  font-size: 18px;
-  font-weight: 700;
-  color: #1a1a2e;
-  line-height: 1.4;
-  margin: 0;
-}
+		/* Info Cards */
+		.cta-card {
+			background-color: #ffffff;
+			border-radius: 16px;
+			padding: 24px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
 
-.cta-card p {
-  font-size: 15px;
-  color: #555;
-  line-height: 1.7;
-  margin: 0;
-  flex: 1;
-}
+		.cta-icon i {
+			font-size: 40px;
+			color: #227675;
+		}
 
-.cta-link {
-  color: #227675;
-  font-size: 15px;
-  font-weight: 500;
-  text-decoration: none;
-  margin-top: auto;
-}
+		.cta-card h3 {
+			font-size: 18px;
+			font-weight: 700;
+			color: #1a1a2e;
+			line-height: 1.4;
+			margin: 0;
+		}
 
-.cta-link:hover { text-decoration: underline; }
+		.cta-card p {
+			font-size: 15px;
+			color: #555;
+			line-height: 1.7;
+			margin: 0;
+			flex: 1;
+		}
 
-.cta-btn {
-  display: inline-block;
-  background-color: #227675;
-  color: #f7f3EB;
-  padding: 14px 40px;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
-  width: fit-content;
-  margin-top: auto;
-  transition: background 0.3s ease;
-}
+		.cta-link {
+			color: #227675;
+			font-size: 15px;
+			font-weight: 500;
+			text-decoration: none;
+			margin-top: auto;
+		}
 
-.cta-btn:hover { background-color: #185f5e; }
+		.cta-link:hover {
+			text-decoration: underline;
+		}
 
-/* ── TABLET (768px - 1024px) ── */
-@media (max-width: 1024px) {
-  .cta-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-  }
+		.cta-btn {
+			display: inline-block;
+			background-color: #227675;
+			color: #f7f3EB;
+			padding: 14px 40px;
+			border-radius: 10px;
+			font-size: 16px;
+			font-weight: 600;
+			text-decoration: none;
+			width: fit-content;
+			margin-top: auto;
+			transition: background 0.3s ease;
+		}
 
-  .cta-illustration-card {
-    min-height: 320px;
-  }
+		.cta-btn:hover {
+			background-color: #185f5e;
+		}
 
-  /* Illustration spans full width on tablet */
-  .cta-grid > div:first-child {
-    grid-column: 1 / -1;
-  }
+		/* ── TABLET (768px - 1024px) ── */
+		@media (max-width: 1024px) {
 
-  .cta-illustration-card {
-    flex-direction: row;
-    align-items: center;
-    padding: 24px 32px;
-    min-height: 200px;
-  }
+			.cta-grid {
+				grid-template-columns: 1fr 1fr;
+				gap: 14px;
+			}
 
-  .cta-illustration-card h2 {
-    font-size: 24px;
-    flex: 1;
-  }
+			.cta-illustration-card {
+				min-height: 320px;
+			}
 
-  .cta-illustration-card img {
-    width: 180px;
-    margin-top: 0;
-    margin-left: 24px;
-  }
-}
+			/* Illustration spans full width on tablet */
+			.cta-grid>div:first-child {
+				grid-column: 1 / -1;
+			}
 
-/* ── MOBILE (below 768px) ── */
-@media (max-width: 768px) {
-  .cta-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
+			.cta-illustration-card {
+				flex-direction: row;
+				align-items: center;
+				padding: 24px 32px;
+				min-height: 200px;
+			}
 
-  .cta-grid > div:first-child {
-    grid-column: 1;
-  }
+			.cta-illustration-card h2 {
+				font-size: 24px;
+				flex: 1;
+			}
 
-  .cta-grid .cta-last-card {
-    grid-column: 1;
-  }
+			.cta-illustration-card img {
+				width: 180px;
+				margin-top: 0;
+				margin-left: 24px;
+			}
+		}
 
-  .cta-illustration-card {
-    flex-direction: column;
-    min-height: 280px;
-    padding: 24px 20px 0;
-  }
+		/* ── MOBILE (below 768px) ── */
+		@media (max-width: 768px) {
 
-  .cta-illustration-card h2 {
-    font-size: 22px;
-  }
+			.cta-grid {
+				grid-template-columns: 1fr;
+				gap: 12px;
+			}
 
-  .cta-illustration-card img {
-    width: 70%;
-    margin: 16px auto 0;
-  }
+			.cta-grid>div:first-child {
+				grid-column: 1;
+			}
 
-  .cta-card {
-    height: auto;
-    min-height: unset;
-  }
+			.cta-grid .cta-last-card {
+				grid-column: 1;
+			}
 
-  .cta-btn {
-    width: 100%;
-    text-align: center;
-    padding: 14px 20px;
-  }
-}
+			.cta-illustration-card {
+				flex-direction: column;
+				min-height: 280px;
+				padding: 24px 20px 0;
+			}
+
+			.cta-illustration-card h2 {
+				font-size: 22px;
+			}
+
+			.cta-illustration-card img {
+				width: 70%;
+				margin: 16px auto 0;
+			}
+
+			.cta-card {
+				height: auto;
+				min-height: unset;
+			}
+
+			.cta-btn {
+				width: 100%;
+				text-align: center;
+				padding: 14px 20px;
+			}
+		}
+
+
 
 
 	</style>
-	<style>.whatsapp-float {
+	<style>/* ================================================
+   FLOATING BUTTONS — WhatsApp | Callback | Scroll
+   All: 45×45px | right: 20px | gap: 10px
+   Stack: scroll(20) → callback(75) → whatsapp(130)
+================================================ */
+
+/* 1. SCROLL TO TOP */
+#scrollProgress {
+   width: 45px !important;
+  height: 45px !important;
+  min-width: 45px !important;
+  min-height: 45px !important;
+  max-width: 45px !important;
+  max-height: 45px !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  right: 20px !important;
+  bottom: 20px !important;
+}
+
+/* Hide the SVG ring entirely — it was built for 50px */
+#scrollProgress svg {
+  display: none !important;
+}
+
+/* 2. CALLBACK WRAPPER */
+.agham-callback-wrapper {
+  position: fixed;
+  bottom: 75px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* 2a. CALLBACK ICON */
+.agham-callback-icon {
+  width: 45px !important;
+  height: 45px !important;
+  background: linear-gradient(135deg, #1f8b87, #146b68);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease;
+}
+
+.agham-callback-icon:hover {
+  transform: scale(1.08);
+}
+
+.agham-support-icon {
+  font-size: 20px !important;
+  color: #ffffff;
+}
+
+/* 3. WHATSAPP */
+.whatsapp-float {
   position: fixed;
   width: 45px;
   height: 45px;
-  bottom: 190px;
-  right: 30px;
+  bottom: 130px;
+  right: 20px;
   background-color: #25D366;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   transition: 0.3s;
   text-decoration: none;
@@ -358,48 +429,43 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 }
 
 .whatsapp-float img {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
 }
 
-@media (max-width: 767px){
+/* ── MOBILE ── */
+@media (max-width: 767px) {
 
-    .whatsapp-float{
-        width: 55px;
-        height: 55px;
-        bottom: 100px;
-        right: 30px;
-    }
+  #scrollProgress {
+    width: 45px !important;
+    height: 45px !important;
+    right: 20px !important;
+    bottom: 20px !important;
+  }
 
-    .whatsapp-float img{
-        width: 32px;
-        height: 32px;
-    }
+  .agham-callback-wrapper {
+    bottom: 75px !important;
+    right: 20px !important;
+  }
 
-}</style>
+  .agham-callback-icon {
+    width: 45px !important;
+    height: 45px !important;
+  }
 
-<style>
-	.agham-callback-icon{
-    width: 55px;
-    height: 55px;
-    background: linear-gradient(135deg, #1f8b87, #146b68);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-    transition: 0.3s ease;
+  .whatsapp-float {
+    width: 45px !important;
+    height: 45px !important;
+    bottom: 130px !important;
+    right: 20px !important;
+  }
+
+  .whatsapp-float img {
+    width: 25px !important;
+    height: 25px !important;
+  }
 }
 
-.agham-callback-icon:hover{
-    transform: scale(1.08);
-}
-
-.agham-support-icon{
-    font-size: 30px !important;
-    color: #ffffff;
-}
 </style>
 
 </head>
@@ -1211,220 +1277,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     margin: 0;
 }</style>
 
-<!-- Facilities Section Start -->
-<section class="2xl:pt-25 2xl:pb-17.5 md:pt-17.5 md:pb-10 sm:pt-12.5 sm:pb-5 pt-10 pb-5 bg-light">
-
-	<div class="container">
-
-		<!-- Heading -->
-		<div class="sm:mb-15 mb-10 text-center wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
-
-			<span class="text-xl font-medium italic text-primary inline-block font-sub-title">
-				Our Facilities
-			</span>
-
-			<h2 class="2xxl:text-2xxl lg:text-[38px] sm:text-[32px] text-2xxl capitalize mb-4">
-				Advanced Healthcare & Wellness Support
-			</h2>
-
-			<p class="xl:text-lg text-base font-light max-w-[750px] mx-auto leading-[1.8]">
-				Providing complete medical assistance, emergency support, insurance guidance, and wellness care for seniors.
-			</p>
-
-		</div>
-
-		<!-- Facilities Cards -->
-		<div class="row -mx-3">
-
-			<!-- Card -->
-			<div class="xl:w-1/4 md:w-1/2 w-full px-3 mb-6">
-
-				<div class="bg-white rounded-2xl text-center xl:py-12 py-10 xl:px-8 px-6 shadow-[0_0_30px_rgba(var(--secondary-rgb),0.08)] hover:-translate-y-2 duration-500 h-full">
-
-					<div class="size-20 rounded-full bg-primary/10 flex items-center justify-center text-primary text-4xxl mx-auto mb-6">
-						<i class="fa-regular fa-truck-medical"></i>
-					</div>
-
-					<h3 class="text-2xl font-bold text-secondary mb-4">
-						Ambulance Support
-					</h3>
-
-					<p class="text-base font-medium text-bodycolor mb-0 leading-[1.7]">
-						Quick emergency ambulance assistance available for residents whenever required.
-					</p>
-
-				</div>
-
-			</div>
-
-			<!-- Card -->
-			<div class="xl:w-1/4 md:w-1/2 w-full px-3 mb-6">
-
-				<div class="bg-white rounded-2xl text-center xl:py-12 py-10 xl:px-8 px-6 shadow-[0_0_30px_rgba(var(--secondary-rgb),0.08)] hover:-translate-y-2 duration-500 h-full">
-
-					<div class="size-20 rounded-full bg-primary/10 flex items-center justify-center text-primary text-4xxl mx-auto mb-6">
-						<i class="fa-regular fa-hospital"></i>
-					</div>
-
-					<h3 class="text-2xl font-bold text-secondary mb-4">
-						Hospital Tie-Ups
-					</h3>
-
-					<p class="text-base font-medium text-bodycolor mb-0 leading-[1.7]">
-						ICU care, insurance coverage, emergency response, and 24/7 medical assistance.
-					</p>
-
-				</div>
-
-			</div>
-
-			<!-- Card -->
-			<div class="xl:w-1/4 md:w-1/2 w-full px-3 mb-6">
-
-				<div class="bg-white rounded-2xl text-center xl:py-12 py-10 xl:px-8 px-6 shadow-[0_0_30px_rgba(var(--secondary-rgb),0.08)] hover:-translate-y-2 duration-500 h-full">
-
-					<div class="size-20 rounded-full bg-primary/10 flex items-center justify-center text-primary text-4xxl mx-auto mb-6">
-					<i class="fa-regular fa-handshake"></i>
-					</div>
-
-					<h3 class="text-2xl font-bold text-secondary mb-4">
-						Insurance Assistance
-					</h3>
-
-					<p class="text-base font-medium text-bodycolor mb-0 leading-[1.7]">
-						Support for insurance claims, healthcare coverage, and documentation assistance.
-					</p>
-
-				</div>
-
-			</div>
-
-			<!-- Card -->
-			<div class="xl:w-1/4 md:w-1/2 w-full px-3 mb-6">
-
-				<div class="bg-white rounded-2xl text-center xl:py-12 py-10 xl:px-20 px-10 shadow-[0_0_30px_rgba(var(--secondary-rgb),0.08)] hover:-translate-y-2 duration-500 h-full">
-
-					<div class="size-20 rounded-full bg-primary/10 flex items-center justify-center text-primary text-4xxl mx-auto mb-6">
-					<i class="fa-regular fa-heart"></i>
-					</div>
-
-					<h3 class="text-2xl font-bold text-secondary mb-4">
-						Complete Wellness
-					</h3>
-
-					<p class="text-base font-medium text-bodycolor mb-0 leading-[1.7]">
-						Emotional, physical, social, and spiritual wellness programs for healthy living.
-					</p>
-
-				</div>
-
-			</div>
-
-		</div>
-
-	</div>
-
-</section>
-
-<style>
-
-	/* Tablet Responsive */
-@media (max-width: 991px){
-
-    .row{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .xl\:w-1\/4{
-        width: 50%;
-    }
-
-    .xl\:w-1\/4 .bg-light{
-        padding: 45px 35px;
-    }
-
-}
-
-/* Mobile Responsive */
-@media (max-width: 767px){
-
-    .xl\:w-1\/4,
-    .md\:w-1\/2{
-        width: 100%;
-    }
-
-    .xl\:w-1\/4{
-        margin-bottom: 20px;
-    }
-
-    .bg-light{
-        padding: 40px 25px !important;
-        border-radius: 24px;
-    }
-
-    .bg-light h3{
-        font-size: 24px;
-        line-height: 1.4;
-    }
-
-    .bg-light p{
-        font-size: 16px;
-        line-height: 1.8;
-    }
-
-    .size-20{
-        width: 70px;
-        height: 70px;
-        margin-bottom: 20px;
-    }
-
-    .size-20 i{
-        font-size: 36px;
-    }
-
-    h2{
-        font-size: 32px !important;
-        line-height: 1.3;
-    }
-
-    .font-sub-title{
-        font-size: 18px;
-    }
-
-}
-	.agham-facility-card{
-    background: #f3efe7;
-    border-radius: 30px;
-
-    /* Padding */
-    padding-top: 55px;
-    padding-bottom: 55px;
-    padding-left: 35px;
-    padding-right: 35px;
-
-    text-align: center;
-
-    /* Card Height */
-    min-height: 360px;
-
-    /* Shadow */
-    box-shadow: 0 0 30px rgba(0,0,0,0.06);
-
-    /* Hover Effect */
-    transition: all 0.4s ease;
-}
-
-.agham-facility-card:hover{
-    transform: translateY(-10px);
-}
-</style>
-
-<!-- Facilities Section End -->
-
 
 <!-- Stats Section -->
-<section class="2xl:pt-25 2xl:pb-17.5 md:pt-17.5 md:pb-10 sm:pt-12.5 sm:pb-5 pt-10 pb-5 bg-white">
+<section class="2xl:pt-25 2xl:pb-17.5 md:pt-17.5 md:pb-10 sm:pt-12.5 sm:pb-5 pt-10 pb-5 bg-light">
 	<div class="container">
 
 		<!-- Heading -->
@@ -1529,7 +1384,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 
 <!-- JOURNEY / TIMELINE SECTION START -->
-<section class="2xl:pt-25 2xl:pb-17.5 md:pt-17.5 md:pb-10 sm:pt-12.5 sm:pb-5 pt-10 pb-5 bg-light journey-section">
+<section class="2xl:pt-25 2xl:pb-17.5 md:pt-17.5 md:pb-10 sm:pt-12.5 sm:pb-5 pt-10 pb-5 journey-section" style="background-color: #ffffff !important;">
 
 	<div class="container">
 
@@ -1858,7 +1713,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 
 <!-- AWARDS & RECOGNITION SECTION START -->
-<section class="2xl:py-25 md:py-17.5 sm:py-12.5 py-10 bg-white overflow-hidden">
+<section class="2xl:py-25 md:py-17.5 sm:py-12.5 py-10 bg-light overflow-hidden">
 
 	<div class="container">
 
@@ -2048,7 +1903,7 @@ document.querySelector('.agham-scroll-area').addEventListener('touchmove', funct
 
 
 
-			        <section class="2xl:pt-25 2xl:pb-17.5 md:pt-17.5 md:pb-10 sm:pt-12.5 sm:pb-5 pt-10 pb-5 bg-light">
+			        <section class="2xl:pt-25 2xl:pb-17.5 md:pt-17.5 md:pb-10 sm:pt-12.5 sm:pb-5 pt-10 pb-5 bg-white">
 			<div class="container">
 				<div class="sm:mb-7.5 mb-5 row items-end">
 					<div class="md:w-7/12 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
@@ -2242,7 +2097,7 @@ document.querySelector('.agham-scroll-area').addEventListener('touchmove', funct
 
 
 
-			        <section class="2xl:pt-25 2xl:pb-17.5 md:pt-17.5 md:pb-10 sm:pt-12.5 sm:pb-5 pt-10 pb-5 bg-white">
+			        <section class="2xl:pt-25 2xl:pb-17.5 md:pt-17.5 md:pb-10 sm:pt-12.5 sm:pb-5 pt-10 pb-5 bg-light">
 			<div class="container">
 				<div class="row content-wrapper style-5 items-center">
 					<div class="2xl:w-7/12 lg:w-1/2 w-full mb-7.5 self-center">
@@ -2353,7 +2208,7 @@ document.querySelector('.agham-scroll-area').addEventListener('touchmove', funct
 
 
 	<!-- CTA SECTION -->
-<section class="cta-section">
+<section class="cta-section" style="background-color: white">
   <div class="container">
     <div class="cta-grid">
 
@@ -2367,7 +2222,7 @@ document.querySelector('.agham-scroll-area').addEventListener('touchmove', funct
 
       <!-- MIDDLE CARD - Visit -->
       <div>
-        <div class="cta-card">
+        <div class="cta-card " style="background-color: #f7f3eb;;">
           <div class="cta-icon">
             <i class="feather icon-home"></i>
           </div>
@@ -2383,8 +2238,8 @@ to arrange a personalized visit that suits your convenience.
       </div>
 
       <!-- RIGHT CARD - Call Us (spans full width on mobile) -->
-      <div class="cta-last-card">
-        <div class="cta-card">
+      <div class="cta-last-card" >
+        <div class="cta-card" style="background-color: #f7f3eb;">
           <div class="cta-icon">
             <i class="feather icon-users"></i>
           </div>
@@ -2393,19 +2248,18 @@ to arrange a personalized visit that suits your convenience.
             Our dedicated support team is ready to guide you toward the right care option 
 or offer tailored recommendations at every step of your decision.
           </p>
-        <div>
-  <a href="tel:+919999999999" 
+       <a href="tel:+919999999999" 
    class="btn btn-primary btn-hover1" 
    style="border-radius: 50px; padding: 14px 40px; font-size: 16px; font-weight: 600; width: fit-content !important; display: inline-block !important;">
     Call Us
 </a>
-</div>
         </div>
       </div>
 
     </div>
   </div>
 </section>
+
 
 			</main>
 

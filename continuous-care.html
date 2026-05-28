@@ -1818,18 +1818,79 @@ document.getElementById('footerSubscribeForm').addEventListener('submit', async 
     console.log("WhatsApp Button Clicked");
 
   });</script>
-  <style>.whatsapp-float {
+  <style>/* ================================================
+   FLOATING BUTTONS — WhatsApp | Callback | Scroll
+   All: 45×45px | right: 20px | gap: 10px
+   Stack: scroll(20) → callback(75) → whatsapp(130)
+================================================ */
+
+/* 1. SCROLL TO TOP */
+#scrollProgress {
+   width: 45px !important;
+  height: 45px !important;
+  min-width: 45px !important;
+  min-height: 45px !important;
+  max-width: 45px !important;
+  max-height: 45px !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  right: 20px !important;
+  bottom: 20px !important;
+}
+
+/* Hide the SVG ring entirely — it was built for 50px */
+#scrollProgress svg {
+  display: none !important;
+}
+
+/* 2. CALLBACK WRAPPER */
+.agham-callback-wrapper {
+  position: fixed;
+  bottom: 75px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* 2a. CALLBACK ICON */
+.agham-callback-icon {
+  width: 45px !important;
+  height: 45px !important;
+  background: linear-gradient(135deg, #1f8b87, #146b68);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease;
+}
+
+.agham-callback-icon:hover {
+  transform: scale(1.08);
+}
+
+.agham-support-icon {
+  font-size: 20px !important;
+  color: #ffffff;
+}
+
+/* 3. WHATSAPP */
+.whatsapp-float {
   position: fixed;
   width: 45px;
   height: 45px;
-  bottom: 190px;
-  right: 30px;
+  bottom: 130px;
+  right: 20px;
   background-color: #25D366;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   transition: 0.3s;
   text-decoration: none;
@@ -1840,25 +1901,43 @@ document.getElementById('footerSubscribeForm').addEventListener('submit', async 
 }
 
 .whatsapp-float img {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
 }
 
-@media (max-width: 767px){
+/* ── MOBILE ── */
+@media (max-width: 767px) {
 
-    .whatsapp-float{
-        width: 55px;
-        height: 55px;
-        bottom: 100px;
-        right: 30px;
-    }
+  #scrollProgress {
+    width: 45px !important;
+    height: 45px !important;
+    right: 20px !important;
+    bottom: 20px !important;
+  }
 
-    .whatsapp-float img{
-        width: 32px;
-        height: 32px;
-    }
+  .agham-callback-wrapper {
+    bottom: 75px !important;
+    right: 20px !important;
+  }
 
-}</style>
+  .agham-callback-icon {
+    width: 45px !important;
+    height: 45px !important;
+  }
+
+  .whatsapp-float {
+    width: 45px !important;
+    height: 45px !important;
+    bottom: 130px !important;
+    right: 20px !important;
+  }
+
+  .whatsapp-float img {
+    width: 25px !important;
+    height: 25px !important;
+  }
+}
+</style>
 
 
 </body>
