@@ -79,7 +79,23 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/services.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/transient.css">
 
-<style>/* ================================================
+<style>
+
+      
+	@media (max-width: 640px) {
+    .custom-logo,
+    .custom-logo a,
+    .custom-logo img,
+    .custom-logo .logo-img {
+        width: 110px !important;
+        height: 90px !important;
+        max-width: 110px !important;
+        max-height: 90px !important;
+        min-height: unset !important;
+        object-fit: contain !important;
+    }
+}
+/* ================================================
    FLOATING BUTTONS — WhatsApp | Callback | Scroll
    All: 45×45px | right: 20px | gap: 10px
    Stack: scroll(20) → callback(75) → whatsapp(130)
