@@ -65,7 +65,7 @@ class sndMail
         try {
 
             $mail->clearAddresses(); 
-            $mail->addAddress("info@nichekala.in");
+            $mail->addAddress("aghamseniorcare@gmail.com");
             $mail->Subject = "New enquiry - " . $data['name'];
             $mail->Body = "
                 Contact details:
