@@ -45,24 +45,129 @@ try {
     $mail->Port       = 587;
 
     $mail->setFrom('contact@blackitechs.com', 'Agham Senior Care Home');
-    $mail->addAddress('contact@blackitechs.com');
+
+    // Mail receiver
+    $mail->addAddress('mugirajan95@gmail.com');
+
+    // Reply-to user
     $mail->addReplyTo($email, $name);
 
     $mail->isHTML(true);
-    $mail->Subject = 'New Callback Request';
+    $mail->Subject = 'New Callback Request - Agham Senior Care Home';
 
-    $mail->Body = "
-    <h2>New Callback Request</h2>
+    $mail->Body = '
 
-    <table border='1' cellpadding='10' cellspacing='0' width='100%'>
-        <tr><td><strong>Name</strong></td><td>{$name}</td></tr>
-        <tr><td><strong>Email</strong></td><td>{$email}</td></tr>
-        <tr><td><strong>Phone</strong></td><td>{$phone}</td></tr>
-        <tr><td><strong>Location</strong></td><td>{$location}</td></tr>
-        <tr><td><strong>Service</strong></td><td>{$service}</td></tr>
-        <tr><td><strong>Looking For</strong></td><td>{$person}</td></tr>
+    <body style="margin:0;padding:0;background:#f4f6f9;font-family:Arial,Helvetica,sans-serif;">
+
+    <table width="100%" cellpadding="0" cellspacing="0" style="background:#f4f6f9;padding:30px 0;">
+    <tr>
+    <td align="center">
+
+    <table width="650" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:12px;overflow:hidden;">
+
+        <tr>
+            <td style="background:#0F766E;padding:30px;text-align:center;">
+                <h1 style="margin:0;color:#ffffff;font-size:28px;">
+                    Agham Senior Care Home
+                </h1>
+
+                <p style="margin:10px 0 0;color:#d9f3f0;font-size:15px;">
+                    New Callback Request Received
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="padding:30px;">
+
+                <h2 style="margin-top:0;color:#1f2937;">
+                    Contact Information
+                </h2>
+
+                <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+
+                    <tr>
+                        <td style="padding:14px;background:#f8fafc;font-weight:bold;border:1px solid #e5e7eb;width:35%;">
+                            Name
+                        </td>
+                        <td style="padding:14px;border:1px solid #e5e7eb;">
+                            '.$name.'
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding:14px;background:#f8fafc;font-weight:bold;border:1px solid #e5e7eb;">
+                            Email
+                        </td>
+                        <td style="padding:14px;border:1px solid #e5e7eb;">
+                            '.$email.'
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding:14px;background:#f8fafc;font-weight:bold;border:1px solid #e5e7eb;">
+                            Mobile Number
+                        </td>
+                        <td style="padding:14px;border:1px solid #e5e7eb;">
+                            '.$phone.'
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding:14px;background:#f8fafc;font-weight:bold;border:1px solid #e5e7eb;">
+                            Location
+                        </td>
+                        <td style="padding:14px;border:1px solid #e5e7eb;">
+                            '.$location.'
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding:14px;background:#f8fafc;font-weight:bold;border:1px solid #e5e7eb;">
+                            Service Required
+                        </td>
+                        <td style="padding:14px;border:1px solid #e5e7eb;">
+                            '.$service.'
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding:14px;background:#f8fafc;font-weight:bold;border:1px solid #e5e7eb;">
+                            Looking For
+                        </td>
+                        <td style="padding:14px;border:1px solid #e5e7eb;">
+                            '.$person.'
+                        </td>
+                    </tr>
+
+                </table>
+
+                <div style="margin-top:25px;padding:18px;background:#ecfdf5;border-left:4px solid #10b981;border-radius:6px;color:#065f46;">
+
+                    A new callback enquiry has been submitted through the Agham Senior Care Home website.
+
+                </div>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td style="background:#f8fafc;padding:20px;text-align:center;border-top:1px solid #e5e7eb;">
+
+                <p style="margin:0;color:#6b7280;font-size:13px;">
+                    © '.date('Y').' Agham Senior Care Home. All Rights Reserved.
+                </p>
+
+            </td>
+        </tr>
+
     </table>
-    ";
+
+    </td>
+    </tr>
+    </table>
+
+    </body>';
 
     if ($mail->send()) {
 
@@ -86,4 +191,3 @@ try {
         'msg' => $e->getMessage()
     ]);
 }
-?>
