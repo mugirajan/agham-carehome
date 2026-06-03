@@ -2481,12 +2481,12 @@ function sendEmail() {
 <!-- FLOATING CALLBACK FORM -->
 <div class="agham-callback-wrapper">
 
-     <!-- Floating Icon -->
+    <!-- Floating Icon -->
 <div class="agham-callback-icon" id="openCallback">
    <i class="fa-solid fa-user-nurse agham-support-icon"></i>
 </div>
 
-       <!-- Popup -->
+    <!-- Popup -->
 
     <div class="agham-callback-popup" id="callbackPopup">
 
@@ -2547,129 +2547,64 @@ function sendEmail() {
                     <p>Please enter your contact details.</p>
 
                 </div>
-<form id="callbackForm">
-
-    <!-- NAME -->
+<form id="callbackForm" action="assets/script/callback_smtp.php" method="POST">
 
     <div class="agham-input-group">
-
-        <i class="feather icon-user"></i>
-
-        <input type="text"
-               placeholder="Name"
-               required>
-
+        <input type="text" name="name" placeholder="Name" required>
     </div>
 
-    <!-- EMAIL -->
-
     <div class="agham-input-group">
-
-        <i class="feather icon-mail"></i>
-
-        <input type="email"
-               placeholder="Email"
-               required>
-
+        <input type="email" name="email" placeholder="Email" required>
     </div>
 
-    <!-- PHONE -->
-
     <div class="agham-input-group">
-
-        <i class="feather icon-phone"></i>
-
-        <input type="tel"
-               placeholder="Mobile Number"
-               required>
-
+        <input type="tel" name="phone" placeholder="Mobile Number" required>
     </div>
 
-    <!-- LOCATION -->
-
     <div class="agham-input-group">
-
-        <i class="feather icon-map-pin"></i>
-
-        <select required>
-
+        <select name="location" required>
             <option value="">Select Location</option>
-
             <option>Chennai</option>
-
             <option>Bangalore</option>
-
             <option>Hyderabad</option>
-			 <option>Coimbatore</option>
-
+            <option>Coimbatore</option>
             <option>Kochi</option>
-
         </select>
-
     </div>
 
-    <!-- SERVICE -->
-
     <div class="agham-input-group">
-
-        <i class="feather icon-briefcase"></i>
-
-         <select required>
-
+        <select name="service" required>
             <option value="">What service are you looking for?</option>
-
-	      <option>senior care - care home</option>
-				 
-
-                <option>Transient Care</option>
-				  <option>Assisted Living</option>
-				  <option>Palliative Care</option>
-				    <option>Post Operative Care</option>
-
-                <option>Rehabilitation & Physio Care</option>
-
-
-                <option>Companionship</option>
-				   <option>Continuous Care</option>
-				      <option>Home care</option>
-			
-
-          
-
-
+            <option>Senior Care - Care Home</option>
+            <option>Transient Care</option>
+            <option>Assisted Living</option>
+            <option>Palliative Care</option>
+            <option>Post Operative Care</option>
+            <option>Rehabilitation & Physio Care</option>
+            <option>Companionship</option>
+            <option>Continuous Care</option>
+            <option>Home Care</option>
         </select>
     </div>
 
-    <!-- PERSON -->
-
     <div class="agham-input-group">
-
-        <i class="feather icon-users"></i>
-
-        <select required>
-
+        <select name="person" required>
             <option value="">For whom are you looking for?</option>
-
             <option>Father</option>
-
             <option>Mother</option>
-
             <option>Grand Parent</option>
-
         </select>
-
     </div>
 
     <button type="submit" class="agham-submit-btn">
-
         Submit
-
     </button>
 
-	<div id="aghamSuccessMessage" class="agham-success-alert">
-
+<div id="aghamSuccessMessage" style="display:none;color:green;margin-top:10px;">
     ✅ Thank you! Our team will contact you shortly.
+</div>
 
+<div id="aghamErrorMessage" style="display:none;color:red;margin-top:10px;">
 </div>
 
 </form>
@@ -2696,7 +2631,84 @@ function sendEmail() {
     overscroll-behavior: contain;
 }
 		 </style>
-		 <script>
+
+		 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    const form = document.getElementById('callbackForm');
+
+    if (!form) return;
+
+    form.addEventListener('submit', async function (e) {
+
+        e.preventDefault();
+
+        const successBox = document.getElementById('aghamSuccessMessage');
+        const errorBox = document.getElementById('aghamErrorMessage');
+        const submitBtn = form.querySelector('button[type="submit"]');
+
+        successBox.style.display = 'none';
+        errorBox.style.display = 'none';
+
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = 'Submitting...';
+
+        try {
+
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form)
+            });
+
+            const text = await response.text();
+
+            console.log('Server Response:', text);
+
+            let result;
+
+            try {
+                result = JSON.parse(text);
+            } catch (err) {
+
+                errorBox.innerHTML = 'Invalid server response.';
+                errorBox.style.display = 'block';
+
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Submit';
+
+                return;
+            }
+
+            if (result.status == 1) {
+
+                successBox.innerHTML = '✅ Thank you! Our team will contact you shortly.';
+                successBox.style.display = 'block';
+
+                form.reset();
+
+            } else {
+
+                errorBox.innerHTML = result.msg || 'Something went wrong.';
+                errorBox.style.display = 'block';
+            }
+
+        } catch (error) {
+
+            console.error(error);
+
+            errorBox.innerHTML = 'Unable to connect to server.';
+            errorBox.style.display = 'block';
+        }
+
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = 'Submit';
+
+    });
+
+});
+</script>
+		 <!-- <script>
 			document.querySelector('.agham-scroll-area').addEventListener('wheel', function(e) {
     e.stopPropagation();
 }, { passive: true });
@@ -2704,7 +2716,8 @@ function sendEmail() {
 document.querySelector('.agham-scroll-area').addEventListener('touchmove', function(e) {
     e.stopPropagation();
 }, { passive: true });
-		 </script>					
+		 </script> -->
+
        <!-- <div class="agham-chat-footer">
 
             <input type="text" placeholder="Type your message...">
@@ -2720,6 +2733,39 @@ document.querySelector('.agham-scroll-area').addEventListener('touchmove', funct
     </div>
 
 </div>
+
+<style>
+	.agham-callback-popup{
+    display:flex;
+    flex-direction:column;
+    height:80vh;
+    overflow:hidden;
+}
+
+.agham-scroll-area{
+    flex:1;
+    overflow-y:auto;
+    overflow-x:hidden;
+    -webkit-overflow-scrolling:touch;
+    padding-right:5px;
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+
+    const scrollArea = document.querySelector('.agham-scroll-area');
+
+    scrollArea.addEventListener('wheel', function(e){
+        e.stopPropagation();
+    });
+
+    scrollArea.addEventListener('touchmove', function(e){
+        e.stopPropagation();
+    });
+
+});
+</script>
+
 <!-- <script>
 document.getElementById('footerSubscribeForm').addEventListener('submit', async function(e) {
     e.preventDefault();
