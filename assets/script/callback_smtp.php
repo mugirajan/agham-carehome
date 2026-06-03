@@ -47,7 +47,7 @@ try {
     $mail->setFrom('contact@blackitechs.com', 'Agham Senior Care Home');
 
     // Mail receiver
-    $mail->addAddress('mugirajan95@gmail.com');
+    $mail->addAddress('aghamseniorcare@gmail.com');
 
     // Reply-to user
     $mail->addReplyTo($email, $name);
