@@ -2659,7 +2659,7 @@
   .before\:text-primary {
     &::before {
       content: var(--tw-content);
-      color: var(--color-primary);
+      color: #4d230d;
     }
   }
   .before\:opacity-15 {
