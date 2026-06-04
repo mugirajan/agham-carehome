@@ -1,6 +1,6 @@
 html[data-theme-color="skin-4"]{
-    --primary: #227675;
-    --primarydark: #1d6463;
+    --primary: #E1B45A;
+    --primarydark: #E1B45A;
     --primary-rgb: 34, 118, 117;
     
     --primarylight: #ccf2f9;
@@ -10,7 +10,7 @@ html[data-theme-color="skin-4"]{
     --secondary: #343434;
     --secondarydark: #031742;
     --secondary-rgb: 10, 51, 102;
-    --light: #F7F3EB;
+    --light: #faf3d7;
 
     --btn-radius: 50px;
     --accordion-shadow: inset 0 calc(-1 * 1px) 0 #E1EBF1;

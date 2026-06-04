@@ -66,7 +66,7 @@ try {
     <table width="650" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:12px;overflow:hidden;">
 
         <tr>
-            <td style="background:#0F766E;padding:30px;text-align:center;">
+            <td style="background:#e1b45a;padding:30px;text-align:center;">
                 <h1 style="margin:0;color:#ffffff;font-size:28px;">
                     Agham Senior Care Home
                 </h1>

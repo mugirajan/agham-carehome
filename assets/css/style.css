@@ -2079,7 +2079,7 @@
     color: var(--color-heading);
   }
   .text-primary {
-    color: var(--color-primary);
+    color: #4D230D;
   }
   .text-red-600 {
     color: var(--color-red-600);
@@ -6241,8 +6241,8 @@
   --box-header-img: url('data:image/svg+xml,<svg viewBox="0 0 561 160" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H561L494.82 132.361C486.35 149.3 469.037 160 450.098 160H0V0Z" fill="white"/></svg>');
 }
 html[data-theme-color="skin-4"] {
-  --primary: #227675;
-  --primarydark: #1d6463;
+  --primary: #E1B45A;
+  --primarydark: #E1B45A;
   --primary-rgb: 34, 118, 117;
   --primarylight: #ccf2f9;
   --body-color: #676767;
@@ -6251,7 +6251,7 @@ html[data-theme-color="skin-4"] {
   --secondary: #343434;
   --secondarydark: #031742;
   --secondary-rgb: 10, 51, 102;
-  --light: #F7F3EB;
+  --light: #faf3d7;
   --btn-radius: 50px;
   --accordion-shadow: inset 0 calc(-1 * 1px) 0 #E1EBF1;
 }
@@ -8148,7 +8148,7 @@ input[type="time"]::-webkit-calendar-picker-indicator , input[type="date"]::-web
 .logo-slider{
   width:100%;
   overflow:hidden;
-  padding:040px 0px 10px 0px;  background-color: #f7f3eb;
+  padding:040px 0px 10px 0px;  background-color: #faf3d7;
 }
 
 .logo-track{
@@ -8236,7 +8236,7 @@ input[type="time"]::-webkit-calendar-picker-indicator , input[type="date"]::-web
 	right: 10px;
 	font-size: 32px;
 	font-weight: 700;
-	color: var(--primary);
+	color: #4D230D;
 	opacity: 0.15;
 	line-height: 1;
 }
@@ -8254,8 +8254,9 @@ input[type="time"]::-webkit-calendar-picker-indicator , input[type="date"]::-web
 }
 
 .agham-premium-icon i{
-	font-size: 30px;
-	color: var(--primary);
+	font-size: 35px;
+	color: #4D230D;
+  font-weight:700;
 }
 
 /* TITLE */
@@ -8496,7 +8497,7 @@ MISSION VISION VALUES SECTION
 .mission-section{
     width: 100%;
     padding: 100px 20px;
-    background: #f7f3eb;
+    background: #faf3d7;
   
 }
 
@@ -8556,10 +8557,10 @@ MISSION VISION VALUES SECTION
 .vision-card{
   margin-top: 100px !important;
   left: -60px !important;
-  border: 2px solid #227675;
+  border: 2px solid #4D230D;
 }
 .mission-card{
-   border: 2px solid #227675;
+   border: 2px solid #4D230D;
    margin-top: -20px;
 }
 
@@ -8631,15 +8632,15 @@ MISSION VISION VALUES SECTION
 }
 
 .vision-card::after{
-    background: #227675;
+    background: #4D230D;
 }
 
 .mission-center::after{
-    background: #227675;
+    background: #4D230D;
 }
 
 .values-card::after{
-    background: #227675;
+    background: #4D230D;
 }
 
 /* ICON */
@@ -8655,20 +8656,20 @@ MISSION VISION VALUES SECTION
 }
 
 .vision-card .mission-icon{
-    border-color: #227675;
+    border-color: #4D230D;
 }
 
 .mission-center .mission-icon{
-    border-color: #227675;
+    border-color: #4D230D;
 }
 
 .values-card .mission-icon{
-    border-color: #227675;
+    border-color: #4D230D;
 }
 
 .mission-icon i{
     font-size: 42px;
-    color: #222;
+    color: #4D230D;
 }
 
 /* TITLE */
@@ -8780,11 +8781,11 @@ MOBILE RESPONSIVE
     .vision-card{
   margin-top: 0px !important;
   left: 0px  !important;
-  border: 2px solid #227675;
+  border: 2px solid #4D230D;
   
 }
 .mission-card{
-   border: 2px solid #227675;
+   border: 2px solid #4D230D;
 }
 }
 
@@ -9014,7 +9015,7 @@ MOBILE RESPONSIVE
 
 .journey-section{
 	padding:100px 20px;
-	background:#f7f3eb;
+	background:#faf3d7;
 	position:relative;
 }
 
@@ -9083,7 +9084,7 @@ color: rgba(0, 0, 0, 0.705);
 	width:18px;
 	height:18px;
 	border-radius:50%;
-	background:var(--primary);
+	background:#4D230D;
 	border:4px solid #fff;
 	box-shadow:0 0 0 4px rgba(0,0,0,0.08);
 	z-index:2;
@@ -9100,7 +9101,7 @@ color: rgba(0, 0, 0, 0.705);
 /* CONTENT BOX */
 .timeline-content{
 	background:#fff;
-	border:2px solid #227675;
+	border:2px solid #4D230D;
 	border-radius:22px;
 	padding:30px;
 	display:flex;
@@ -9731,7 +9732,7 @@ body{
 
 
     .mission-card{
-              border: 2px solid #227675;
+              border: 2px solid #4D230D;
         width: 1200px !important;
     }
         .mission-grid{
@@ -10937,7 +10938,7 @@ body{
 ========================= */
 
 .amenities-section{
-	background: #f7f3eb;
+	background: #faf3d7;
   padding:80px 20px;
 }
 
@@ -10958,7 +10959,7 @@ body{
 /* HOVER */
 .amenities-card:hover{
 	transform: translateY(-8px);
-	border-color: #227675;
+	border-color: #E1B45A;
 	box-shadow: 0 20px 60px rgba(34,118,117,0.15);
 }
 
@@ -10968,8 +10969,8 @@ body{
 	height: 85px;
 	margin: 0 auto 25px;
 	border-radius: 50%;
-	background: #22767510;
-	border: 2px solid #227675;
+	background: #E1B45A10;
+	border: 2px solid #E1B45A;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -10979,14 +10980,14 @@ body{
 /* ICON STYLE */
 .amenities-icon i{
 	font-size: 38px;
-	color: #227675;
+	color: #E1B45A;
 	transition: all 0.35s ease;
 }
 
 /* ICON HOVER */
 .amenities-card:hover .amenities-icon{
-	background: #227675;
-	border-color: #227675;
+	background: #E1B45A;
+	border-color: #E1B45A;
 }
 
 .amenities-card:hover .amenities-icon i{
@@ -11270,7 +11271,7 @@ body{
 ========================= */
 
 .care-benefits-section{
-	background: #f7f3eb;
+	background: #faf3d7;
 	overflow: hidden;
   padding: 80px 20px;
 }
@@ -11316,8 +11317,8 @@ body{
 	width: 72px;
 	height: 72px;
 	border-radius: 20px;
-	background: #22767521;
-	border: 2px solid #227675;
+	background: #E1B45A21;
+	border: 2px solid #E1B45A;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -11326,7 +11327,7 @@ body{
 
 .benefit-icon i{
 	font-size: 30px;
-	color: #227675;
+	color: #E1B45A;
 }
 
 /* CONTENT */
@@ -11376,7 +11377,7 @@ body{
 .care-floating-box h3{
 	font-size: 52px;
 	font-weight: 600;
-	color: #227675;
+	color: #E1B45A;
 	line-height: 1;
 	margin-bottom: 12px;
 }
@@ -11674,7 +11675,7 @@ body{
 /* Header */
 
 .agham-callback-header{
-    background: #227675;
+    background: #4D230D;
     padding: 16px 18px;
     display: flex;
     justify-content: space-between;
@@ -11840,7 +11841,7 @@ body{
 
 .agham-input-group input:focus,
 .agham-input-group select:focus{
-    border-color: #227675;
+    border-color: #E1B45A;
 }
 
 /* Submit Button */
@@ -11850,7 +11851,7 @@ body{
     height: 54px;
     border: none;
     border-radius: 14px;
-    background: #227675;
+    background: #E1B45A;
     color: #fff;
     font-size: 16px;
     font-weight: 600;
@@ -11885,7 +11886,7 @@ body{
     height: 48px;
     border: none;
     border-radius: 50%;
-    background: #227675;
+    background: #E1B45A;
     color: #fff;
     cursor: pointer;
     font-size: 18px;
@@ -12250,7 +12251,7 @@ LOGO SLIDER SECTION
     box-shadow: 0 10px 35px rgba(0,0,0,0.06);
     transition: 0.4s ease;
     flex-shrink: 0;
-    border: 2px solid #227675;
+    border: 2px solid #E1B45A;
 
 }
 
@@ -12474,7 +12475,7 @@ MOBILE
 
 .agham-value-icon i{
     font-size: 50px;
-    color: #227675;
+    color: #4D230D;
     line-height: 1;
 }
 
@@ -12836,7 +12837,7 @@ MOBILE
 
 /* HOVER */
 .services-dropdown li a:hover{
-    background: #0f766e;
+    background: #e1b45a;
     color: #fff;
 }
 /* Fix 1 — FAQ, service section descriptions */
