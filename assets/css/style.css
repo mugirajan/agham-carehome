@@ -10852,11 +10852,147 @@ body{
 
 /* Custom Logo Size */
 
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    .extra-nav {
+        display: flex !important;
+    }
+
+    .extra-nav ul {
+        justify-content: flex-end !important;
+    }
+
+    .extra-nav li.max-xl\:hidden {
+        display: inline-block !important;
+    }
+
+    .extra-nav .btn {
+        padding: 10px 18px !important;
+        font-size: 14px !important;
+    }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .navbar-nav > li > a {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        font-size: 15px !important;
+    }
+
+    /* Services menu */
+    .services-menu > a {
+        min-width: 120px;
+        justify-content: center;
+        gap: 8px;
+    }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    /* Contact Number Hide */
+    .extra-nav li:first-child {
+        display: none !important;
+    }
+
+    /* Appointment Button Show */
+    .extra-nav li:last-child {
+        display: inline-block !important;
+    }
+
+    /* Extra Nav Visible */
+    .extra-nav {
+        display: flex !important;
+        margin-left: auto;
+    }
+
+    /* Reduce logo size slightly */
+    .custom-logo {
+        width: 120px !important;
+        min-width: 120px !important;
+    }
+
+    /* Menu spacing */
+    .navbar-nav > li > a {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        font-size: 15px !important;
+    }
+}
+@media (max-width: 767px){
+    .style-26{
+        flex-direction: column-reverse;
+        padding: 0px 20px;
+    }
+}
+
+	@media (max-width: 640px) {
+ .custom-logo,
+    .custom-logo a,
+    .custom-logo img,
+    .custom-logo .logo-img {
+        width: 110px !important;
+        height: 90px !important;
+        max-width: 110px !important;
+        max-height: 50px !important;
+   margin-top:10px !important;
+   margin-left:-6px !important;
+        object-fit: contain !important;
+		    
+    }
+      .mx-auto {
+    margin-inline: 0 !important;
+  }
+
+  .highlight-icon {
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50%;
+    background: #f5f5f5;
+    border: 2px dashed #4D230D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+     
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .navbar-nav{
+        display: block !important;
+        width: 100%;
+    }
+
+    .navbar-nav > li{
+        display: block !important;
+        width: 100%;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .navbar-nav > li > a{
+        display: block !important;
+        width: 100%;
+        padding: 15px 0 !important;
+        white-space: nowrap;
+    }
+
+    .services-menu > a{
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 
 .custom-logo .logo-img {
 	max-width: 100%;
-	max-height: 100px;
-	object-fit: contain;
+	max-height: 80px;
+	object-fit: cover;
+  margin-top:5px;
 }
 
 /* Mobile Responsive */
