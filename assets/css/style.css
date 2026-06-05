@@ -10931,6 +10931,13 @@ body{
     }
 }
 
+@media (max-width:1024px){
+    .mobile-menu-fix .navbar-nav.mx-auto{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
 	@media (max-width: 640px) {
  .custom-logo,
     .custom-logo a,
