@@ -12882,6 +12882,20 @@ MOBILE
     .service-grid{
         grid-template-columns: repeat(1, 1fr);
     }
+    .agham-header-left h4 {
+    font-size: 15px;
+    color: #fff;
+    margin: 0;
+    font-weight: 600;
+}
+.agham-header-left p {
+    margin: 4px 0 0;
+    color: #fff;
+    font-size: 13px !important;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
 }
 
 /* FORCE 3 COLUMN GRID */
@@ -13045,4 +13059,26 @@ p.text-2sm {
 }
 
 
+@media (max-width: 1023px) {
+    .navbar-nav {
+        margin-top: 20px;
+    }
+}
 
+@media (max-width:1023px){
+
+    .mobile-menu-fix{
+        position: fixed;
+        top: 0;
+        left: -300px !important; /* default hidden */
+        width: 288px;
+        height: 100vh;
+        background: #fff;
+        transition: left .4s ease;
+        z-index: 9999;
+    }
+
+    .mobile-menu-fix.menu-open{
+        left: 0 !important; /* show on click */
+    }
+}
