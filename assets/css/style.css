@@ -8403,7 +8403,7 @@ input[type="time"]::-webkit-calendar-picker-indicator , input[type="date"]::-web
 	justify-content:center;
 	margin:0 auto 25px;
 	font-size:42px;
-	color:var(--primary);
+	color:#4D230D;
 }
 
 /* TITLE */
@@ -11481,7 +11481,7 @@ body{
 
 .benefit-icon i{
 	font-size: 30px;
-	color: #E1B45A;
+	color: #4D230D;
 }
 
 /* CONTENT */
