@@ -10373,8 +10373,13 @@ body{
     }
 
     .agham-location-section .location-card h3{
-        font-size: 20px;
+        font-size: 16px;
     }
+    .faq img {
+    height: 300px !important;
+    width: 100%;
+    object-fit: cover;
+}
 }
 
 
@@ -13080,5 +13085,15 @@ p.text-2sm {
 
     .mobile-menu-fix.menu-open{
         left: 0 !important; /* show on click */
+    }
+}
+
+
+
+
+@media (min-width: 1024px) {
+    .content-media img {
+        height: 700px;
+        object-fit:cover;
     }
 }
